@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Widget</title>
+    <script src="https://cdn.jsdelivr.net/npm/@botfront/rasa-webchat@0.11.5/lib/index.js"></script>
+</head>
+<body>
+    <div id="webchat"></div>
+    <script>
+        WebChat.default.init({
+            selector: "#webchat",
+            initPayload: "/greet",
+            interval: 1000, // message fetching interval
+            customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+            socketUrl: "http://localhost:5005", // Rasa server URL
+            socketPath: "/socket.io/",
+            title: "Rasa Bot",
+            subtitle: "Ask me anything",
+            inputTextFieldHint: "Type your message here",
+            initPayload: "/get_started",
+            showCloseButton: true,
+            fullScreenMode: false,
+            params: {
+                images: {
+                    dims: {
+                        width: 300,
+                        height: 200
+                    }
+                },
+                storage: "session" // can also be "local" or "none"
+            }
+        });
+    </script>
+</body>
+</html>

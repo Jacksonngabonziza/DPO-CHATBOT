@@ -1,0 +1,10 @@
+[
+  {
+    "text": "What are my rights under the data protection law?",
+    "intent": "data_protection_rights",
+    "intent_prediction": {
+      "name": "data_protection_law",
+      "confidence": 0.9320250153541565
+    }
+  }
+]

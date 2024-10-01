@@ -1,0 +1,183 @@
+version: '3.1'
+actions:
+- utter_greeting
+- action_default_fallback
+intents:
+- affirm
+- welcome
+- when_to_report_change_of_representative
+- bot_challenge
+- cross_border_data_transfers
+- data_access_correction
+- data_breach_notifications
+- data_collection_consent
+- data_deletion_retention
+- data_protection_authority
+- data_protection_compliance
+- data_protection_general_info
+- data_protection_impact_assessment
+- data_protection_law
+- data_protection_rights
+- data_storage_security
+- deny
+- goodbye
+- greeting
+- nlu_fallback
+- out_of_scope
+- thanks
+- transfer_to_human
+- who_qualifies_to_be_a_representative
+- how_to_designate_a_representative
+- duties_of_a_representative
+- when_to_report_a_change_of_representative
+- lodge_complaint
+- lodge_complaint_for_someone_else
+- appeal_a_decision
+- full_description_of_data_representative
+- aim_of_the_law
+- who_does_this_law_apply_to
+- who_is_a_data_subject
+- what_is_personal_data
+- what_is_privacy
+- what_is_sensitive_personal_data
+- what_is_genetic_information
+- what_is_biometric_information
+- what_are_special_categories_of_personal_data
+- what_does_processing_mean
+- who_is_a_controller
+- who_is_a_processor
+- how_to_determine_controller_or_processor
+- what_is_supervisory_authority
+- what_are_powers_of_supervisory_authority
+- should_register_with_supervisory_authority
+- what_is_consent
+- how_to_ensure_legal_consent
+- duties_of_data_protection_officer
+- rights_of_data_subjects
+- obligations_of_data_controllers_and_processors
+- data_storage_transfer_retention
+- is_non_compliance_an_offence
+- important_documents_to_have
+- implications_of_the_law_for_different_sectors
+responses:
+  utter_data_deletion_retention:
+  - text: To request the deletion of your personal data, contact the organization that holds your data and follow their formal procedures. Organizations have retention policies that dictate how long they can keep data, typically based on legal requirements or your ongoing relationship with them.
+  utter_data_access_correction:
+  - text: You can access your personal data by submitting a formal request to the organization holding it. If your data is incorrect, you should ask for it to be corrected as soon as possible to ensure accuracy.
+  utter_data_protection_impact_assessment:
+  - text: A Data Protection Impact Assessment (DPIA) helps organizations identify and minimize risks related to the handling of personal data. It is typically required when the processing of data is likely to pose high risks to individuals’ privacy.
+  utter_data_storage_security:
+  - text: To store personal data securely, organizations should use encryption, access control, and regular security assessments. Hosting data outside Rwanda requires compliance with both local and international regulations.
+  utter_data_protection_compliance:
+  - text: Organizations must follow data protection laws by performing audits, appointing Data Protection Officers, and keeping up with regulatory requirements. Non-compliance can lead to penalties such as fines and sanctions.
+  utter_data_protection_authority:
+  - text: In Rwanda, the Data Protection and Privacy Office is responsible for enforcing data protection laws. They handle complaints, monitor compliance, and provide guidance on data protection practices.
+  utter_cross_border_data_transfers:
+  - text: Transferring data outside Rwanda is subject to regulations that ensure the recipient country provides adequate data protection. These rules ensure data is processed with similar standards to those within Rwanda.
+  utter_data_breach_notifications:
+  - text: In the event of a data breach, organizations must notify you and the supervisory authority within 72 hours. If your data has been compromised, you should report the incident and take immediate action to protect your identity.
+  utter_data_collection_consent:
+  - text: Organizations must obtain your informed consent before collecting personal data. Consent should be clear, explicit, and easily revocable. Additionally, processing data may rely on legal grounds depending on the situation.
+  utter_data_protection_rights:
+  - text: Under data protection law, you have the right to access, correct, and delete your data, withdraw consent, and ensure that your data is secure. If you feel your rights are violated, you can contact the Data Protection and Privacy Office.
+  utter_data_protection_law:
+  - text: Rwanda's Data Protection Law outlines your rights as a data subject, including access, correction, and deletion of personal data. Organizations are obligated to protect this data, and penalties exist for non-compliance.
+  utter_data_protection_general_info:
+  - text: Data protection refers to the legal and technical measures in place to safeguard personal data from misuse, breaches, or unauthorized access. It is essential for ensuring privacy and maintaining trust in digital environments.
+  utter_welcome:
+  - text: Hello, I'm here to help you navigate the world of data protection and privacy in Rwanda. Whether you’re looking to learn more about your rights, understand how your data is handled, or resolve concerns regarding privacy, you've come to the right place. Ask me anything about Rwanda's data protection laws or let me assist you with any related issues.
+
+  utter_affirm:
+  - text: Great! Glad to hear that.
+  - text: Perfect!
+  - text: Awesome!
+  - text: Yes!
+  - text: Of course!
+  utter_deny:
+  - text: Okay, feel free to ask if you change your mind.
+  utter_bot_challenge:
+  - text: Yes, I am a bot, here to assist you with your queries.
+  - text: I’m a bot, but I’m happy to help with any questions you have.
+  - text: You're talking to a bot, but I can assist you with most inquiries.
+  utter_thanks:
+  - text: You’re welcome!
+  - text: Glad I could help!
+  - text: Thank you!
+  - text: You're welcome, feel free to reach out if you have more questions.
+  - text: Thanks for your kind words!
+  utter_greeting:
+  - text: Hello! How can I help you today?
+  - text: Hi there, what can I assist you with?
+  - text: Good day! How can I be of service?
+  - text: Hey! Need any help?
+  - text: Hi! How can I support you today?
+  utter_goodbye:
+  - text: Goodbye! Have a great day!
+  - text: See you later, take care!
+  - text: Goodbye, feel free to reach out anytime!
+  - text: Bye for now!
+  - text: Catch you later!
+  utter_out_of_scope:
+  - text: I’m sorry, but I can’t help with that question. Would you like to ask something related to data protection?
+  - text: That query is out of my scope. I can assist you with data protection and privacy-related topics.
+  - text: Unfortunately, that’s not something I can answer. I’m here to help with data protection queries!
+  - text: I’m not sure about that, but I can help with questions about data protection.
+  utter_transfer_to_human:
+  - text: It seems you’d like to talk to a human. Let me transfer you to a support agent.
+  - text: I understand you want to speak to a person. Connecting you to an agent now.
+  - text: Let me transfer you to a human agent for further assistance.
+  - text: I’ll connect you to an agent right away.
+  - text: Connecting you to a live agent. Please hold on.
+  utter_who_qualifies_to_be_a_representative:
+    - text: |
+        A Data Controller or Data Processor established or residing outside Rwanda that processes personal data of individuals located in Rwanda must appoint a representative. The designated representative must fulfill the following criteria:
+        1. Be a corporate body or legal entity established in Rwanda (this could be either an external service provider or a local entity within the corporate group of the Data Controller or Data Processor);
+        2. Be registered as a Data Controller or Data Processor with NCSA;
+        3. Understand the designating party’s business operations;
+        4. Understand the data processing operations of the designating party;
+        5. Be able to fulfill the mandate ascribed in the representation agreement;
+        6. Be able to handle data subjects’ requests;
+        7. Ensure the respect of the rights and freedoms of data subjects;
+        8. Ensure collaboration and cooperation with the NCSA.
+
+  utter_how_to_designate_a_representative:
+    - text: |
+        The Data Controller or Data Processor established or residing outside Rwanda designates a representative in writing through a representation agreement laying out the roles and responsibilities of involved parties in compliance with the DPP Law. The agreement must govern the relations and obligations between the representative in Rwanda and the Data Controller or Data Processor established outside Rwanda, and encompass the nature, scope, and purpose of processing operations in line with the provisions of the DPP Law.
+
+  utter_duties_of_a_representative:
+    - text: |
+        The duties of a representative include:
+        1. Acting on behalf of the Data Controller or Data Processor in all matters related to personal data processing and privacy;
+        2. Responding to actions including complaints from data subjects and issues raised by NCSA;
+        3. Keeping a copy of records of personal data processing operations and providing them to NCSA if requested;
+        4. Taking over any liabilities and enforcing verdicts or arbitral awards rendered against the Designating Party;
+        5. Performing any other obligations assigned by NCSA.
+
+  utter_when_to_report_a_change_of_representative:
+    - text: |
+        After receiving a registration certificate, any change in the representative agreement or designation of a new representative must be reported to NCSA in writing within fifteen (15) working days from the date of change. You should report this to registration@dpo.gov.rw and copy dpp@ncsa.gov.rw.
+  utter_lodge_complaint:
+    - text: |
+        You can lodge a complaint with the Data Protection and Privacy Office if you notice non-compliance with the Data Protection and Privacy (DPP) Law. Complaints can be submitted through the following channels:
+        a) Toll-Free number 9080
+        b) Website at [https://dpo.gov.rw/contact-us](https://dpo.gov.rw/contact-us)
+        c) E-mail to complaint@dpo.gov.rw and copy dpp@ncsa.gov.rw
+        d) In-person at the Data Protection and Privacy Office.
+
+  utter_lodge_complaint_for_someone_else:
+    - text: |
+        You can lodge a complaint on behalf of someone else if they provide written consent authorizing you to act on their behalf. This process must follow the relevant civil procedure laws in Rwanda on representative action.
+  utter_stasified:
+    - text: was this helpful👍  👎 ?
+  utter_appeal_a_decision:
+    - text: |
+        If you are dissatisfied with a decision made by the Data Protection and Privacy Office, you have the right to appeal. You may file an appeal with the competent court if you believe the decision does not address your complaint adequately.
+  utter_full_description_of_data_representative:
+    - text: |
+        A Data Controller or Data Processor established or residing outside Rwanda that processes personal data of individuals located in Rwanda must appoint a representative. The representative acts on behalf of the Data Controller or Data Processor in all matters related to personal data processing and privacy. The representative serves as a point of contact for both the National Cyber Security Authority (NCSA) and data subjects, ensuring compliance with Rwanda’s Data Protection and Privacy (DPP) Law. They must be a corporate body or legal entity established in Rwanda, registered with the NCSA, and possess the requisite knowledge of the data processing operations of the appointing party.
+  utter_fallback:
+    - text: |
+       Sorry, I didn't quite understand that. Could you rephrase?
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

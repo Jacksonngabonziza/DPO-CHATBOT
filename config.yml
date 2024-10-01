@@ -1,0 +1,69 @@
+recipe: default.v1
+
+
+assistant_id: 20240907-010106-compact-sandwich
+
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: en
+
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  
+
+  # Adding a pre-trained language model featurizer (BERT)
+  - name: LanguageModelFeaturizer
+    model_name: "bert"
+    model_weights: "bert-base-uncased"
+    
+  # CRFEntityExtractor for enhanced entity extraction
+  - name: CRFEntityExtractor
+
+  - name: DIETClassifier
+    epochs: 300  # Increase epochs for better accuracy
+    constrain_similarities: true
+
+  # EntitySynonymMapper for handling synonyms
+  - name: EntitySynonymMapper
+
+  - name: ResponseSelector
+    epochs: 300  
+    constrain_similarities: true
+    conversational_context: true  # Enable multi-turn conversation handling
+
+  # FallbackClassifier to handle fallback cases
+  - name: FallbackClassifier
+    threshold: 0.35  # Adjust for more confident predictions
+    ambiguity_threshold: 0.15  # Handle ambiguous intents better
+
+  # RegexEntityExtractor for capturing specific patterns (e.g., dates, emails, numbers)
+  - name: RegexEntityExtractor
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+  - name: MemoizationPolicy
+
+  - name: RulePolicy
+
+  - name: UnexpecTEDIntentPolicy
+    max_history: 5
+    epochs: 200
+
+  - name: TEDPolicy
+    max_history: 20  # Increased history for deeper context handling
+    epochs: 300  # Increased for more training cycles
+    constrain_similarities: true
+    batch_strategy: "balanced"
+    batch_size: [32, 64]  # Fine-tuned batch sizes for better training optimization
+
+# CORS settings
+cors:
+  "*"

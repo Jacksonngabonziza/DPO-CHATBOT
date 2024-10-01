@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DPO-Bot</title>
+    <!-- <link
+      rel="icon"
+      type="image/png"
+      href="https://i0.wp.com/digitalumuganda.com/wp-content/uploads/2019/09/LOGO-DIGITAL-UMUGANDA.png"
+    /> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      df-messenger {
+        --df-messenger-bot-message: RGB(236, 239, 247);
+        --df-messenger-button-titlebar-color: RGB(58, 194, 108);
+        --df-messenger-chat-background-color: #fafafa;
+        --df-messenger-font-color: white;
+        --df-messenger-send-icon: #878fac;
+        --df-messenger-user-message: RGB(58, 194, 108);
+      }
+      .rw-conversation-container .rw-header {
+        background-color: #222211;
+      }
+      .rw-conversation-container .rw-close-function {
+        background-color: #222211;
+      }
+      .rw-launcher {
+        background-color: #222211;
+      }
+      .rw-conversation-container .rw-messages-container .rw-message .rw-client {
+        background-color: #222211;
+      }
+
+      /* Styles for the image to fit the screen */
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body style="text-align: center">
+    <img src="image.png" alt="Image" />
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_jyxnt8gq.json"  
+    background="transparent"  
+    speed="1"  
+    style="width: 300px; height: 300px; align-items: center; margin-left: 580px; margin-top: 100px;"  
+    loop  autoplay>
+  </lottie-player> -->
+<script>
+    localStorage.clear();
+    !(function () {
+
+        let e = document.createElement("script"),
+          t = document.head || document.getElementsByTagName("head")[0];
+        (e.src =
+          "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"),
+          // Replace 1.x.x with the version that you want
+          (e.async = !0),
+          (e.onload = () => {
+            //window.localstorage.clear();
+            window.WebChat.default(
+              {
+
+                initPayload:'/welcome',  
+                customData: { language: "en" },
+                socketUrl: "http://localhost:5005/",
+                title: "DP Bot",
+                subtitle: "Your data , Our priority",
+                showFullScreenButton: true,
+                showMessageDate: true
+              },
+              null
+            );
+            
+          }),
+          t.insertBefore(e, t.firstChild);
+          
+      })();
+      
+      
+      </script>
+  </body>
+</html>

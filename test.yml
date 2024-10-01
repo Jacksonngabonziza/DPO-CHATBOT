@@ -1,0 +1,831 @@
+version: "3.1"
+
+nlu:
+  intents:
+    - aim_of_the_law
+    - who_does_this_law_apply_to
+    - who_is_a_data_subject
+    - what_is_personal_data
+    - what_is_privacy
+    - what_is_sensitive_personal_data
+    - what_is_genetic_information
+    - what_is_biometric_information
+    - what_are_special_categories_of_personal_data
+    - what_does_processing_mean
+    - who_is_a_controller
+    - who_is_a_processor
+    - how_to_determine_controller_or_processor
+    - what_is_supervisory_authority
+    - what_are_powers_of_supervisory_authority
+    - should_controllers_and_processors_register
+    - what_is_consent
+    - how_to_ensure_consent_meets_legal_requirements
+    - duties_of_data_protection_officer
+    - rights_of_data_subjects
+    - obligations_of_controllers_and_processors
+    - storage_transfer_and_retention_of_personal_data
+    - is_it_an_offence_not_to_comply
+    - important_documents_to_have
+    - implications_of_the_law_for_different_sectors
+
+  examples:
+    - intent: aim_of_the_law
+      examples: |
+        - What is the aim of the data protection law?
+        - What is the purpose of the privacy law?
+        - Why was the personal data protection law introduced?
+        - What does this law seek to achieve?
+        - What is the objective of the personal data protection law?
+        - What are the goals of the privacy law?
+        - What does the law aim to protect?
+        - Why is the data protection law important?
+        - What are the main goals of the personal data law?
+        - How does the law protect privacy?
+        - What are the expected outcomes of the data protection law?
+        - Why does Rwanda need a data protection law?
+        - What are the primary reasons for the law’s introduction?
+        - How does the law contribute to securing personal data?
+        - What is the law designed to prevent?
+        - What is the significance of the data protection law in Rwanda?
+        - Why was the data privacy law enacted?
+        - What is the overall aim of the personal data protection law?
+        - How does the law promote trust in digital services?
+        - What are the benefits of the data protection law?
+
+    - intent: who_does_this_law_apply_to
+      examples: |
+        - Who must comply with the data protection law?
+        - Who is required to follow the personal data protection law?
+        - Does the law apply to foreign companies?
+        - Is the law applicable to businesses outside Rwanda?
+        - Does the law apply to organizations outside Rwanda?
+        - Who does the personal data law affect?
+        - Is the law only for Rwandan companies?
+        - What entities must adhere to the law?
+        - Who needs to register under the data protection law?
+        - Does the law cover international organizations?
+        - Who must follow this privacy law?
+        - Does the law apply to businesses outside Rwanda?
+        - Is this law applicable to private companies only?
+        - What companies need to comply with the law?
+        - Is compliance with the law mandatory for all organizations?
+        - Who does the law target?
+        - Does the law apply to non-profit organizations?
+        - Are small businesses covered under the law?
+        - What sectors are affected by the data protection law?
+        - Is compliance with the law required for all companies?
+
+    - intent: who_is_a_data_subject
+      examples: |
+        - Who is considered a data subject?
+        - Can you explain what a data subject is?
+        - Who falls under the definition of a data subject?
+        - What does the law say about data subjects?
+        - Who is affected by this law as a data subject?
+        - What does the term "data subject" mean?
+        - Who qualifies as a data subject?
+        - Who is a data subject under this law?
+        - Can an organization be a data subject?
+        - What type of person is considered a data subject?
+        - Who does the law classify as a data subject?
+        - How is a data subject defined?
+        - Is every individual a data subject?
+        - What qualifies someone as a data subject?
+        - Can businesses be data subjects?
+        - Does the term data subject include legal entities?
+        - Who is protected as a data subject?
+        - Who can be classified as a data subject?
+        - Is an individual whose data is collected a data subject?
+        - What makes someone a data subject?
+
+    - intent: what_is_personal_data
+      examples: |
+        - What does personal data mean?
+        - What is considered personal data under the law?
+        - Can you define personal data?
+        - What information is classified as personal data?
+        - What counts as personal data?
+        - What does personal data include?
+        - Is my phone number considered personal data?
+        - Is personal data the same as sensitive data?
+        - Can you give examples of personal data?
+        - Is location data considered personal data?
+        - What information is covered under personal data?
+        - Does the law protect personal data?
+        - What does the law say about personal data?
+        - What is included in personal data?
+        - Does the law define personal data?
+        - How does the law define personal data?
+        - What types of information qualify as personal data?
+        - Can an email address be personal data?
+        - What makes data personal under the law?
+        - Does personal data include health information?
+
+    - intent: what_is_privacy
+      examples: |
+        - What does privacy mean under this law?
+        - Can you explain privacy in the context of data protection?
+        - How is privacy defined in the law?
+        - What does privacy mean in terms of personal data protection?
+        - What is privacy in terms of personal data?
+        - How is the right to privacy protected under this law?
+        - Can you describe the privacy protections in the law?
+        - What is the definition of privacy under data protection law?
+        - What are privacy rights under this law?
+        - What does the law say about the right to privacy?
+        - How does the law protect privacy?
+        - What is meant by privacy in personal data protection?
+        - Does the law define privacy?
+        - What is the meaning of privacy under the law?
+        - What does privacy cover in data protection?
+        - What is the scope of privacy rights under the law?
+        - What privacy protections exist under this law?
+        - What is considered a violation of privacy under the law?
+        - How does this law guarantee privacy?
+        - How does the law define the right to privacy?
+
+    - intent: what_is_sensitive_personal_data
+      examples: |
+        - What does sensitive personal data mean?
+        - What counts as sensitive personal data?
+        - Can you explain what sensitive data is?
+        - What kind of information is considered sensitive personal data?
+        - How does the law define sensitive personal data?
+        - What makes data sensitive under the law?
+        - What is classified as sensitive personal data?
+        - Can you give examples of sensitive personal data?
+        - Is health data considered sensitive personal data?
+        - Is biometric data sensitive personal data?
+        - What types of personal data are sensitive?
+        - What does the law say about sensitive personal data?
+        - What is protected as sensitive personal data?
+        - Does genetic data fall under sensitive personal data?
+        - Is medical information classified as sensitive personal data?
+        - What are examples of sensitive personal data?
+        - Is personal health data considered sensitive?
+        - Can religious beliefs be sensitive personal data?
+        - Does the law treat sensitive personal data differently?
+        - What types of information are considered highly sensitive?
+
+    - intent: what_is_genetic_information
+      examples: |
+        - What is genetic information?
+        - How does the law define genetic data?
+        - Is genetic data considered personal data?
+        - What is covered under genetic information?
+        - Does the law regulate genetic data?
+        - Can you explain what genetic information is?
+        - Is genetic data included in sensitive personal data?
+        - What makes data genetic under the law?
+        - What does genetic data mean under this law?
+        - Is DNA information considered genetic data?
+        - What is considered genetic data under the law?
+        - Is genetic data protected by the law?
+        - How is genetic information classified?
+        - Can you give an example of genetic information?
+        - What kind of information qualifies as genetic data?
+        - Does genetic information include family health history?
+        - What does the law say about the use of genetic data?
+        - Is genetic information protected like personal data?
+        - How does the law regulate genetic information?
+
+    - intent: what_is_biometric_information
+      examples: |
+        - What is biometric information?
+        - What does biometric data include?
+        - How is biometric information classified under the law?
+        - Can you explain what biometric data is?
+        - Is biometric information considered personal data?
+        - What counts as biometric information?
+        - What types of data are considered biometric?
+        - Does the law include biometric data as sensitive?
+        - What does biometric data refer to?
+        - Is fingerprint data biometric?
+        - How does the law define biometric information?
+        - What protections are there for biometric data?
+        - What are examples of biometric data?
+        - Is retina scan data biometric?
+        - What qualifies as biometric information?
+        - Does biometric data include facial recognition?
+        - What personal information is classified as biometric?
+        - Is biometric data sensitive personal information?
+        - What regulations exist for handling biometric data?
+        - Does the law treat biometric data differently?
+
+    - intent: what_are_special_categories_of_personal_data
+      examples: |
+        - What are special categories of personal data?
+        - Can you explain special categories of personal data?
+        - What types of data fall under special categories?
+        - What is considered special categories of personal data?
+        - What makes data part of special categories?
+        - Can you give examples of special categories of personal data?
+        - How does the law define special categories of personal data?
+        - Is sensitive data included in special categories?
+        - Are criminal records considered part of special categories?
+        - Does medical data fall under special categories?
+        - Is health data part of special categories?
+        - What types of personal information are special categories?
+        - What does the law say about special categories of data?
+        - What makes data special categories?
+        - What is included in special categories under the law?
+        - What information falls under special categories of data?
+        - Is religious belief considered special categories of data?
+        - What does the law define as special categories of data?
+        - Are biometric data part of special categories of data?
+        - What protections are provided for special categories of data?
+
+    - intent: what_does_processing_mean
+      examples: |
+        - What does processing mean?
+        - What does data processing involve?
+        - How is processing of personal data defined in the law?
+        - Can you explain what processing of personal data is?
+        - What activities are included in processing data?
+        - How does the law define processing?
+        - What types of data are involved in processing?
+        - What does the law say about processing personal data?
+        - Is collecting personal data considered processing?
+        - Does processing include storing personal data?
+        - What counts as processing personal data?
+        - Does sharing personal data with third parties fall under processing?
+        - What activities are classified as processing?
+        - How is processing of data managed?
+        - What activities are considered data processing under the law?
+        - What does the law define as processing operations?
+        - Is storing information considered processing?
+        - How is processing regulated under the law?
+        - What actions fall under the processing of data?
+        - Does processing include collecting and erasing data?
+
+    - intent: who_is_a_controller
+      examples: |
+        - Who is a data controller?
+        - Can you define who a controller is under the law?
+        - What is a data controller responsible for?
+        - Who qualifies as a data controller?
+        - What is the role of a data controller?
+        - Can you explain what a data controller does?
+        - Who is responsible for determining how personal data is processed?
+        - Who does the law classify as a controller?
+        - What organizations are considered controllers?
+        - What makes a company a data controller?
+        - What is a controller in data protection?
+        - What responsibilities do controllers have?
+        - How does the law define a controller?
+        - Can you explain what a controller is under the law?
+        - What makes someone a controller under this law?
+        - Who is considered the controller in personal data handling?
+        - How does the law describe a data controller?
+        - What authority does a controller have over personal data?
+        - Who does the law refer to as a controller of personal data?
+        - What are the legal obligations of a controller?
+
+    - intent: who_is_a_processor
+      examples: |
+        - Who is a data processor?
+        - What role does a data processor play under the law?
+        - What does the term processor mean in data protection?
+        - How is a processor defined in data protection law?
+        - What are the responsibilities of a processor?
+        - What is a data processor responsible for?
+        - Who qualifies as a data processor?
+        - Can you explain what a data processor is?
+        - What companies are considered data processors?
+        - What organizations fall under the category of processors?
+        - What does the law say about processors?
+        - Can a company be both a controller and a processor?
+        - Who is responsible for processing personal data under the law?
+        - What makes someone a processor?
+        - How is a processor regulated by the law?
+        - What activities are included in the role of a processor?
+        - What organizations are considered processors under the law?
+        - What is the role of a processor in data handling?
+        - What actions make someone a processor?
+        - What responsibilities does a data processor have under the law?
+
+    - intent: how_to_determine_controller_or_processor
+      examples: |
+        - How do you determine whether you are a controller or processor?
+        - How do I know if my company is a controller or processor?
+        - What factors decide whether someone is a data controller or processor?
+        - How does the law differentiate between a controller and processor?
+        - What makes someone a controller instead of a processor?
+        - Can a company be both a controller and processor?
+        - How is the role of a controller determined?
+        - How do you determine if a company is a data processor?
+        - What defines the role of a controller in data protection?
+        - What criteria determine whether an organization is a controller?
+        - How is the distinction between controller and processor made?
+        - Can a company be both a controller and processor under the law?
+        - What actions define a controller in personal data management?
+        - What makes an organization a data processor?
+        - How can you identify if you are a processor or controller?
+        - How does a company know if they are a processor or controller?
+        - How is the role of a processor defined in the law?
+        - What makes a business a processor rather than a controller?
+        - How can you tell if your business is a controller or processor?
+        - What legal distinction exists between a controller and a processor?
+
+    - intent: what_is_supervisory_authority
+      examples: |
+        - What is the supervisory authority?
+        - What is the role of the supervisory authority in data protection?
+        - Can you explain the function of the supervisory authority?
+        - What responsibilities does the supervisory authority have?
+        - Who is the supervisory authority under the data protection law?
+        - What powers does the supervisory authority have?
+        - How does the supervisory authority enforce the law?
+        - Who regulates compliance with the data protection law?
+        - What is the supervisory authority responsible for?
+        - What is the role of the supervisory body in data protection?
+        - Who oversees compliance with the data protection law?
+        - What does the supervisory authority do?
+        - What is the function of the supervisory authority under the law?
+        - What authority does the supervisory body have over data processors?
+        - How does the supervisory authority ensure compliance with the law?
+        - Who is responsible for enforcing the data protection law?
+        - How is the supervisory authority involved in data breaches?
+        - What enforcement actions can the supervisory authority take?
+        - How is the supervisory authority defined under the law?
+        - What legal powers does the supervisory authority have?
+
+    - intent: what_are_powers_of_supervisory_authority
+      examples: |
+        - What are the powers of the supervisory authority?
+        - What authority does the supervisory body have under this law?
+        - Can you explain the responsibilities and powers of the supervisory authority?
+        - What legal powers are granted to the supervisory authority?
+        - What can the supervisory authority do under the data protection law?
+        - What enforcement actions can the supervisory authority take?
+        - What powers does the supervisory body have over controllers?
+        - What legal authority does the supervisory body have?
+        - What actions can the supervisory authority take to enforce compliance?
+        - Can the supervisory authority impose penalties?
+        - What authority does the supervisory body have to enforce the law?
+        - What powers does the supervisory authority have in data breach cases?
+        - What legal powers are given to the supervisory authority under this law?
+        - How does the supervisory authority enforce compliance with the law?
+        - Can the supervisory authority conduct audits of organizations?
+        - What investigative powers does the supervisory authority have?
+        - Can the supervisory authority fine organizations for non-compliance?
+        - What role does the supervisory authority play in enforcing data protection laws?
+        - What authority does the supervisory body have in ensuring compliance?
+        - How does the supervisory authority regulate controllers and processors?
+
+    - intent: should_controllers_and_processors_register
+      examples: |
+        - Should data controllers and processors register with the supervisory authority?
+        - Is registration mandatory for data processors?
+        - Do companies need to register under the data protection law?
+        - Who needs to register with the supervisory authority?
+        - What is the process for registration under the data protection law?
+        - Should all organizations processing personal data register with the authority?
+        - Is registration with the supervisory authority required by law?
+        - How does a data controller register with the supervisory authority?
+        - Who is required to register under the data protection law?
+        - What organizations need to register with the data protection authority?
+        - Is it mandatory to register with the supervisory authority?
+        - What are the requirements for registering with the supervisory authority?
+        - Can a company operate without registering with the authority?
+        - What happens if an organization does not register with the supervisory authority?
+        - Does the law require all companies to register with the supervisory authority?
+        - Is it compulsory for controllers to register with the authority?
+        - What steps are involved in registering with the supervisory authority?
+        - How do data controllers and processors register under the law?
+        - What organizations are obligated to register with the authority?
+        - Is it legally required to register with the supervisory authority?
+
+    - intent: what_is_consent
+      examples: |
+        - What is consent in data protection?
+        - How is consent defined under this law?
+        - Can you explain what constitutes consent for data processing?
+        - What does consent mean in the context of data protection?
+        - How does the law define consent for data use?
+        - What is considered valid consent under the data protection law?
+        - How do individuals give consent for their data to be processed?
+        - What makes consent legally valid for data processing?
+        - Can you explain the requirements for obtaining consent under the law?
+        - What is considered informed consent in data protection?
+        - How is consent obtained under the data protection law?
+        - What does the law say about obtaining consent for data use?
+        - What does explicit consent mean in the context of data protection?
+        - How is consent handled under the data protection law?
+        - What are the legal requirements for obtaining consent?
+        - Is consent always required to process personal data?
+        - Can data be processed without consent?
+        - How is consent given for personal data processing?
+        - What must be done to obtain valid consent?
+        - What are the legal standards for consent in data protection?
+
+    - intent: how_to_ensure_consent_meets_legal_requirements
+      examples: |
+        - How do you ensure that consent meets the legal requirements?
+        - What should be done to ensure consent is valid under the law?
+        - How is valid consent obtained in data processing?
+        - What are the legal requirements for obtaining consent?
+        - How can organizations make sure consent is legally valid?
+        - What steps should be taken to meet legal consent requirements?
+        - What makes consent legally valid under the law?
+        - How can companies ensure they meet the consent requirements of the law?
+        - How does the law define valid consent for data processing?
+        - What are the guidelines for ensuring legal consent is met?
+        - How can an organization obtain legal consent under the data protection law?
+        - What steps must be followed to ensure consent meets legal standards?
+        - How is valid consent obtained under this law?
+        - What actions are required to ensure consent is legally binding?
+        - How do organizations verify that consent meets the law's requirements?
+        - What does the law require for consent to be valid?
+        - How is legal consent ensured for personal data use?
+        - What guidelines are provided for obtaining valid consent?
+        - What should be done to ensure valid and informed consent?
+        - How is informed consent ensured to meet legal requirements?
+
+    - intent: duties_of_data_protection_officer
+      examples: |
+        - What are the duties of a data protection officer?
+        - What is the role of a data protection officer?
+        - What responsibilities does a data protection officer have?
+        - What are the key duties of a data protection officer?
+        - How does a data protection officer ensure compliance with the law?
+        - What tasks does a data protection officer perform?
+        - Can you explain the role of a data protection officer?
+        - What is the legal role of a data protection officer?
+        - How does a data protection officer help ensure privacy?
+        - What are the obligations of a data protection officer under the law?
+        - What authority does a data protection officer have?
+        - What are the key functions of a data protection officer?
+        - How does a data protection officer manage compliance?
+        - What role does the data protection officer play in data security?
+        - What is the legal function of a data protection officer?
+        - How does the law define the duties of a data protection officer?
+        - What is the role of a data protection officer in data processing?
+        - What compliance duties does a data protection officer have?
+        - What are the responsibilities of a data protection officer in organizations?
+        - What legal duties does a data protection officer have?
+
+    - intent: rights_of_data_subjects
+      examples: |
+        - How does the law protect the rights of data subjects?
+        - What are the rights of data subjects under this law?
+        - Can you explain the rights given to data subjects?
+        - What legal rights do data subjects have under the data protection law?
+        - What protections are provided for data subjects?
+        - How does the law protect individuals' data rights?
+        - What legal rights are granted to data subjects under the law?
+        - Can you explain the protections given to data subjects?
+        - What rights are available to data subjects?
+        - What does the law say about the rights of data subjects?
+        - How does the law safeguard the rights of data subjects?
+        - What rights do individuals have regarding their personal data?
+        - Can data subjects request access to their personal data?
+        - What protections are provided for data subjects under this law?
+        - How does the law ensure data subjects' privacy rights?
+        - What authority do data subjects have over their personal data?
+        - What rights do individuals have in relation to personal data?
+        - How can data subjects exercise their rights under the law?
+        - What does the law say about data subjects' rights?
+        - Can data subjects request the deletion of their data?
+
+    - intent: obligations_of_controllers_and_processors
+      examples: |
+        - What are the obligations of data controllers and processors?
+        - What duties do controllers and processors have under this law?
+        - What are the legal obligations for controllers and processors?
+        - Can you explain the responsibilities of controllers and processors?
+        - What does the law say about the duties of controllers and processors?
+        - How does the law define the obligations of data controllers and processors?
+        - What actions must controllers and processors take to comply with the law?
+        - What are the compliance requirements for controllers and processors?
+        - How do controllers and processors meet their legal obligations?
+        - What steps must controllers and processors follow under the law?
+        - What are the responsibilities of controllers and processors under the law?
+        - What obligations do data controllers and processors have under the law?
+        - What does the law require controllers and processors to do?
+        - How do controllers and processors ensure compliance with the law?
+        - What are the regulatory obligations of data controllers and processors?
+        - What duties must controllers and processors meet under the law?
+        - How are the roles of controllers and processors defined under the law?
+        - What obligations do controllers and processors have regarding data security?
+        - How do controllers and processors ensure they meet the legal requirements?
+        - What are the key responsibilities of controllers and processors?
+
+    - intent: storage_transfer_and_retention_of_personal_data
+      examples: |
+        - What does the law say about storage, transfer, and retention of personal data?
+        - How should personal data be stored and transferred under the law?
+        - What are the legal requirements for storing and transferring personal data?
+        - How does the law regulate the storage and transfer of personal data?
+        - What are the rules for retaining personal data under the law?
+        - What is the legal framework for data retention and storage?
+        - What are the guidelines for storing personal data securely?
+        - How does the law define the rules for transferring personal data?
+        - What does the law require for data storage and retention?
+        - How long can personal data be retained under the law?
+        - What security measures must be taken when transferring personal data?
+        - What guidelines exist for the secure transfer of personal data?
+        - How should personal data be stored to meet legal requirements?
+        - What rules govern the storage and transfer of personal data?
+        - What retention periods are required under the law for personal data?
+        - How should personal data be stored to ensure compliance?
+        - What guidelines are in place for the retention of personal data?
+        - What must be done to securely transfer personal data?
+        - What does the law say about the safe transfer of personal data?
+        - What security measures must be followed for storing personal data?
+
+    - intent: is_it_an_offence_not_to_comply
+      examples: |
+        - Is it an offence not to comply with the data protection law?
+        - What are the penalties for non-compliance?
+        - What happens if a company doesn't follow the law?
+        - What are the legal consequences of not complying with the law?
+        - Is non-compliance with the data protection law considered a crime?
+        - Can a company face penalties for not following the law?
+        - What happens if an organization violates the data protection law?
+        - What legal actions can be taken against non-compliant companies?
+        - What are the consequences of violating the data protection law?
+        - Can companies be fined for not following the data protection law?
+        - What legal penalties exist for non-compliance with the law?
+        - Can an organization be prosecuted for not complying with the law?
+        - What are the legal repercussions of not complying with the law?
+        - What fines can be imposed for non-compliance with the data protection law?
+        - How does the law punish companies that do not comply?
+        - What are the sanctions for failing to follow the law?
+        - Is it illegal not to comply with the data protection law?
+        - What actions are taken against companies that do not comply with the law?
+        - Can non-compliant organizations face legal consequences?
+        - What legal repercussions exist for violating the law?
+
+    - intent: important_documents_to_have
+      examples: |
+        - What important documents should companies have for compliance?
+        - What documentation is required under the data protection law?
+        - What are the key documents needed to comply with the law?
+        - What documents should an organization have to meet compliance requirements?
+        - What documents must be in place to comply with the law?
+        - What are the key compliance documents required under the law?
+        - Can you explain the documents needed for data protection compliance?
+        - What are the essential documents for complying with the data protection law?
+        - What paperwork must companies maintain to comply with the law?
+        - What legal documents are required for data protection compliance?
+        - What policies and documents are needed to meet data protection requirements?
+        - What records must be kept to ensure compliance with the law?
+        - What forms are required for compliance with the data protection law?
+        - What documents do organizations need to ensure compliance?
+        - What paperwork must be maintained for compliance purposes?
+        - What compliance records must companies keep under the data protection law?
+        - What legal documents must organizations maintain to comply with the law?
+        - What compliance documents must be in place for companies?
+        - What records and policies are essential for data protection compliance?
+        - What documents must be retained to comply with the law?
+
+    - intent: implications_of_the_law_for_different_sectors
+      examples: |
+        - What are the implications of the law for different sectors?
+        - How does this law impact various industries?
+        - What are the sector-specific implications of the data protection law?
+        - How will the data protection law affect different industries?
+        - What are the consequences of the law for different sectors?
+        - Can you explain how the law affects different sectors?
+        - What impact does the law have on various industries?
+        - How will the law change data practices in different industries?
+        - What are the legal implications for different sectors under the law?
+        - How does the law affect companies in different sectors?
+        - What are the key changes for different sectors under the data protection law?
+        - How does the law regulate data in different sectors?
+        - What changes are required for different industries under the law?
+        - How does the law impact the handling of data in different industries?
+        - What is the sector-specific impact of the data protection law?
+        - How does the law affect data practices across industries?
+        - What sectors will see the greatest impact from the data protection law?
+        - How does the law affect different sectors in Rwanda?
+        - What sector-specific implications should businesses prepare for?
+        - What industry changes are required by the data protection law?
+
+responses:
+  utter_aim_of_the_law:
+    - text: |
+        The personal data protection and privacy law aims to strengthen individuals' control over their personal data, ensure secure data flows, and promote trust in digital services.
+
+  utter_who_does_this_law_apply_to:
+    - text: |
+        The law applies to individuals and organizations established or residing in Rwanda, as well as entities outside Rwanda that process the personal data of individuals located in Rwanda.
+
+  utter_who_is_a_data_subject:
+    - text: |
+        A data subject is any individual whose personal data is being processed, whether they are identified directly or indirectly through information such as name, ID number, or location data.
+
+  utter_what_is_personal_data:
+    - text: |
+        Personal data refers to any information relating to an identified or identifiable individual, including names, ID numbers, location data, or any factors specific to a person's physical, genetic, or social identity.
+
+  utter_what_is_privacy:
+    - text: |
+        Privacy in the context of data protection refers to the right of individuals to have their personal data protected from misuse and unauthorized access, ensuring their autonomy over how their data is processed.
+
+  utter_what_is_sensitive_personal_data:
+    - text: |
+        Sensitive personal data includes information about a person's race, health status, criminal records, religious beliefs, genetic or biometric data, and family details.
+
+  utter_what_is_genetic_information:
+    - text: |
+        Genetic information refers to data relating to the inherited or acquired genetic characteristics of an individual, which give unique information about the physiology or health of that individual, such as DNA.
+
+  utter_what_is_biometric_information:
+    - text: |
+        Biometric information refers to personal data resulting from specific technical processing related to the physical, physiological, or behavioral characteristics of an individual, such as fingerprint or facial recognition data.
+
+  utter_what_are_special_categories_of_personal_data:
+    - text: |
+        Special categories of personal data include information related to race, ethnic origin, political opinions, religious beliefs, health data, sexual orientation, and genetic and biometric data processed for identification purposes.
+
+  utter_what_does_processing_mean:
+    - text: |
+        Processing refers to any operation or set of operations performed on personal data, such as collecting, recording, organizing, structuring, storing, adapting, retrieving, using, disclosing, erasing, or destroying it.
+
+  utter_who_is_a_controller:
+    - text: |
+        A data controller is a person or organization that determines the purposes and means of processing personal data. They have authority over how and why the data is processed.
+
+  utter_who_is_a_processor:
+    - text: |
+        A data processor is a person or organization that processes personal data on behalf of the controller. They act according to the controller's instructions and do not determine the purposes of processing.
+
+  utter_how_to_determine_controller_or_processor:
+    - text: |
+        To determine whether you are a controller or processor, assess whether you have decision-making authority over the purposes and means of data processing. Controllers make those decisions, while processors follow instructions.
+
+  utter_what_is_supervisory_authority:
+    - text: |
+        The supervisory authority is the National Cyber Security Authority (NCSA), responsible for monitoring and enforcing compliance with the personal data protection law in Rwanda.
+
+  utter_what_are_powers_of_supervisory_authority:
+    - text: |
+        The supervisory authority has powers to conduct investigations, audits, issue penalties, order the suspension of data processing activities, and ensure compliance with data protection laws.
+
+  utter_should_controllers_and_processors_register:
+    - text: |
+        Yes, data controllers and processors must register with the supervisory authority (NCSA) to ensure their data processing activities comply with Rwanda's data protection regulations.
+
+  utter_what_is_consent:
+    - text: |
+        Consent refers to a freely given, specific, informed, and unambiguous agreement by a data subject to the processing of their personal data. It must be explicit and revocable.
+
+  utter_how_to_ensure_consent_meets_legal_requirements:
+    - text: |
+        To ensure consent meets legal requirements, it must be freely given, specific, informed, and explicit. The data subject must understand what they are consenting to, and consent must be documented.
+
+  utter_duties_of_data_protection_officer:
+    - text: |
+        The duties of a Data Protection Officer (DPO) include monitoring compliance with the law, advising on data protection impact assessments, and acting as a liaison between the organization and the supervisory authority.
+
+  utter_rights_of_data_subjects:
+    - text: |
+        The rights of data subjects include the right to access, correct, and delete their personal data, the right to withdraw consent, and the right to object to the processing of their data.
+
+  utter_obligations_of_controllers_and_processors:
+    - text: |
+        Data controllers and processors are obligated to ensure the security of personal data, process it lawfully, notify the supervisory authority of data breaches, and respect the rights of data subjects.
+
+  utter_storage_transfer_and_retention_of_personal_data:
+    - text: |
+        Personal data must be stored securely and transferred in accordance with the law. Retention periods must be limited to what is necessary, and data must be securely erased once no longer needed.
+
+  utter_is_it_an_offence_not_to_comply:
+    - text: |
+        Yes, it is an offence not to comply with the data protection law. Non-compliance can result in fines, penalties, or suspension of data processing activities.
+
+  utter_important_documents_to_have:
+    - text: |
+        Important documents for compliance include data protection policies, consent forms, privacy notices, data processing agreements, and records of data processing activities.
+
+  utter_implications_of_the_law_for_different_sectors:
+    - text: |
+        The law impacts different sectors by requiring compliance with data protection regulations, particularly in handling sensitive personal data, ensuring security, and maintaining privacy standards.
+
+rules:
+  - rule: Answer aim of the law
+    steps:
+      - intent: aim_of_the_law
+      - action: utter_aim_of_the_law
+
+  - rule: Who does this law apply to?
+    steps:
+      - intent: who_does_this_law_apply_to
+      - action: utter_who_does_this_law_apply_to
+
+  - rule: Who is a data subject?
+    steps:
+      - intent: who_is_a_data_subject
+      - action: utter_who_is_a_data_subject
+
+  - rule: What is personal data?
+    steps:
+      - intent: what_is_personal_data
+      - action: utter_what_is_personal_data
+
+  - rule: What is privacy?
+    steps:
+      - intent: what_is_privacy
+      - action: utter_what_is_privacy
+
+  - rule: What is sensitive personal data?
+    steps:
+      - intent: what_is_sensitive_personal_data
+      - action: utter_what_is_sensitive_personal_data
+
+  - rule: What is genetic information?
+    steps:
+      - intent: what_is_genetic_information
+      - action: utter_what_is_genetic_information
+
+  - rule: What is biometric information?
+    steps:
+      - intent: what_is_biometric_information
+      - action: utter_what_is_biometric_information
+
+  - rule: What are special categories of personal data?
+    steps:
+      - intent: what_are_special_categories_of_personal_data
+      - action: utter_what_are_special_categories_of_personal_data
+
+  - rule: What does processing mean?
+    steps:
+      - intent: what_does_processing_mean
+      - action: utter_what_does_processing_mean
+
+  - rule: Who is a controller?
+    steps:
+      - intent: who_is_a_controller
+      - action: utter_who_is_a_controller
+
+  - rule: Who is a processor?
+    steps:
+      - intent: who_is_a_processor
+      - action: utter_who_is_a_processor
+
+  - rule: How to determine controller or processor?
+    steps:
+      - intent: how_to_determine_controller_or_processor
+      - action: utter_how_to_determine_controller_or_processor
+
+  - rule: What is supervisory authority?
+    steps:
+      - intent: what_is_supervisory_authority
+      - action: utter_what_is_supervisory_authority
+
+  - rule: What are the powers of supervisory authority?
+    steps:
+      - intent: what_are_powers_of_supervisory_authority
+      - action: utter_what_are_powers_of_supervisory_authority
+
+  - rule: Should controllers and processors register?
+    steps:
+      - intent: should_controllers_and_processors_register
+      - action: utter_should_controllers_and_processors_register
+
+  - rule: What is consent?
+    steps:
+      - intent: what_is_consent
+      - action: utter_what_is_consent
+
+  - rule: How to ensure consent meets legal requirements?
+    steps:
+      - intent: how_to_ensure_consent_meets_legal_requirements
+      - action: utter_how_to_ensure_consent_meets_legal_requirements
+
+  - rule: Duties of a data protection officer?
+    steps:
+      - intent: duties_of_data_protection_officer
+      - action: utter_duties_of_data_protection_officer
+
+  - rule: Rights of data subjects?
+    steps:
+      - intent: rights_of_data_subjects
+      - action: utter_rights_of_data_subjects
+
+  - rule: Obligations of controllers and processors?
+    steps:
+      - intent: obligations_of_controllers_and_processors
+      - action: utter_obligations_of_controllers_and_processors
+
+  - rule: Storage, transfer, and retention of personal data?
+    steps:
+      - intent: storage_transfer_and_retention_of_personal_data
+      - action: utter_storage_transfer_and_retention_of_personal_data
+
+  - rule: Is it an offence not to comply?
+    steps:
+      - intent: is_it_an_offence_not_to_comply
+      - action: utter_is_it_an_offence_not_to_comply
+
+  - rule: Important documents to have?
+    steps:
+      - intent: important_documents_to_have
+      - action: utter_important_documents_to_have
+
+  - rule: Implications of the law for different sectors?
+    steps:
+      - intent: implications_of_the_law_for_different_sectors
+      - action: utter_implications_of_the_law_for_different_sectors

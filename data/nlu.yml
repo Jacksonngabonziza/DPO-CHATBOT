@@ -1,0 +1,1679 @@
+version: "3.1"
+nlu:
+- intent: welcome
+  examples: |
+    - I'm here to help you navigate the world of data protection and privacy in Rwanda. Whether you’re looking to learn more about your rights, understand how your data is handled, or resolve concerns regarding privacy, you've come to the right place. Ask me anything about Rwanda's data protection laws or let me assist you with any related issues
+- intent: greeting
+  examples: |
+    - yo
+    - good morning
+    - hi
+    - hey there
+    - hey
+    - good evening
+    - hello
+    - Hello?
+    - HEY
+    - hello are you still there
+    - hallo
+    - HI
+    - Hey
+    - Hi
+    - hello there
+    - hi there
+    - Hello
+    - hello its ella
+    - Hola.
+    - welcome
+    - howdy
+    - good day
+    - hiya
+    - greetings
+    - whats up?
+    - sup
+    - hey  whats going on?
+    - morning
+    - afternoon
+    - evening
+    - yo whats up
+    - hiya pal
+    - hey buddy
+    - how s it going?
+    - whats happening?
+    - how s everything?
+    - how s life?
+    - nice to see you
+    - hey  whats up?
+    - hey  how are you?
+    - hello  anyone there?
+    - good to see you
+    - long time no see
+    - hello  how s it going?
+    - how s your day?
+    - hey  long time
+    - what s good?
+    - hiya  mate
+    - what s popping?
+    - hello friend
+    - hey fam
+    - hey there  how s your day?
+    - yo  whats good?
+    - aloha
+    - hey  you there?
+    - salut
+    - hi pal
+    - whats going on today?
+    - bonjour
+    - hi everyone
+    - hey there folks
+- intent: goodbye
+  examples: |
+    - see you later
+    - goodbye
+    - im done
+    - quit
+    - stop
+    - bye
+    - Adios
+    - BYEE
+    - GOODBYE
+    - Thanks a lot. See ya later
+    - have a good day. time to go  bye
+    - bye bye
+    - ok i gtg
+    - bye bye bot
+    - bye for now
+    - bye udo
+    - bye  was nice talking to you
+    - byee
+    - catch you later
+    - ciao
+    - cya
+    - farewell
+    - good bye
+    - good bye rasa bot
+    - good night
+    - goodbye.
+    - goodnight
+    - gotta go
+    - later
+    - take care
+    - peace out
+    - catch ya later
+    - I m out
+    - see ya
+    - time to go
+    - Im off
+    - signing off
+    - take it easy
+    - Im outta here
+    - so long
+    - see you soon
+    - talk to you later
+    - till next time
+    - until we meet again
+    - Im leaving now
+    - ok bye
+    - ok see you later
+    - heading out now
+    - ok  I m done here
+    - ok  bye for now
+    - gotta run
+    - bye  chat later
+    - take it easy  bye
+    - later gator
+    - ok  I m done. Bye
+    - thats it  goodbye
+    - alright  see ya later
+    - I m done for today  bye
+    - until next time  goodbye
+    - cheers  Im off
+    - Im heading out
+    - gotta bounce
+    - peace
+    - ok  thanks  Bye
+    - hasta la vista
+    - toodles
+    - see you in a bit
+    - talk soon  bye
+    - \q
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - absolutely
+    - sure
+    - definitely
+    - yeah
+    - yup
+    - right
+    - exactly
+    - for sure
+    - totally
+    - agreed
+    - youre right
+    - thats right
+    - 100%
+    - affirmative
+    - sure thing
+    - sounds good
+    - you bet
+    - all right
+    - yep
+    - okay
+    - okay  yes
+    - okay  sure
+    - yes  please
+    - fine by me
+    - you got it
+    - certainly
+    - I agree
+    - yes  that s right
+    - thats correct
+    - that s fine
+    - I m on board
+    - sounds perfect
+    - no doubt
+    - without a doubt
+    - undoubtedly
+    - that s exactly it
+    - yeah  totally
+    - ok  yes
+    - true
+    - very true
+    - it s true
+    - it sure is
+    - yes  exactly
+    - I think so too
+    - that s the one
+    - you re spot on
+    - nailed it
+    - couldnt agree more
+    - sounds about right
+    - I d say so
+    - thats a yes from me
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I dont think so
+    - dont like that
+    - no way
+    - not really
+    - nope
+    - nah
+    - absolutely not
+    - definitely not
+    - no  thanks
+    - not at all
+    - negative
+    - no chance
+    - no  thats wrong
+    - no  I disagree
+    - no  not at all
+    - not interested
+    - I dont agree
+    - I disagree
+    - no  I dont think so
+    - thats not right
+    - that s incorrect
+    - I don t want to
+    - no  absolutely not
+    - no  I m good
+    - not gonna happen
+    - that s not it
+    - I refuse
+    - not really  no
+    - no  that s not what I want
+    - nope  not doing that
+    - no  not quite
+    - no  thats not correct
+    - no  I wouldnt
+    - I dont want to
+    - no  that s wrong
+    - nah  I m fine
+    - not this time
+    - I m afraid not
+    - no  never
+    - nope  no thanks
+    - nah  not today
+    - not likely
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you real?
+    - is this a bot?
+    - youre a bot  right?
+    - youre not human  are you?
+    - are you a machine?
+    - is this an AI?
+    - are you a chatbot?
+    - youre not a person  are you?
+    - are you a robot?
+    - youre just a bot  right?
+    - am I speaking to a bot?
+    - am I chatting with a bot?
+    - are you an AI?
+    - are you automated?
+    - is this an automated response?
+    - is this AI?
+    - youre not a real person  are you?
+    - are you an artificial intelligence?
+    - are you a computer?
+    - is this a real person or a bot?
+    - am I talking to AI right now?
+    - is this conversation with a robot?
+    - are you an actual person?
+    - is this a bot answering me?
+    - are you an algorithm?
+    - are you a program?
+    - youre not alive  are you?
+    - am I interacting with a bot?
+    - is this a computer-generated response?
+    - am I speaking to a human being?
+    - am I chatting with a human or a bot?
+- intent: request_human_agent
+  examples: |
+    - handoff
+    - operator
+    - I want a human
+    - can I speak to an agent
+    - real agent please
+    - real human
+    - chat with a live agent
+    - give me a person please
+    - i want to talk to a human
+    - transfer to a human
+    - Please give me to a human
+    - can I talk to human?
+    - can I talk to human
+    - talk to human
+    - i want human :(
+    - can i talk to human
+    - i want to speak to human
+    - can i talk to a real person?
+    - connect me to a real person
+    - I need a real person
+    - can i talk to a real person
+    - let me speak to a real person
+    - let me speak to a real person please
+    - i want to talk to a real person
+- intent: out_of_scope
+  examples: |
+    - what is the square root of 5
+    - I want to know the weather
+    - what is the meaning of life
+    - Fridge isnt running
+    - my tv isnt working
+    - I want a pizza
+    - my washing machine isnt working
+    - what year is it
+    - order a pizza
+    - I want to order a pizza
+    - what is the weather today
+    - what is the weather
+    - what the weather today ?
+    - hows the weather
+    - tell me a joke
+    - Can I get a hamburger?
+    - Can YouTube talk?
+    - Can you call me back?
+    - Can you give me your datacenters password
+    - Can you give me your datacenters password?
+    - Can you make sandwiches?
+    - Can you please send me an Uber?
+    - ofif fsdfafsfs
+    - Can you fix my car?
+    - Tell me about the stock market
+    - Can you cook pasta?
+    - How many people are in the world right now?
+    - What is the best TV show of all time?
+    - Can you teleport?
+    - Can you solve my relationship problems?
+    - Can you make a pizza for me?
+    - Can you turn off the lights in my house?
+    - Can you book a flight for me?
+    - Whats the capital of Mars?
+- intent: thanks
+  examples: |
+    - thank you goodbye
+    - okay thank you goodbye
+    - thank you bye
+    - um okay thank you goodbye
+    - thank you
+    - and thats all  thank you and goodbye
+    - okay thank you
+    - thanks
+    - thanks goodbye
+    - thank you and goodbye
+    - Thanks
+    - Awesome  you are a good bot
+    - great
+    - I see  thanks
+    - Oh  thats good
+    - its good :-)
+    - thnaks
+    - good job bot
+    - thanks for the help
+    - thank you so much
+    - I appreciate your help
+    - thanks you
+    - thank you very much
+    - thankyou
+    - thnks
+    - thx
+    - many thanks
+    - cheers
+    - appreciate it
+    - thank you for the information
+    - thanks for your help
+    - awesome  thanks
+    - cool  thank you
+    - got it  thanks
+    - perfect  thank you
+    - much appreciated
+    - thanks f
+    - that helps  thanks
+    - thanks for the update
+    - thanks for everything
+    - you re great  thanks
+    - you rock  thanks
+    - Im grateful  thank you
+    - youre awesome  thanks
+- intent: data_deletion_retention
+  examples: |
+    - How can I request the deletion of my personal data?
+    - What is the data retention policy for organizations?
+    - How do I get my data removed from your system?
+    - How long do organizations keep my personal data?
+    - Can I ask for my personal data to be deleted?
+    - What is the retention period for personal data?
+    - How can I request that you delete my information?
+    - What are my rights regarding data deletion?
+    - How long can companies keep my personal data?
+    - Can I request data deletion under Rwandan law?
+    - What is the policy for retaining my data?
+    - How do I request for my data to be erased?
+    - How long does my personal data stay in the system?
+    - How long are organizations allowed to store personal data?
+    - What happens to my data after I request deletion?
+    - What is the retention policy for data in Rwanda?
+    - When can I ask for my personal data to be deleted?
+    - What is the process for data deletion requests?
+    - How long does it take to delete my data?
+    - Can companies keep my data after I request deletion?
+    - How long can my data be retained under Rwandan law?
+- intent: data_access_correction
+  examples: |
+    - how can I access my personal data held by an organization?
+    - What should I do if my data is incorrect?
+    - How do I view the personal data an organization has about me?
+    - What steps should I take if my personal data is wrong?
+    - Can I request access to my personal information?
+    - How can I correct inaccurate information an organization holds about me?
+    - How do I get a copy of my personal data?
+    - What should I do if the data an organization has is wrong?
+    - How can I update my personal information with an organization?
+    - Can I review my personal data held by companies?
+    - What s the process to correct my data?
+    - How do I request access to my personal records?
+    - Can I request to see the data a company has on me?
+    - What happens if my personal data is incorrect?
+    - How can I update my personal details under Rwandan law?
+    - How do I ask a company to correct incorrect data they hold about me?
+    - Can I ask to see and change my personal data?
+    - How can I check what information a company holds on me?
+    - What should I do if my data needs correction?
+    - Is there a way to access and amend my personal data?
+- intent: data_protection_impact_assessment
+  examples: |
+    - What is a data protection impact assessment?
+    - When should a data protection impact assessment be conducted?
+    - Why should I conduct a Data Protection Impact Assessment?
+    - When is the DPIA needed?
+    - What is the purpose of a data protection impact assessment?
+    - In what cases is a DPIA required?
+    - Why is a DPIA important?
+    - When must organizations carry out a data protection impact assessment?
+    - When do I need to conduct a DPIA?
+    - What are the requirements for a data protection impact assessment?
+    - How do I know if a DPIA is necessary?
+    - What triggers the need for a DPIA?
+    - When should a company conduct a data protection impact assessment?
+    - Why is conducting a DPIA important for organizations?
+    - In which situations should a DPIA be carried out?
+    - What kind of projects require a DPIA?
+    - What does a data protection impact assessment involve?
+    - How do I determine if a DPIA is required?
+    - At what stage of a project should a DPIA be conducted?
+    - Why do organizations need to perform a DPIA?
+- intent: data_storage_security
+  examples: |
+    - How should personal data be stored securely?
+    - What measures are required for data security?
+    - Am I allowed to host data outside Rwanda?
+    - What are the best practices for storing personal data?
+    - How can organizations ensure data is stored securely?
+    - What security measures should be in place for data storage?
+    - Is it legal to store data outside Rwanda?
+    - What steps should be taken to protect stored personal data?
+    - How do I securely store sensitive information?
+    - Are there restrictions on storing data outside the country?
+    - What encryption methods should be used for storing data?
+    - What security protocols are required for data storage?
+    - Can personal data be hosted in foreign countries?
+    - What storage solutions are compliant with Rwandan data protection laws?
+    - How can organizations ensure data security in storage?
+    - Are there any specific regulations for data storage security in Rwanda?
+    - What storage practices must companies follow to protect personal data?
+    - Is there any guidance on cross-border data storage?
+    - What does Rwandan law say about hosting data internationally?
+    - How should I protect personal data when storing it digitally?
+    - What are the data storage requirements under Rwandas data protection law?
+    - Are there penalties for storing data insecurely?
+    - How can I ensure compliance with data storage regulations in Rwanda?
+    - Is cloud storage allowed for sensitive data under Rwandan law?
+    - Are there specific technologies recommended for securing data storage?
+    - How should I store physical documents containing personal data?
+    - Are backups of personal data required?
+    - What s the difference between local and cloud data storage security?
+    - Do I need to encrypt personal data before storing it?
+    - How often should I audit my data storage security measures?
+    - What kind of data protection is needed for stored information?
+    - Are third-party data storage providers allowed?
+    - Can I store personal data in a foreign data center?
+    - How do I make sure my data is safe from breaches while in storage?
+    - What data protection standards must companies meet for secure storage?
+    - Is data mirroring between Rwanda and foreign servers allowed?
+    - What physical security measures are necessary for data centers?
+    - How does the law handle cross-border storage of personal data?
+    - Are organizations required to store data locally in Rwanda?
+    - How do I know if my data storage method is secure enough?
+    - What are the penalties for not securing stored data properly?
+- intent: data_protection_compliance
+  examples: |
+    - How do organizations ensure compliance with data protection laws?
+    - What are the penalties for non-compliance with data protection laws?
+    - How can companies comply with data protection regulations in Rwanda?
+    - What steps should be taken to comply with data protection laws?
+    - What happens if an organization violates data protection laws?
+    - What are the consequences of failing to comply with data protection regulations?
+    - How can I make sure my company is following data protection laws?
+    - Are there audits for compliance with data protection regulations?
+    - What measures are required for compliance with Rwandan data protection laws?
+    - What does the law say about penalties for not protecting data?
+    - How does Rwanda enforce data protection compliance?
+    - How can businesses avoid penalties for violating data protection laws?
+    - What guidelines must be followed to comply with data protection regulations?
+    - Are there financial penalties for breaching data protection laws?
+    - What are the legal obligations for companies under Rwandan data protection laws?
+    - How do organizations demonstrate compliance with data protection rules?
+    - What fines can be imposed for data protection violations?
+    - What must a company do to comply with Rwandan data protection laws?
+    - Are there legal consequences for non-compliance with data protection standards?
+    - How do I check if my company is compliant with data protection laws?
+    - What are the reporting obligations for data protection compliance?
+    - How can an organization prove it is compliant with data protection regulations?
+    - What are the sanctions for not complying with data protection laws?
+    - What actions can the government take for non-compliance with data laws?
+    - What should I do to ensure data protection compliance in my organization?
+    - Are there monitoring processes for data protection compliance?
+    - What kind of audits are done to ensure compliance with data protection laws?
+    - How often should companies review their data protection compliance measures?
+    - Can an organization be shut down for non-compliance with data protection laws?
+    - What are the steps to ensure full compliance with data protection laws?
+    - How do companies avoid violations of data protection regulations?
+    - How do companies maintain compliance with ongoing data protection obligations?
+    - What policies should be in place to comply with data protection laws?
+    - What are the key elements of a data protection compliance program?
+    - How does the government monitor compliance with data protection laws?
+    - What should a compliance audit for data protection include?
+    - What kind of training is required for compliance with data protection laws?
+    - How does a company prepare for a data protection compliance audit?
+    - What happens during a data protection compliance inspection?
+    - Are there industry-specific data protection compliance requirements in Rwanda?
+    - How can organizations ensure they meet data protection compliance standards?
+    - How does a company prove it complies with Rwandan data protection laws?
+    - What actions should be taken if a company fails a data protection audit?
+    - What are the obligations of data controllers and processors in Rwanda?
+    - How do organizations stay up to date with changing data protection laws?
+    - What are the requirements for notifying authorities of a data breach in Rwanda?
+    - How can a business make sure it doesnt violate data protection laws?
+    - What does it mean to be compliant with data protection laws in Rwanda?
+- intent: data_protection_authority
+  examples: |
+    - Who is responsible for enforcing data protection in Rwanda?
+    - How can I contact the Data Protection and Privacy Office?
+    - What are the roles of the Data Protection and Privacy Office?
+    - Who oversees data protection compliance in Rwanda?
+    - What is the contact information for the Data Protection and Privacy Office?
+    - How do I reach the data protection authority in Rwanda?
+    - What is the role of the Data Protection and Privacy Office?
+    - Who handles data protection issues in Rwanda?
+    - How can I get in touch with the Data Protection Authority?
+    - What does the Data Protection and Privacy Office do?
+    - Who should I contact regarding data protection concerns in Rwanda?
+    - What are the functions of the Data Protection and Privacy Office?
+    - Where can I find the contact details for the data protection regulator?
+    - How can I report a data protection issue to the authorities?
+    - What authority manages data protection laws in Rwanda?
+    - How do I file a complaint with the Data Protection and Privacy Office?
+    - Who can assist me with data protection queries in Rwanda?
+    - What responsibilities does the Data Protection and Privacy Office have?
+    - How can individuals reach out to the data protection office in Rwanda?
+    - What is the address of the Data Protection and Privacy Office?
+    - Who enforces data protection regulations in Rwanda?
+    - How do I get support from the Data Protection Authority?
+    - What is the process for contacting the Data Protection and Privacy Office?
+    - How can I communicate with the data protection office in Rwanda?
+    - What are the responsibilities of the Data Protection and Privacy Office?
+    - How do I report a data breach to the data protection authority?
+    - What are the key responsibilities of the Data Protection and Privacy Office?
+    - How do I find the Data Protection and Privacy Office s contact information?
+    - Who is the primary contact for data protection issues in Rwanda?
+    - What is the role of the data protection commissioner in Rwanda?
+    - How can I get assistance from the data protection regulator?
+    - Who is in charge of data protection enforcement in Rwanda?
+    - What support does the Data Protection and Privacy Office provide?
+    - How do I contact the data protection office for assistance?
+    - What are the duties of the Data Protection and Privacy Office?
+    - How can organizations contact the data protection authority?
+    - What is the contact procedure for the Data Protection and Privacy Office?
+    - Who manages data privacy enforcement in Rwanda?
+    - What steps should I follow to contact the Data Protection and Privacy Office?
+    - How can I get help with data protection issues from the authorities?
+    - What are the contact details for reporting data protection breaches?
+    - How does the Data Protection and Privacy Office handle complaints?
+    - Who to approach for data protection guidance in Rwanda?
+    - What are the main tasks of the Data Protection and Privacy Office?
+    - How can the public access the services of the Data Protection and Privacy Office?
+- intent: cross_border_data_transfers
+  examples: |
+    - Are there restrictions on transferring data outside Rwanda?
+    - What are the rules for international data transfers?
+    - What are the requirements for transferring personal data outside Rwanda?
+    - What is the transfer of personal data?
+    - What is the difference between sharing and transferring personal data?
+    - What is the storage of personal data?
+    - Is the storage of personal data outside Rwanda allowed?
+    - What are the requirements for storing personal data outside Rwanda?
+    - What is the use of a data flow diagram?
+    - Can I transfer data to a third country outside Rwanda?
+    - How do I legally transfer data across borders?
+    - What regulations apply to cross-border data transfers in Rwanda?
+    - Do I need consent to transfer personal data outside Rwanda?
+    - What is the legal basis for transferring data internationally?
+    - Are there safeguards required for cross-border data transfers?
+    - Can personal data be transferred to a country without data protection laws?
+    - What restrictions apply to data transfers outside the East African Community?
+    - Are there exceptions to the restrictions on international data transfers?
+    - What documents are required for a lawful data transfer abroad?
+    - Do I need to inform the Data Protection and Privacy Office for cross-border transfers?
+    - How can I ensure compliance with cross-border data transfer rules?
+    - What steps should be taken before transferring data internationally?
+    - Is it necessary to conduct a data protection impact assessment for cross-border transfers?
+    - Can data be transferred to cloud providers located outside Rwanda?
+    - What conditions must be met for lawful international data transfers?
+    - How do I transfer personal data to an international organization?
+    - Are there penalties for unlawful cross-border data transfers?
+    - Is data localization mandatory for Rwandan companies?
+    - What is the role of data controllers in international data transfers?
+    - Are there specific agreements required for transferring data abroad?
+    - What are the security measures for cross-border data transfers?
+    - Can data be shared with third parties located outside Rwanda?
+    - How do I determine if a country is suitable for data transfers?
+    - Do I need to notify the data subject before transferring their data abroad?
+    - Can data processors transfer data across borders?
+    - What are the consequences of unauthorized cross-border data transfers?
+    - What legal frameworks are in place for international data transfers?
+    - How does Rwanda regulate the transfer of data to countries outside Africa?
+    - What impact do cross-border data transfers have on data protection?
+    - What measures must be in place to transfer data safely to other countries?
+    - What approvals are required for cross-border data transfers in Rwanda?
+    - Are there any exemptions for cross-border data transfer regulations?
+    - Can data be transferred for research purposes outside Rwanda?
+    - How does Rwanda ensure the security of personal data in cross-border transfers?
+    - Are there special regulations for transferring sensitive data abroad?
+    - How can organizations mitigate risks in cross-border data transfers?
+- intent: data_breach_notifications
+  examples: |
+    - What should I do if my data has been breached?
+    - How do organizations notify me about data breaches?
+    - How do you report a data breach?
+    - What is the duration for notifying the data breach to the supervisory authority?
+    - When can I complain to an organization about a data breach?
+    - How soon should I be informed of a data breach?
+    - What steps should be taken if a data breach occurs?
+    - What is the procedure for reporting a data breach in Rwanda?
+    - How do I know if my personal data was compromised in a breach?
+    - What are the legal requirements for reporting a data breach?
+    - What happens if a company fails to report a data breach?
+    - How long does an organization have to notify authorities of a data breach?
+    - Who is responsible for notifying me if my data has been breached?
+    - How do companies inform individuals of a personal data breach?
+    - What should I do if I suspect a data breach has occurred?
+    - What are the steps to report a data breach to the data protection authority?
+    - When must a company notify users about a data breach?
+    - What penalties apply for failing to notify authorities of a data breach?
+    - What is the process for reporting a data breach in Rwanda?
+    - How does the Data Protection and Privacy Office handle breach notifications?
+    - How long does a company have to report a data breach?
+    - What should an organization do immediately after discovering a data breach?
+    - What kind of information should be included in a data breach notification?
+    - Who is responsible for reporting data breaches to the supervisory authority?
+    - How do organizations report data breaches under Rwandan law?
+    - When do I need to
+- intent: data_collection_consent
+  examples: |
+    - How is my data collected?
+    - What kind of consent is required for data collection?
+    - How should consent be obtained and managed?
+    - What are the legal grounds for processing data?
+    - Do I need consent to use cookies on my website?
+    - How do organizations collect my personal data?
+    - What types of data collection require my consent?
+    - How should businesses obtain consent for data collection?
+    - Can data be collected without my consent?
+    - What are the rules for collecting data with consent?
+    - How should consent be recorded for future reference?
+    - What are the different types of consent in data protection?
+    - Do I need explicit consent to collect sensitive data?
+    - When is consent not required for data collection?
+    - How can I withdraw consent for data collection?
+    - What are the lawful bases for processing personal data?
+    - How should consent forms be structured?
+    - Do I need consent for processing employee data?
+    - What is the process for managing consent in data collection?
+    - How can organizations verify that consent was given?
+    - What happens if data is collected without consent?
+    - What guidelines exist for obtaining valid consent?
+    - Can consent be implied in certain situations?
+    - When is consent necessary under Rwandan data protection law?
+    - How long does consent last for data collection purposes?
+    - What are the requirements for valid consent?
+    - How should consent for minors  data be handled?
+    - Do I need consent for direct marketing campaigns?
+    - What are the rules for using cookies and tracking technologies?
+    - How do organizations manage and track consent over time?
+    - Can consent be revoked  and how is that handled?
+    - Is it enough to obtain consent verbally for data collection?
+    - How do I provide consent for my data to be processed?
+    - What is informed consent in the context of data protection?
+    - Do I need consent for collecting biometric data?
+    - How can organizations ensure compliance with consent requirements?
+    - What role does consent play in data processing agreements?
+    - What rights do individuals have regarding their consent?
+    - How should consent be presented to be clear and understandable?
+    - Is there a difference between explicit and implicit consent?
+    - How can consent be managed in online platforms?
+    - Do I need consent to collect data for analytical purposes?
+    - What information should be provided before asking for consent?
+    - Can an organization collect my data without asking me?
+    - How do I know if I ve given consent for my data to be used?
+    - What does Rwandan law say about consent and data collection?
+    - Can I refuse to give consent for data processing?
+    - What are the exceptions to needing consent for data collection?
+    - How does the use of cookies relate to consent?
+    - Are there specific rules about gaining consent for data transfers?
+    - How do companies ensure consent is freely given and informed?
+    - What is the process for withdrawing consent once given?
+- intent: data_protection_rights
+  examples: |
+    - What are my rights under the data protection law?
+    - How can I exercise my right to data access?
+    - How can I withdraw my consent?
+    - How can I be ensured that my personal data is secured?
+    - How can I know if my sensitive data is only accessed by authorized personnel?
+    - What are the rights of the data subject?
+    - How can I get my personal data corrected?
+    - Can we consider the right to privacy a fundamental right?
+    - How can I designate an heir for my personal data?
+    - How can I ensure that my personal data is erased from an organization?
+    - How long can an organization keep my personal data?
+    - How do you protect the rights of a data subject?
+    - Who can I contact if I have concerns about my personal data?
+    - How do I request to access my data?
+    - What are my rights regarding data portability?
+    - What is the right to be forgotten under data protection laws?
+    - How can I get my personal data transferred to another service provider?
+    - How do I exercise my right to object to data processing?
+    - Can I request a restriction on how my data is used?
+    - How do I check if my data is being lawfully processed?
+    - How can I access my personal data held by a company?
+    - What is the right to data rectification?
+    - How do I know if my personal data has been shared with third parties?
+    - How can I revoke permission to use my data?
+    - How can I ensure my data is being processed lawfully?
+    - What steps do I take if I want my data to be deleted?
+    - How can I exercise my right to data portability?
+    - What is my right to not be subject to automated decision-making?
+    - How can I ensure my data is protected when processed outside Rwanda?
+    - What is the right to object under Rwandan data protection law?
+    - How can I challenge an organization s data processing activities?
+    - What rights do I have if my data is breached?
+    - How do I request the deletion of my personal data?
+    - Can I restrict the way an organization uses my personal data?
+    - How do I file a complaint if my data rights are violated?
+    - How can I update my personal data in an organizations database?
+    - Can I access the data that an organization has about me?
+    - What is the procedure to update my personal data?
+    - How can I prevent unauthorized access to my sensitive data?
+    - How can I ensure that my privacy rights are respected?
+    - What are my legal rights regarding data retention?
+    - What recourse do I have if my data is misused?
+    - How do I exercise my right to restrict data processing?
+    - What are my rights when an organization uses my data for marketing?
+    - How can I ensure that my consent is respected when processing my data?
+    - Can I request information on how my data is being used?
+    - How can I challenge incorrect data held about me?
+    - How do I submit a request to access my personal information?
+    - What should I do if I believe my data rights are violated?
+    - How do I request the correction of inaccurate personal data?
+    - How do I contact the Data Protection Authority if my rights are breached?
+    - How do I request erasure of my personal data under the data protection law?
+    - What rights do I have in relation to automated profiling and decision-making?
+    - How can I get a report on how my personal data is processed?
+    - What happens if an organization refuses to honor my data rights?
+    - How can I ensure transparency in the way my data is handled?
+- intent: data_protection_law
+  examples: |
+    - What does the data protection law in Rwanda say?
+    - Can you explain the Law No. 058/2021 on data protection?
+    - Who is a Data Processor?
+    - Who is a Data Controller?
+    - Can we know who can access our personal data?
+    - How can I get a Data Protection certificate?
+    - What is the role of a Data Protection Officer?
+    - Where can we find more information about the Data Protection law in Rwanda?
+    - What can I do to comply with the Data Protection Law?
+    - Why do I have to appoint a Data Protection Officer at my company?
+    - What are the requirements to appoint a Data Protection Officer?
+    - What are my rights under the data protection law?
+    - Can you be both a Data Controller and a Data Processor?
+    - When can I be sanctioned by the Data Protection and Privacy Office?
+    - How do I register with the Data Protection and Privacy Office?
+    - How do I transfer personal data outside Rwanda?
+    - How do I store personal data outside Rwanda?
+    - Who is considered a third party under data protection law?
+    - What is a data processing agreement?
+    - What are the mandatory clauses in a data processing agreement?
+    - When do I need to appoint a representative under data protection law?
+    - What is representation in the context of data protection?
+    - What is the difference between a supervisory authority and a competent authority?
+    - What are the duties and powers of the supervisory authority regarding the protection of personal data and privacy?
+    - What are the principles relating to the processing of personal data?
+    - Am I allowed to transfer personal data outside Rwanda?
+    - Am I allowed to store personal data outside Rwanda?
+    - Where can I find Rwandas Data Protection Law?
+    - How do you ensure the quality of personal data?
+    - What does Rwandas Data Protection Law say about childrens data?
+    - How does Rwanda s data protection law regulate the processing of sensitive data?
+    - What are the penalties for violating the data protection law in Rwanda?
+    - How do organizations prove compliance with the data protection law?
+    - Do I need consent to process personal data according to the data protection law?
+    - What are the legal bases for processing personal data under Rwanda s data protection law?
+    - How often do I need to report to the Data Protection Office?
+    - What steps should I take to avoid penalties under the Data Protection Law?
+    - Can organizations share personal data without consent under certain circumstances?
+    - Who is accountable for data protection within an organization?
+    - What actions can the supervisory authority take against non-compliance?
+    - How do I file a complaint under the data protection law?
+    - What rights do data subjects have under Rwanda s data protection law?
+    - How does the law protect personal data during international transfers?
+    - What security measures are mandated under the data protection law?
+    - Can personal data be processed for marketing purposes under the data protection law?
+    - What is the role of consent in the data protection law?
+    - What is the scope of application of Rwandas data protection law?
+    - How long can an organization retain personal data according to the law?
+    - Are there any exceptions to complying with the data protection law?
+    - What must organizations do when a data breach occurs under Rwanda s data protection law?
+    - What are the requirements for notifying individuals about a data breach?
+    - How does the data protection law affect cross-border data transfers?
+    - Who is responsible for the enforcement of the data protection law?
+    - Can personal data be processed without the individuals knowledge under certain conditions?
+    - What are the lawful bases for processing childrens personal data under Rwanda s data protection law?
+    - Does the law require companies to appoint a data protection officer?
+    - What are the penalties for companies that fail to comply with the law?
+    - How does the law define personal data?
+    - What constitutes sensitive personal data under the data protection law?
+    - What is the responsibility of a third-party processor under the law?
+    - How can I ensure my organization is compliant with Rwanda s data protection regulations?
+- intent: data_protection_general_info
+  examples: |
+    - What is data protection?
+    - Why is data protection important?
+    - Why is privacy important?
+    - What is privacy?
+    - Which countries in Africa have Data Protection Laws?
+    - What is personal data?
+    - What should I do when my data protection certificate expires?
+    - Why do I have to get registered for data protection?
+    - What are the requirements for registration?
+    - What is the purpose of strong data protection practices?
+    - What are the consequences of non-compliance with data protection laws?
+    - How long does it take to obtain a data protection certificate?
+    - What is the difference between cybersecurity and data protection?
+    - What happens if you ignore data protection regulations?
+    - When did data protection become important?
+    - Why is data protection important for Rwanda?
+    - Which country has the best data protection practices?
+    - What are the risks of poor data protection practices?
+    - How does data protection benefit individuals and businesses?
+    - What are the principles of data protection?
+    - What are the main elements of data protection law?
+    - How does data protection relate to digital privacy?
+    - What are the types of personal data that need protection?
+    - What is the relationship between privacy and data protection?
+    - How do organizations benefit from implementing strong data protection policies?
+    - Why is it important to safeguard personal data?
+    - How does data protection affect businesses in Rwanda?
+    - What are the global trends in data protection?
+    - How does data protection impact international business?
+    - What are the challenges in enforcing data protection laws?
+    - How has data protection evolved over the years?
+    - What is the role of technology in ensuring data protection?
+    - What are data protection best practices?
+    - How can businesses prepare for data protection compliance?
+    - What is the difference between data privacy and data security?
+    - What are the legal requirements for processing personal data?
+    - How does the General Data Protection Regulation (GDPR) influence Rwandas data protection laws?
+    - What are the benefits of data protection certification for companies?
+    - Why do organizations need to implement data protection measures?
+    - How can individuals protect their personal data?
+    - What sectors are most affected by data protection laws?
+    - How is data protection linked to cybersecurity?
+    - What is the history of data protection laws in Africa?
+    - How does Rwanda s data protection law compare to other countries?
+    - What are the key elements of Rwanda s data protection law?
+    - What are the consequences of violating data protection laws in Rwanda?
+    - What industries are most impacted by data protection regulations?
+    - How does data protection relate to cross-border data flows?
+    - What are the key challenges in implementing data protection laws?
+    - How can businesses stay compliant with evolving data protection laws?
+    - What are the consequences of a data breach?
+    - What tools are available for managing data protection compliance?
+    - What is the role of a data protection officer in an organization?
+    - Why are data protection laws becoming more widespread?
+    - What is the impact of data protection laws on small businesses?
+    - How can individuals check if their data is protected?
+    - How can companies build a strong data protection framework?
+    - Why is data protection essential for the digital economy?
+    - What are the common misconceptions about data protection?
+    - What is the future of data protection in Rwanda?
+    - What industries need to focus more on data protection?
+    - What are the penalties for non-compliance with data protection regulations?
+    - What are the key principles of Rwanda s data protection framework?
+    - What legal protections are in place for sensitive personal data?
+    - How does data protection impact customer trust?
+    - How can companies protect customer data?
+    - What tools are used to enforce data protection laws?
+    - What should businesses prioritize in their data protection strategy?
+    - What is the relationship between personal data protection and ethical business practices?
+- intent: nlu_fallback
+  examples: |
+    - muraho neza
+- intent: who_qualifies_to_be_a_representative
+  examples: |
+    - Who is eligible to be a representative?
+    - what are the creterias to be considered as a data representative?
+    - What are the qualifications to be a representative?
+    - How do I become a representative?
+    - Can anyone be a representative?
+    - What is required to be a representative?
+    - What qualifications should a representative have?
+    - Who can act as a representative?
+    - What are the criteria to become a representative?
+    - How can I qualify to be a representative?
+    - Who can serve as a representative?
+    - What are the responsibilities of a representative?
+    - What conditions must be met to be a representative?
+    - What does it take to qualify as a representative?
+    - What makes someone qualified to be a representative?
+    - Who needs to appoint a representative?
+    - Can a company outside Rwanda have a representative?
+    - What kind of entity can be a representative in Rwanda?
+    - Who is responsible for choosing a representative?
+    - What legal entity qualifies as a representative?
+    - What are the requirements for being appointed as a representative?
+
+- intent: how_to_designate_a_representative
+  examples: |
+    - How can I designate a representative?
+    - What is the process to appoint a representative?
+    - How do I choose a representative?
+    - What steps are involved in designating a representative?
+    - What is the procedure for appointing a representative?
+    - How can a Data Controller designate a representative?
+    - What is required to designate a representative?
+    - How is a representative officially appointed?
+    - What agreement is needed to designate a representative?
+    - What document must be signed to appoint a representative?
+    - How should a representative be chosen?
+    - What is the legal process for designating a representative?
+    - What criteria should be considered when designating a representative?
+    - How do Data Processors designate a representative?
+    - What is the proper way to select a representative?
+    - Is there an agreement required to appoint a representative?
+    - How do I set up a representative for my business?
+    - Can a representative be designated online?
+    - How does a company choose a representative in Rwanda?
+    - How does the agreement for a representative work?
+
+- intent: duties_of_a_representative
+  examples: |
+    - What responsibilities does a representative have?
+    - What does a representative do?
+    - WHAT ARE THE responsibilities OF A REPRESENTATIVE?
+    - What are the main obligations of a representative?
+    - What are the tasks of a representative?
+    - What actions does a representative need to perform?
+    - What are the obligations of a representative?
+    - What does a representative need to handle?
+    - What is expected of a representative?
+    - What is required from a representative?
+    - What does a representative need to comply with?
+    - How does a representative fulfill their role?
+    - What legal duties does a representative have?
+    - What obligations does a representative hold?
+    - What does a representative handle on behalf of a Data Controller?
+    - What is the role of a representative in data processing?
+    - What compliance tasks must a representative perform?
+    - What must a representative do to fulfill their role?
+    - What records must a representative keep?
+    - What kind of reports must a representative provide?
+    - How does a representative act on behalf of a company?
+
+- intent: when_to_report_a_change_of_representative
+  examples: |
+    - When should I report a change of representative?
+    - How soon do I need to report a new representative?
+    - What is the deadline to report a change of representative?
+    - When must I notify NCSA about a representative change?
+    - What is the time frame for reporting a change in representative?
+    - How do I inform NCSA about a new representative?
+    - When should I report the termination of a representative agreement?
+    - How quickly should a new representative be reported?
+    - When must a representative change be submitted to NCSA?
+    - What happens when a representative changes?
+    - How soon should I report a terminated representative?
+    - How do I handle reporting a new representative to NCSA?
+    - What’s the process for notifying a change of representative?
+    - When do I need to inform NCSA about a new agreement?
+    - What is the procedure for reporting representative changes?
+    - How do I officially report a representative change?
+    - How long do I have to report a new representative?
+    - How do I submit a change in representative details?
+    - Who do I contact to report a new representative?
+    - How do I notify NCSA about a representative change?
+
+- intent: lodge_complaint
+  examples: |
+    - How can I lodge a complaint?
+    - I want to lodge a complaint.
+    - What is the process for lodging a complaint?
+    - Can I submit a complaint online?
+    - Where can I file a complaint about my personal data?
+    - How do I raise a complaint about personal data misuse?
+    - I need help filing a complaint.
+    - Can I call to lodge a complaint?
+    - What channels are available for submitting complaints?
+    - Can I visit the Data Protection Office in person to lodge a complaint?
+    - How can I lodge a personal data protection complaint?
+    - What are the steps to lodge a complaint with the Data Protection Office?
+    - How do I submit a complaint to the DPP Office?
+    - Is there a way to lodge a complaint anonymously?
+    - Can I file a complaint through email?
+    - What information do I need to submit a complaint?
+    - Can I lodge a complaint over the phone?
+    - What’s the toll-free number to submit a complaint?
+    - Is there a deadline for lodging complaints?
+    - Can I lodge a complaint if my data was misused?
+
+- intent: lodge_complaint_for_someone_else
+  examples: |
+    - Can I lodge a complaint on behalf of someone else?
+    - How do I file a complaint for another person?
+    - Can I raise a complaint for someone else?
+    - What is the process to lodge a complaint for someone else?
+    - How can I help someone else file a complaint?
+    - Is it possible to submit a complaint on behalf of another person?
+    - Can I file a data protection complaint for a friend?
+    - Can I lodge a complaint for my child?
+    - Can I help my elderly parents file a complaint?
+    - What do I need to lodge a complaint for someone else?
+    - How do I act as a representative in filing a complaint?
+    - What are the legal steps to file a complaint for someone else?
+    - Can I lodge a complaint if I have power of attorney?
+    - Do I need written consent to file a complaint for another person?
+    - What documentation is required to file a complaint on behalf of someone else?
+    - Can a lawyer file a complaint for a client?
+    - Can I file a complaint for someone who is incapacitated?
+    - How do I submit a complaint if someone is unable to do it themselves?
+    - Is it possible to act as a representative for another person’s complaint?
+    - How do I file a complaint for someone who is unable to write?
+
+- intent: appeal_a_decision
+  examples: |
+    - How can I appeal a decision made on my complaint?
+    - I want to appeal a decision by the Data Protection Office.
+    - What is the process to appeal a decision on a data protection complaint?
+    - Can I challenge the outcome of my complaint?
+    - How do I file an appeal against a decision?
+    - What should I do if I disagree with the Data Protection Office's decision?
+    - Can I appeal to the court if my complaint is rejected?
+    - How do I challenge a data privacy decision in court?
+    - Can I submit an appeal if my complaint was denied?
+    - What is the legal process to appeal a data protection decision?
+    - What are the steps to appeal a decision on a privacy complaint?
+    - How long do I have to appeal a decision from the Data Protection Office?
+    - What do I need to submit an appeal to the court?
+    - How do I appeal if I disagree with the response to my complaint?
+    - Can I contest a ruling on my data privacy complaint?
+    - Who can help me file an appeal for a complaint decision?
+    - What happens if I appeal a decision made by the Data Protection Office?
+    - How do I appeal if my complaint was not addressed properly?
+    - Can I appeal a decision related to a personal data complaint?
+    - What legal options do I have to challenge the Data Protection Office’s decision?
+- intent: full_description_of_data_representative
+  examples: |
+    - What is a data representative?
+    - Can you explain what a data representative is?
+    - Please describe the role of a data representative.
+    - What does a data representative do?
+    - I need a full description of a data representative.
+    - Give me an overview of a data representative.
+    - What is the function of a data representative?
+    - Who is a data representative?
+    - Can you define the role of a data representative?
+    - Tell me more about data representatives.
+    - What is the role of a data representative in Rwanda?
+    - Explain the concept of a data representative.
+    - Can you explain the responsibilities of a data representative?
+    - What is the purpose of a data representative?
+    - What does a data representative mean?
+    - How do you define a data representative?
+    - What are data representatives responsible for?
+    - Can you provide a description of a data representative?
+    - What are the duties of a data representative?
+    - What is the importance of a data representative?
+- intent: aim_of_the_law
+      examples: |
+        - What is the aim of the data protection law?
+        - What is the purpose of the privacy law?
+        - Why was the personal data protection law introduced?
+        - What does this law seek to achieve?
+        - What is the objective of the personal data protection law?
+        - What are the goals of the privacy law?
+        - What does the law aim to protect?
+        - Why is the data protection law important?
+        - What are the main goals of the personal data law?
+        - How does the law protect privacy?
+        - What are the expected outcomes of the data protection law?
+        - Why does Rwanda need a data protection law?
+        - What are the primary reasons for the law’s introduction?
+        - How does the law contribute to securing personal data?
+        - What is the law designed to prevent?
+        - What is the significance of the data protection law in Rwanda?
+        - Why was the data privacy law enacted?
+        - What is the overall aim of the personal data protection law?
+        - How does the law promote trust in digital services?
+        - What are the benefits of the data protection law?
+
+  - intent: who_does_this_law_apply_to
+    examples: |
+      - Who must comply with the data protection law?
+      - Who is required to follow the personal data protection law?
+      - Does the law apply to foreign companies?
+      - Is the law applicable to businesses outside Rwanda?
+      - Does the law apply to organizations outside Rwanda?
+      - Who does the personal data law affect?
+      - Is the law only for Rwandan companies?
+      - What entities must adhere to the law?
+      - Who needs to register under the data protection law?
+      - Does the law cover international organizations?
+      - Who must follow this privacy law?
+      - Does the law apply to businesses outside Rwanda?
+      - Is this law applicable to private companies only?
+      - What companies need to comply with the law?
+      - Is compliance with the law mandatory for all organizations?
+      - Who does the law target?
+      - Does the law apply to non-profit organizations?
+      - Are small businesses covered under the law?
+      - What sectors are affected by the data protection law?
+      - Is compliance with the law required for all companies?
+
+  - intent: who_is_a_data_subject
+    examples: |
+      - Who is considered a data subject?
+      - Can you explain what a data subject is?
+      - Who falls under the definition of a data subject?
+      - What does the law say about data subjects?
+      - Who is affected by this law as a data subject?
+      - What does the term "data subject" mean?
+      - Who qualifies as a data subject?
+      - Who is a data subject under this law?
+      - Can an organization be a data subject?
+      - What type of person is considered a data subject?
+      - Who does the law classify as a data subject?
+      - How is a data subject defined?
+      - Is every individual a data subject?
+      - What qualifies someone as a data subject?
+      - Can businesses be data subjects?
+      - Does the term data subject include legal entities?
+      - Who is protected as a data subject?
+      - Who can be classified as a data subject?
+      - Is an individual whose data is collected a data subject?
+      - What makes someone a data subject?
+
+  - intent: what_is_personal_data
+    examples: |
+      - What does personal data mean?
+      - What is considered personal data under the law?
+      - Can you define personal data?
+      - What information is classified as personal data?
+      - What counts as personal data?
+      - What does personal data include?
+      - Is my phone number considered personal data?
+      - Is personal data the same as sensitive data?
+      - Can you give examples of personal data?
+      - Is location data considered personal data?
+      - What information is covered under personal data?
+      - Does the law protect personal data?
+      - What does the law say about personal data?
+      - What is included in personal data?
+      - Does the law define personal data?
+      - How does the law define personal data?
+      - What types of information qualify as personal data?
+      - Can an email address be personal data?
+      - What makes data personal under the law?
+      - Does personal data include health information?
+
+  - intent: what_is_privacy
+    examples: |
+      - What does privacy mean under this law?
+      - Can you explain privacy in the context of data protection?
+      - How is privacy defined in the law?
+      - What does privacy mean in terms of personal data protection?
+      - What is privacy in terms of personal data?
+      - How is the right to privacy protected under this law?
+      - Can you describe the privacy protections in the law?
+      - What is the definition of privacy under data protection law?
+      - What are privacy rights under this law?
+      - What does the law say about the right to privacy?
+      - How does the law protect privacy?
+      - What is meant by privacy in personal data protection?
+      - Does the law define privacy?
+      - What is the meaning of privacy under the law?
+      - What does privacy cover in data protection?
+      - What is the scope of privacy rights under the law?
+      - What privacy protections exist under this law?
+      - What is considered a violation of privacy under the law?
+      - How does this law guarantee privacy?
+      - How does the law define the right to privacy?
+
+  - intent: what_is_sensitive_personal_data
+    examples: |
+      - What does sensitive personal data mean?
+      - What counts as sensitive personal data?
+      - Can you explain what sensitive data is?
+      - What kind of information is considered sensitive personal data?
+      - How does the law define sensitive personal data?
+      - What makes data sensitive under the law?
+      - What is classified as sensitive personal data?
+      - Can you give examples of sensitive personal data?
+      - Is health data considered sensitive personal data?
+      - Is biometric data sensitive personal data?
+      - What types of personal data are sensitive?
+      - What does the law say about sensitive personal data?
+      - What is protected as sensitive personal data?
+      - Does genetic data fall under sensitive personal data?
+      - Is medical information classified as sensitive personal data?
+      - What are examples of sensitive personal data?
+      - Is personal health data considered sensitive?
+      - Can religious beliefs be sensitive personal data?
+      - Does the law treat sensitive personal data differently?
+      - What types of information are considered highly sensitive?
+
+  - intent: what_is_genetic_information
+    examples: |
+      - What is genetic information?
+      - How does the law define genetic data?
+      - Is genetic data considered personal data?
+      - What is covered under genetic information?
+      - Does the law regulate genetic data?
+      - Can you explain what genetic information is?
+      - Is genetic data included in sensitive personal data?
+      - What makes data genetic under the law?
+      - What does genetic data mean under this law?
+      - Is DNA information considered genetic data?
+      - What is considered genetic data under the law?
+      - Is genetic data protected by the law?
+      - How is genetic information classified?
+      - Can you give an example of genetic information?
+      - What kind of information qualifies as genetic data?
+      - Does genetic information include family health history?
+      - What does the law say about the use of genetic data?
+      - Is genetic information protected like personal data?
+      - How does the law regulate genetic information?
+
+  - intent: what_is_biometric_information
+    examples: |
+      - What is biometric information?
+      - What does biometric data include?
+      - How is biometric information classified under the law?
+      - Can you explain what biometric data is?
+      - Is biometric information considered personal data?
+      - What counts as biometric information?
+      - What types of data are considered biometric?
+      - Does the law include biometric data as sensitive?
+      - What does biometric data refer to?
+      - Is fingerprint data biometric?
+      - How does the law define biometric information?
+      - What protections are there for biometric data?
+      - What are examples of biometric data?
+      - Is retina scan data biometric?
+      - What qualifies as biometric information?
+      - Does biometric data include facial recognition?
+      - What personal information is classified as biometric?
+      - Is biometric data sensitive personal information?
+      - What regulations exist for handling biometric data?
+      - Does the law treat biometric data differently?
+
+  - intent: what_are_special_categories_of_personal_data
+    examples: |
+      - What are special categories of personal data?
+      - Can you explain special categories of personal data?
+      - What types of data fall under special categories?
+      - What is considered special categories of personal data?
+      - What makes data part of special categories?
+      - Can you give examples of special categories of personal data?
+      - How does the law define special categories of personal data?
+      - Is sensitive data included in special categories?
+      - Are criminal records considered part of special categories?
+      - Does medical data fall under special categories?
+      - Is health data part of special categories?
+      - What types of personal information are special categories?
+      - What does the law say about special categories of data?
+      - What makes data special categories?
+      - What is included in special categories under the law?
+      - What information falls under special categories of data?
+      - Is religious belief considered special categories of data?
+      - What does the law define as special categories of data?
+      - Are biometric data part of special categories of data?
+      - What protections are provided for special categories of data?
+
+  - intent: what_does_processing_mean
+    examples: |
+      - What does processing mean?
+      - What does data processing involve?
+      - How is processing of personal data defined in the law?
+      - Can you explain what processing of personal data is?
+      - What activities are included in processing data?
+      - How does the law define processing?
+      - What types of data are involved in processing?
+      - What does the law say about processing personal data?
+      - Is collecting personal data considered processing?
+      - Does processing include storing personal data?
+      - What counts as processing personal data?
+      - Does sharing personal data with third parties fall under processing?
+      - What activities are classified as processing?
+      - How is processing of data managed?
+      - What activities are considered data processing under the law?
+      - What does the law define as processing operations?
+      - Is storing information considered processing?
+      - How is processing regulated under the law?
+      - What actions fall under the processing of data?
+      - Does processing include collecting and erasing data?
+
+  - intent: who_is_a_controller
+    examples: |
+      - Who is a data controller?
+      - Can you define who a controller is under the law?
+      - What is a data controller responsible for?
+      - Who qualifies as a data controller?
+      - What is the role of a data controller?
+      - Can you explain what a data controller does?
+      - Who is responsible for determining how personal data is processed?
+      - Who does the law classify as a controller?
+      - What organizations are considered controllers?
+      - What makes a company a data controller?
+      - What is a controller in data protection?
+      - What responsibilities do controllers have?
+      - How does the law define a controller?
+      - Can you explain what a controller is under the law?
+      - What makes someone a controller under this law?
+      - Who is considered the controller in personal data handling?
+      - How does the law describe a data controller?
+      - What authority does a controller have over personal data?
+      - Who does the law refer to as a controller of personal data?
+      - What are the legal obligations of a controller?
+
+  - intent: who_is_a_processor
+    examples: |
+      - Who is a data processor?
+      - What role does a data processor play under the law?
+      - What does the term processor mean in data protection?
+      - How is a processor defined in data protection law?
+      - What are the responsibilities of a processor?
+      - What is a data processor responsible for?
+      - Who qualifies as a data processor?
+      - Can you explain what a data processor is?
+      - What companies are considered data processors?
+      - What organizations fall under the category of processors?
+      - What does the law say about processors?
+      - Can a company be both a controller and a processor?
+      - Who is responsible for processing personal data under the law?
+      - What makes someone a processor?
+      - How is a processor regulated by the law?
+      - What activities are included in the role of a processor?
+      - What organizations are considered processors under the law?
+      - What is the role of a processor in data handling?
+      - What actions make someone a processor?
+      - What responsibilities does a data processor have under the law?
+
+  - intent: how_to_determine_controller_or_processor
+    examples: |
+      - How do you determine whether you are a controller or processor?
+      - How do I know if my company is a controller or processor?
+      - What factors decide whether someone is a data controller or processor?
+      - How does the law differentiate between a controller and processor?
+      - What makes someone a controller instead of a processor?
+      - Can a company be both a controller and processor?
+      - How is the role of a controller determined?
+      - How do you determine if a company is a data processor?
+      - What defines the role of a controller in data protection?
+      - What criteria determine whether an organization is a controller?
+      - How is the distinction between controller and processor made?
+      - Can a company be both a controller and processor under the law?
+      - What actions define a controller in personal data management?
+      - What makes an organization a data processor?
+      - How can you identify if you are a processor or controller?
+      - How does a company know if they are a processor or controller?
+      - How is the role of a processor defined in the law?
+      - What makes a business a processor rather than a controller?
+      - How can you tell if your business is a controller or processor?
+      - What legal distinction exists between a controller and a processor?
+
+  - intent: what_is_supervisory_authority
+    examples: |
+      - What is the supervisory authority?
+      - What is the role of the supervisory authority in data protection?
+      - Can you explain the function of the supervisory authority?
+      - What responsibilities does the supervisory authority have?
+      - Who is the supervisory authority under the data protection law?
+      - What powers does the supervisory authority have?
+      - How does the supervisory authority enforce the law?
+      - Who regulates compliance with the data protection law?
+      - What is the supervisory authority responsible for?
+      - What is the role of the supervisory body in data protection?
+      - Who oversees compliance with the data protection law?
+      - What does the supervisory authority do?
+      - What is the function of the supervisory authority under the law?
+      - What authority does the supervisory body have over data processors?
+      - How does the supervisory authority ensure compliance with the law?
+      - Who is responsible for enforcing the data protection law?
+      - How is the supervisory authority involved in data breaches?
+      - What enforcement actions can the supervisory authority take?
+      - How is the supervisory authority defined under the law?
+      - What legal powers does the supervisory authority have?
+
+  - intent: what_are_powers_of_supervisory_authority
+    examples: |
+      - What are the powers of the supervisory authority?
+      - What authority does the supervisory body have under this law?
+      - Can you explain the responsibilities and powers of the supervisory authority?
+      - What legal powers are granted to the supervisory authority?
+      - What can the supervisory authority do under the data protection law?
+      - What enforcement actions can the supervisory authority take?
+      - What powers does the supervisory body have over controllers?
+      - What legal authority does the supervisory body have?
+      - What actions can the supervisory authority take to enforce compliance?
+      - Can the supervisory authority impose penalties?
+      - What authority does the supervisory body have to enforce the law?
+      - What powers does the supervisory authority have in data breach cases?
+      - What legal powers are given to the supervisory authority under this law?
+      - How does the supervisory authority enforce compliance with the law?
+      - Can the supervisory authority conduct audits of organizations?
+      - What investigative powers does the supervisory authority have?
+      - Can the supervisory authority fine organizations for non-compliance?
+      - What role does the supervisory authority play in enforcing data protection laws?
+      - What authority does the supervisory body have in ensuring compliance?
+      - How does the supervisory authority regulate controllers and processors?
+
+  - intent: should_controllers_and_processors_register
+    examples: |
+      - Should data controllers and processors register with the supervisory authority?
+      - Is registration mandatory for data processors?
+      - Do companies need to register under the data protection law?
+      - Who needs to register with the supervisory authority?
+      - What is the process for registration under the data protection law?
+      - Should all organizations processing personal data register with the authority?
+      - Is registration with the supervisory authority required by law?
+      - How does a data controller register with the supervisory authority?
+      - Who is required to register under the data protection law?
+      - What organizations need to register with the data protection authority?
+      - Is it mandatory to register with the supervisory authority?
+      - What are the requirements for registering with the supervisory authority?
+      - Can a company operate without registering with the authority?
+      - What happens if an organization does not register with the supervisory authority?
+      - Does the law require all companies to register with the supervisory authority?
+      - Is it compulsory for controllers to register with the authority?
+      - What steps are involved in registering with the supervisory authority?
+      - How do data controllers and processors register under the law?
+      - What organizations are obligated to register with the authority?
+      - Is it legally required to register with the supervisory authority?
+
+  - intent: what_is_consent
+    examples: |
+      - What is consent in data protection?
+      - How is consent defined under this law?
+      - Can you explain what constitutes consent for data processing?
+      - What does consent mean in the context of data protection?
+      - How does the law define consent for data use?
+      - What is considered valid consent under the data protection law?
+      - How do individuals give consent for their data to be processed?
+      - What makes consent legally valid for data processing?
+      - Can you explain the requirements for obtaining consent under the law?
+      - What is considered informed consent in data protection?
+      - How is consent obtained under the data protection law?
+      - What does the law say about obtaining consent for data use?
+      - What does explicit consent mean in the context of data protection?
+      - How is consent handled under the data protection law?
+      - What are the legal requirements for obtaining consent?
+      - Is consent always required to process personal data?
+      - Can data be processed without consent?
+      - How is consent given for personal data processing?
+      - What must be done to obtain valid consent?
+      - What are the legal standards for consent in data protection?
+
+  - intent: how_to_ensure_consent_meets_legal_requirements
+    examples: |
+      - How do you ensure that consent meets the legal requirements?
+      - What should be done to ensure consent is valid under the law?
+      - How is valid consent obtained in data processing?
+      - What are the legal requirements for obtaining consent?
+      - How can organizations make sure consent is legally valid?
+      - What steps should be taken to meet legal consent requirements?
+      - What makes consent legally valid under the law?
+      - How can companies ensure they meet the consent requirements of the law?
+      - How does the law define valid consent for data processing?
+      - What are the guidelines for ensuring legal consent is met?
+      - How can an organization obtain legal consent under the data protection law?
+      - What steps must be followed to ensure consent meets legal standards?
+      - How is valid consent obtained under this law?
+      - What actions are required to ensure consent is legally binding?
+      - How do organizations verify that consent meets the law's requirements?
+      - What does the law require for consent to be valid?
+      - How is legal consent ensured for personal data use?
+      - What guidelines are provided for obtaining valid consent?
+      - What should be done to ensure valid and informed consent?
+      - How is informed consent ensured to meet legal requirements?
+
+  - intent: duties_of_data_protection_officer
+    examples: |
+      - What are the duties of a data protection officer?
+      - What is the role of a data protection officer?
+      - What responsibilities does a data protection officer have?
+      - What are the key duties of a data protection officer?
+      - How does a data protection officer ensure compliance with the law?
+      - What tasks does a data protection officer perform?
+      - Can you explain the role of a data protection officer?
+      - What is the legal role of a data protection officer?
+      - How does a data protection officer help ensure privacy?
+      - What are the obligations of a data protection officer under the law?
+      - What authority does a data protection officer have?
+      - What are the key functions of a data protection officer?
+      - How does a data protection officer manage compliance?
+      - What role does the data protection officer play in data security?
+      - What is the legal function of a data protection officer?
+      - How does the law define the duties of a data protection officer?
+      - What is the role of a data protection officer in data processing?
+      - What compliance duties does a data protection officer have?
+      - What are the responsibilities of a data protection officer in organizations?
+      - What legal duties does a data protection officer have?
+
+  - intent: rights_of_data_subjects
+    examples: |
+      - How does the law protect the rights of data subjects?
+      - What are the rights of data subjects under this law?
+      - Can you explain the rights given to data subjects?
+      - What legal rights do data subjects have under the data protection law?
+      - What protections are provided for data subjects?
+      - How does the law protect individuals' data rights?
+      - What legal rights are granted to data subjects under the law?
+      - Can you explain the protections given to data subjects?
+      - What rights are available to data subjects?
+      - What does the law say about the rights of data subjects?
+      - How does the law safeguard the rights of data subjects?
+      - What rights do individuals have regarding their personal data?
+      - Can data subjects request access to their personal data?
+      - What protections are provided for data subjects under this law?
+      - How does the law ensure data subjects' privacy rights?
+      - What authority do data subjects have over their personal data?
+      - What rights do individuals have in relation to personal data?
+      - How can data subjects exercise their rights under the law?
+      - What does the law say about data subjects' rights?
+      - Can data subjects request the deletion of their data?
+
+  - intent: obligations_of_controllers_and_processors
+    examples: |
+      - What are the obligations of data controllers and processors?
+      - What duties do controllers and processors have under this law?
+      - What are the legal obligations for controllers and processors?
+      - Can you explain the responsibilities of controllers and processors?
+      - What does the law say about the duties of controllers and processors?
+      - How does the law define the obligations of data controllers and processors?
+      - What actions must controllers and processors take to comply with the law?
+      - What are the compliance requirements for controllers and processors?
+      - How do controllers and processors meet their legal obligations?
+      - What steps must controllers and processors follow under the law?
+      - What are the responsibilities of controllers and processors under the law?
+      - What obligations do data controllers and processors have under the law?
+      - What does the law require controllers and processors to do?
+      - How do controllers and processors ensure compliance with the law?
+      - What are the regulatory obligations of data controllers and processors?
+      - What duties must controllers and processors meet under the law?
+      - How are the roles of controllers and processors defined under the law?
+      - What obligations do controllers and processors have regarding data security?
+      - How do controllers and processors ensure they meet the legal requirements?
+      - What are the key responsibilities of controllers and processors?
+
+  - intent: storage_transfer_and_retention_of_personal_data
+    examples: |
+      - What does the law say about storage, transfer, and retention of personal data?
+      - How should personal data be stored and transferred under the law?
+      - What are the legal requirements for storing and transferring personal data?
+      - How does the law regulate the storage and transfer of personal data?
+      - What are the rules for retaining personal data under the law?
+      - What is the legal framework for data retention and storage?
+      - What are the guidelines for storing personal data securely?
+      - How does the law define the rules for transferring personal data?
+      - What does the law require for data storage and retention?
+      - How long can personal data be retained under the law?
+      - What security measures must be taken when transferring personal data?
+      - What guidelines exist for the secure transfer of personal data?
+      - How should personal data be stored to meet legal requirements?
+      - What rules govern the storage and transfer of personal data?
+      - What retention periods are required under the law for personal data?
+      - How should personal data be stored to ensure compliance?
+      - What guidelines are in place for the retention of personal data?
+      - What must be done to securely transfer personal data?
+      - What does the law say about the safe transfer of personal data?
+      - What security measures must be followed for storing personal data?
+
+  - intent: is_it_an_offence_not_to_comply
+    examples: |
+      - Is it an offence not to comply with the data protection law?
+      - What are the penalties for non-compliance?
+      - What happens if a company doesn't follow the law?
+      - What are the legal consequences of not complying with the law?
+      - Is non-compliance with the data protection law considered a crime?
+      - Can a company face penalties for not following the law?
+      - What happens if an organization violates the data protection law?
+      - What legal actions can be taken against non-compliant companies?
+      - What are the consequences of violating the data protection law?
+      - Can companies be fined for not following the data protection law?
+      - What legal penalties exist for non-compliance with the law?
+      - Can an organization be prosecuted for not complying with the law?
+      - What are the legal repercussions of not complying with the law?
+      - What fines can be imposed for non-compliance with the data protection law?
+      - How does the law punish companies that do not comply?
+      - What are the sanctions for failing to follow the law?
+      - Is it illegal not to comply with the data protection law?
+      - What actions are taken against companies that do not comply with the law?
+      - Can non-compliant organizations face legal consequences?
+      - What legal repercussions exist for violating the law?
+
+  - intent: important_documents_to_have
+    examples: |
+      - What important documents should companies have for compliance?
+      - What documentation is required under the data protection law?
+      - What are the key documents needed to comply with the law?
+      - What documents should an organization have to meet compliance requirements?
+      - What documents must be in place to comply with the law?
+      - What are the key compliance documents required under the law?
+      - Can you explain the documents needed for data protection compliance?
+      - What are the essential documents for complying with the data protection law?
+      - What paperwork must companies maintain to comply with the law?
+      - What legal documents are required for data protection compliance?
+      - What policies and documents are needed to meet data protection requirements?
+      - What records must be kept to ensure compliance with the law?
+      - What forms are required for compliance with the data protection law?
+      - What documents do organizations need to ensure compliance?
+      - What paperwork must be maintained for compliance purposes?
+      - What compliance records must companies keep under the data protection law?
+      - What legal documents must organizations maintain to comply with the law?
+      - What compliance documents must be in place for companies?
+      - What records and policies are essential for data protection compliance?
+      - What documents must be retained to comply with the law?
+
+  - intent: implications_of_the_law_for_different_sectors
+    examples: |
+      - What are the implications of the law for different sectors?
+      - How does this law impact various industries?
+      - What are the sector-specific implications of the data protection law?
+      - How will the data protection law affect different industries?
+      - What are the consequences of the law for different sectors?
+      - Can you explain how the law affects different sectors?
+      - What impact does the law have on various industries?
+      - How will the law change data practices in different industries?
+      - What are the legal implications for different sectors under the law?
+      - How does the law affect companies in different sectors?
+      - What are the key changes for different sectors under the data protection law?
+      - How does the law regulate data in different sectors?
+      - What changes are required for different industries under the law?
+      - How does the law impact the handling of data in different industries?
+      - What is the sector-specific impact of the data protection law?
+      - How does the law affect data practices across industries?
+      - What sectors will see the greatest impact from the data protection law?
+      - How does the law affect different sectors in Rwanda?
+      - What sector-specific implications should businesses prepare for?
+      - What industry changes are required by the data protection law?

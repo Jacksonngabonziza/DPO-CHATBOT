@@ -1,0 +1,115 @@
+version: "3.1"
+
+stories:
+
+  - story: Greet the user
+    steps:
+      - intent: greeting
+      - action: utter_greeting
+
+  - story: User says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: User affirms
+    steps:
+      - intent: affirm
+      - action: utter_affirm
+
+  - story: User denies
+    steps:
+      - intent: deny
+      - action: utter_deny
+
+  - story: User challenges if it's a bot
+    steps:
+      - intent: bot_challenge
+      - action: utter_bot_challenge
+
+  - story: User thanks the bot
+    steps:
+      - intent: thanks
+      - action: utter_thanks
+
+  - story: User asks out of scope question
+    steps:
+      - intent: out_of_scope
+      - action: utter_out_of_scope
+
+  - story: User wants to be transferred to a human agent
+    steps:
+      - intent: transfer_to_human
+      - action: utter_transfer_to_human
+
+  # Domain-specific stories
+# 0788258974
+  - story: Ask about data deletion and retention
+    steps:
+      - intent: data_deletion_retention
+      - action: utter_data_deletion_retention
+
+  - story: Ask about data access and correction
+    steps:
+      - intent: data_access_correction
+      - action: utter_data_access_correction
+
+  - story: Ask about data protection impact assessment
+    steps:
+      - intent: data_protection_impact_assessment
+      - action: utter_data_protection_impact_assessment
+
+  - story: Ask about data storage and security
+    steps:
+      - intent: data_storage_security
+      - action: utter_data_storage_security
+
+  - story: Ask about data protection compliance
+    steps:
+      - intent: data_protection_compliance
+      - action: utter_data_protection_compliance
+
+  - story: Ask about data protection authority
+    steps:
+      - intent: data_protection_authority
+      - action: utter_data_protection_authority
+
+  - story: Ask about cross-border data transfers
+    steps:
+      - intent: cross_border_data_transfers
+      - action: utter_cross_border_data_transfers
+
+  - story: Ask about data breach notifications
+    steps:
+      - intent: data_breach_notifications
+      - action: utter_data_breach_notifications
+
+  - story: Ask about data collection consent
+    steps:
+      - intent: data_collection_consent
+      - action: utter_data_collection_consent
+
+  - story: Ask about data protection rights
+    steps:
+      - intent: data_protection_rights
+      - action: utter_data_protection_rights
+
+  - story: Ask about data protection law
+    steps:
+      - intent: data_protection_law
+      - action: utter_data_protection_law
+
+  - story: Ask about general data protection information
+    steps:
+      - intent: data_protection_general_info
+      - action: utter_data_protection_general_info
+
+  - story: interactive_story_1
+    steps:
+      - intent: nlu_fallback
+      - action: action_default_fallback
+  - story: welcome_story
+    steps:
+      - intent: welcome
+      - action: utter_welcome
+   

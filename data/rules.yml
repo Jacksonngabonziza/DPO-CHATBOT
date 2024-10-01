@@ -1,0 +1,156 @@
+version: "3.1"
+
+rules:
+  - rule: Say hello
+    steps:
+      - intent: greeting
+      - action: utter_greeting
+
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Affirm response
+    steps:
+      - intent: affirm
+      - action: utter_affirm
+
+  - rule: Deny response
+    steps:
+      - intent: deny
+      - action: utter_deny
+
+  - rule: Respond to bot challenge
+    steps:
+      - intent: bot_challenge
+      - action: utter_bot_challenge
+
+  - rule: Respond to thanks
+    steps:
+      - intent: thanks
+      - action: utter_thanks
+
+  - rule: Out of scope response
+    steps:
+      - intent: out_of_scope
+      - action: utter_out_of_scope
+
+  - rule: Transfer to human agent
+    steps:
+      - intent: transfer_to_human
+      - action: utter_transfer_to_human
+
+  # Domain-specific rules
+  - rule: Handle data deletion and retention
+    steps:
+      - intent: data_deletion_retention
+      - action: utter_data_deletion_retention
+      
+
+  - rule: Handle data access and correction
+    steps:
+      - intent: data_access_correction
+      - action: utter_data_access_correction
+
+  - rule: Handle data protection impact assessment
+    steps:
+      - intent: data_protection_impact_assessment
+      - action: utter_data_protection_impact_assessment
+
+  - rule: Handle data storage and security
+    steps:
+      - intent: data_storage_security
+      - action: utter_data_storage_security
+
+  - rule: Handle data protection compliance
+    steps:
+      - intent: data_protection_compliance
+      - action: utter_data_protection_compliance
+
+  - rule: Handle data protection authority queries
+    steps:
+      - intent: data_protection_authority
+      - action: utter_data_protection_authority
+
+  - rule: Handle cross-border data transfers
+    steps:
+      - intent: cross_border_data_transfers
+      - action: utter_cross_border_data_transfers
+
+  - rule: Handle data breach notifications
+    steps:
+      - intent: data_breach_notifications
+      - action: utter_data_breach_notifications
+
+  - rule: Handle data collection and consent
+    steps:
+      - intent: data_collection_consent
+      - action: utter_data_collection_consent
+
+  - rule: Handle data protection rights
+    steps:
+      - intent: data_protection_rights
+      - action: utter_data_protection_rights
+
+  - rule: Handle data protection law queries
+    steps:
+      - intent: data_protection_law
+      - action: utter_data_protection_law
+
+  - rule: Handle general data protection info
+    steps:
+      - intent: data_protection_general_info
+      - action: utter_data_protection_general_info
+  - rule: welcome to dpo
+    steps:
+      - intent: welcome
+      - action: utter_welcome
+  - rule: Fallback
+    steps:
+      - intent: nlu_fallback
+      - action: action_default_fallback
+  - rule: Lodge a complaint
+    steps:
+      - intent: lodge_complaint
+      - action: utter_lodge_complaint
+
+  - rule: Lodge a complaint for someone else
+    steps:
+      - intent: lodge_complaint_for_someone_else
+      - action: utter_lodge_complaint_for_someone_else
+
+  - rule: Appeal a decision
+    steps:
+      - intent: appeal_a_decision
+      - action: utter_appeal_a_decision
+
+  - rule: Who qualifies to be a representative?
+    steps:
+      - intent: who_qualifies_to_be_a_representative
+      - action: utter_who_qualifies_to_be_a_representative
+
+  - rule: How to designate a representative?
+    steps:
+      - intent: how_to_designate_a_representative
+      - action: utter_how_to_designate_a_representative
+
+  - rule: What are the duties of a representative?
+    steps:
+      - intent: duties_of_a_representative
+      - action: utter_duties_of_a_representative
+
+  - rule: When to report a change of representative?
+    steps:
+      - intent: when_to_report_change_of_representative
+      - action: utter_when_to_report_a_change_of_representative
+
+  - rule: Full description of data representative
+    steps:
+      - intent: full_description_of_data_representative
+      - action: utter_full_description_of_data_representative
+     
+  # - rule: Full description of data representative
+  #   steps:
+  #     - intent: full_description_of_data_representative
+  #     - action: utter_full_description_of_data_representative

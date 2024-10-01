@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rasa Core Visualisation</title>
+    <script src="https://dagrejs.github.io/project/dagre-d3/latest/dagre-d3.min.js"></script>
+    <script src="https://dagrejs.github.io/project/dagre/latest/dagre.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://dagrejs.github.io/project/graphlib-dot/v0.6.3/graphlib-dot.js"></script>
+</head>
+<body>
+<div id="errormsg" style="color: #b00"></div>
+<svg>
+    <style id="graph-style">
+        .node.invisible > rect {
+            display: none;
+        }
+
+        .node.start > rect {
+            fill: #7f7;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node.end > rect {
+            fill: #f77;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node:not(.active) > rect, .node:not(.active) > .label {
+            opacity: 0.4;
+        }
+
+        .edgePath:not(.active) path {
+            opacity: 0.4;
+        }
+
+        .node.ellipsis > rect {
+            fill: #CCC;
+        }
+
+        .node.intent > rect {
+            fill: #7ff;
+        }
+
+        .node.dashed > rect {
+            stroke-dasharray: 5;
+        }
+
+        text {
+            font-weight: 300;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serf, serif;
+            font-size: 14px;
+            color: #1f1d1d;
+        }
+
+        .node rect {
+            stroke: #444;
+            fill: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .edgePath path {
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+
+        svg {
+            position: fixed;
+            top: 10px;
+            left: 0;
+            height: 100%;
+            width: 100%
+        }
+    </style>
+    <g></g>
+</svg>
+<script>
+
+  function serveGraph() {
+    let oldInputGraphValue;
+
+    const url = 'visualization.dot';
+    const refreshInterval = 500;
+
+    // trigger a refresh by fetching an updated graph
+    setInterval(function () {
+      fetch(url).then(r => r.text()).then(dot => {
+        document.getElementById('errormsg').innerHTML = '';
+        if (oldInputGraphValue === dot) return;
+
+        oldInputGraphValue = dot;
+        drawGraph(dot);
+      }).catch(err => {
+        document.getElementById('errormsg').innerHTML =
+          'Failed to update plot. (' + err.message + ')';
+      });
+    }, refreshInterval);
+  }
+
+  function drawGraph(graph) {
+    let g = graphlibDot.read(graph);
+    // Set margins, if not present
+    if (!g.graph().hasOwnProperty("marginx") &&
+      !g.graph().hasOwnProperty("marginy")) {
+      g.graph().marginx = 20;
+      g.graph().marginy = 20;
+    }
+    g.graph().transition = function (selection) {
+      return selection.transition().duration(300);
+    };
+    // Render the graph into svg g
+    d3.select("svg g").call(render, g);
+  }
+  // Set up zoom support
+  const svg = d3.select("svg"),
+    inner = d3.select("svg g"),
+    zoom = d3.zoom().on("zoom", function () {
+      inner.attr("transform", d3.event.transform);
+    });
+  svg.call(zoom);
+
+  // Create and configure the renderer
+  const render = dagreD3.render();
+
+  let isClient = false;
+  isClient = true;
+
+  if (isClient) {
+    // Mark all nodes and their edges as active
+    cssRules = document.getElementById('graph-style').sheet.cssRules;
+    cssRules[3].style.opacity = 1;
+    cssRules[4].style.opacity = 1;
+
+    let graph;
+    graph = `digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+"-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
+1 [class="", fontsize=12, label=utter_greeting];
+2 [class="", fontsize=12, label=utter_goodbye];
+3 [class="", fontsize=12, label=utter_affirm];
+4 [class="", fontsize=12, label=utter_deny];
+5 [class="", fontsize=12, label=utter_bot_challenge];
+6 [class="", fontsize=12, label=utter_thanks];
+7 [class="", fontsize=12, label=utter_out_of_scope];
+8 [class="", fontsize=12, label=utter_transfer_to_human];
+9 [class="", fontsize=12, label=utter_data_deletion_retention];
+10 [class="", fontsize=12, label=utter_data_access_correction];
+11 [class="", fontsize=12, label=utter_data_protection_impact_assessment];
+12 [class="", fontsize=12, label=utter_data_storage_security];
+13 [class="", fontsize=12, label=utter_data_protection_compliance];
+14 [class="", fontsize=12, label=utter_data_protection_authority];
+15 [class="", fontsize=12, label=utter_cross_border_data_transfers];
+16 [class="", fontsize=12, label=utter_data_breach_notifications];
+17 [class="", fontsize=12, label=utter_data_collection_consent];
+18 [class="", fontsize=12, label=utter_data_protection_rights];
+19 [class="", fontsize=12, label=utter_data_protection_law];
+20 [class="", fontsize=12, label=utter_data_protection_general_info];
+21 [class="", fontsize=12, label="..."];
+46 [class="", fontsize=12, label=action_default_fallback];
+63 [class=intent, fillcolor=lightblue, label="hey  how are you?", shape=rect, style=filled];
+64 [class=intent, fillcolor=lightblue, label="bye  was nice talking to you", shape=rect, style=filled];
+65 [class=intent, fillcolor=lightblue, label="it s true", shape=rect, style=filled];
+66 [class=intent, fillcolor=lightblue, label="definitely not", shape=rect, style=filled];
+67 [class=intent, fillcolor=lightblue, label="am I talking to a bot?", shape=rect, style=filled];
+68 [class=intent, fillcolor=lightblue, label=great, shape=rect, style=filled];
+69 [class=intent, fillcolor=lightblue, label="tell me a joke", shape=rect, style=filled];
+70 [class=intent, fillcolor=lightblue, label="/transfer_to_human", shape=rect, style=filled];
+71 [class=intent, fillcolor=lightblue, label="How long does my personal data stay in the system?", shape=rect, style=filled];
+72 [class=intent, fillcolor=lightblue, label="What should I do if my data is incorrect?", shape=rect, style=filled];
+73 [class=intent, fillcolor=lightblue, label="What is a data protection impact assessment?", shape=rect, style=filled];
+74 [class=intent, fillcolor=lightblue, label="Are there restrictions on storing data outside the country?", shape=rect, style=filled];
+75 [class=intent, fillcolor=lightblue, label="How can companies comply with data protection regulations in Rwanda?", shape=rect, style=filled];
+76 [class=intent, fillcolor=lightblue, label="What authority manages data protection laws in Rwanda?", shape=rect, style=filled];
+77 [class=intent, fillcolor=lightblue, label="Is the storage of personal data outside Rwanda allowed?", shape=rect, style=filled];
+78 [class=intent, fillcolor=lightblue, label="What is the duration for notifying the data breach to the supervisory authority?", shape=rect, style=filled];
+79 [class=intent, fillcolor=lightblue, label="What are the different types of consent in data protection?", shape=rect, style=filled];
+80 [class=intent, fillcolor=lightblue, label="How do I check if my data is being lawfully processed?", shape=rect, style=filled];
+81 [class=intent, fillcolor=lightblue, label="What can I do to comply with the Data Protection Law?", shape=rect, style=filled];
+82 [class=intent, fillcolor=lightblue, label="What are the penalties for non-compliance with data protection regulations?", shape=rect, style=filled];
+83 [class=intent, fillcolor=lightblue, label="How do I request access to my personal records?", shape=rect, style=filled];
+84 [class=intent, fillcolor=lightblue, label="When should a company conduct a data protection impact assessment?", shape=rect, style=filled];
+85 [class=intent, fillcolor=lightblue, label="How does the law handle cross-border storage of personal data?", shape=rect, style=filled];
+86 [class=intent, fillcolor=lightblue, label="What measures are required for compliance with Rwandan data protection laws?", shape=rect, style=filled];
+87 [class=intent, fillcolor=lightblue, label="What is the contact procedure for the Data Protection and Privacy Office?", shape=rect, style=filled];
+88 [class=intent, fillcolor=lightblue, label="Is data localization mandatory for Rwandan companies?", shape=rect, style=filled];
+89 [class=intent, fillcolor=lightblue, label="What kind of information should be included in a data breach notification?", shape=rect, style=filled];
+90 [class=intent, fillcolor=lightblue, label="How do I know if I ve given consent for my data to be used?", shape=rect, style=filled];
+91 [class=intent, fillcolor=lightblue, label="How do I submit a request to access my personal information?", shape=rect, style=filled];
+92 [class=intent, fillcolor=lightblue, label="When can I be sanctioned by the Data Protection and Privacy Office?", shape=rect, style=filled];
+93 [class=intent, fillcolor=lightblue, label="what s popping?", shape=rect, style=filled];
+94 [class=intent, fillcolor=lightblue, label="What are the global trends in data protection?", shape=rect, style=filled];
+95 [class=intent, fillcolor=lightblue, label="/nlu_fallback", shape=rect, style=filled];
+96 [class=intent, fillcolor=lightblue, label="bye  was nice talking to you", shape=rect, style=filled];
+97 [class=intent, fillcolor=lightblue, label="sounds good", shape=rect, style=filled];
+98 [class=intent, fillcolor=lightblue, label="no  absolutely not", shape=rect, style=filled];
+99 [class=intent, fillcolor=lightblue, label="are you real?", shape=rect, style=filled];
+100 [class=intent, fillcolor=lightblue, label=thanks, shape=rect, style=filled];
+101 [class=intent, fillcolor=lightblue, label="what the weather today ?", shape=rect, style=filled];
+102 [class=intent, fillcolor=lightblue, label="/transfer_to_human", shape=rect, style=filled];
+103 [class=intent, fillcolor=lightblue, label="What is the process for data deletion requests?", shape=rect, style=filled];
+0 -> 21  [class="", key=NONE, label=""];
+0 -> 63  [class="", key=0];
+0 -> 64  [class="", key=0];
+0 -> 65  [class="", key=0];
+0 -> 66  [class="", key=0];
+0 -> 67  [class="", key=0];
+0 -> 68  [class="", key=0];
+0 -> 69  [class="", key=0];
+0 -> 70  [class="", key=0];
+0 -> 71  [class="", key=0];
+0 -> 72  [class="", key=0];
+0 -> 73  [class="", key=0];
+0 -> 74  [class="", key=0];
+0 -> 75  [class="", key=0];
+0 -> 76  [class="", key=0];
+0 -> 77  [class="", key=0];
+0 -> 78  [class="", key=0];
+0 -> 79  [class="", key=0];
+0 -> 80  [class="", key=0];
+0 -> 81  [class="", key=0];
+0 -> 82  [class="", key=0];
+1 -> "-1"  [class="", key=NONE, label=""];
+2 -> "-1"  [class="", key=NONE, label=""];
+3 -> "-1"  [class="", key=NONE, label=""];
+4 -> "-1"  [class="", key=NONE, label=""];
+5 -> "-1"  [class="", key=NONE, label=""];
+6 -> "-1"  [class="", key=NONE, label=""];
+7 -> "-1"  [class="", key=NONE, label=""];
+8 -> "-1"  [class="", key=NONE, label=""];
+9 -> "-1"  [class="", key=NONE, label=""];
+10 -> "-1"  [class="", key=NONE, label=""];
+11 -> "-1"  [class="", key=NONE, label=""];
+12 -> "-1"  [class="", key=NONE, label=""];
+13 -> "-1"  [class="", key=NONE, label=""];
+14 -> "-1"  [class="", key=NONE, label=""];
+15 -> "-1"  [class="", key=NONE, label=""];
+16 -> "-1"  [class="", key=NONE, label=""];
+17 -> "-1"  [class="", key=NONE, label=""];
+18 -> "-1"  [class="", key=NONE, label=""];
+19 -> "-1"  [class="", key=NONE, label=""];
+20 -> "-1"  [class="", key=NONE, label=""];
+21 -> 83  [class="", key=0];
+21 -> 84  [class="", key=0];
+21 -> 85  [class="", key=0];
+21 -> 86  [class="", key=0];
+21 -> 87  [class="", key=0];
+21 -> 88  [class="", key=0];
+21 -> 89  [class="", key=0];
+21 -> 90  [class="", key=0];
+21 -> 91  [class="", key=0];
+21 -> 92  [class="", key=0];
+21 -> 93  [class="", key=0];
+21 -> 94  [class="", key=0];
+21 -> 95  [class="", key=0];
+21 -> 96  [class="", key=0];
+21 -> 97  [class="", key=0];
+21 -> 98  [class="", key=0];
+21 -> 99  [class="", key=0];
+21 -> 100  [class="", key=0];
+21 -> 101  [class="", key=0];
+21 -> 102  [class="", key=0];
+21 -> 103  [class="", key=0];
+46 -> "-1"  [class="", key=NONE, label=""];
+63 -> 1  [class="", key=0];
+64 -> 2  [class="", key=0];
+65 -> 3  [class="", key=0];
+66 -> 4  [class="", key=0];
+67 -> 5  [class="", key=0];
+68 -> 6  [class="", key=0];
+69 -> 7  [class="", key=0];
+70 -> 8  [class="", key=0];
+71 -> 9  [class="", key=0];
+72 -> 10  [class="", key=0];
+73 -> 11  [class="", key=0];
+74 -> 12  [class="", key=0];
+75 -> 13  [class="", key=0];
+76 -> 14  [class="", key=0];
+77 -> 15  [class="", key=0];
+78 -> 16  [class="", key=0];
+79 -> 17  [class="", key=0];
+80 -> 18  [class="", key=0];
+81 -> 19  [class="", key=0];
+82 -> 20  [class="", key=0];
+83 -> 10  [class="", key=0];
+84 -> 11  [class="", key=0];
+85 -> 12  [class="", key=0];
+86 -> 13  [class="", key=0];
+87 -> 14  [class="", key=0];
+88 -> 15  [class="", key=0];
+89 -> 16  [class="", key=0];
+90 -> 17  [class="", key=0];
+91 -> 18  [class="", key=0];
+92 -> 19  [class="", key=0];
+93 -> 1  [class="", key=0];
+94 -> 20  [class="", key=0];
+95 -> 46  [class="", key=0];
+96 -> 2  [class="", key=0];
+97 -> 3  [class="", key=0];
+98 -> 4  [class="", key=0];
+99 -> 5  [class="", key=0];
+100 -> 6  [class="", key=0];
+101 -> 7  [class="", key=0];
+102 -> 8  [class="", key=0];
+103 -> 9  [class="", key=0];
+}
+`;
+    drawGraph(graph);
+  } else {
+    serveGraph();
+  }
+
+
+</script>
+</body>
+</html>

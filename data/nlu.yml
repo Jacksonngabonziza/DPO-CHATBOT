@@ -1105,27 +1105,27 @@ nlu:
     - What are the duties of a data representative?
     - What is the importance of a data representative?
 - intent: aim_of_the_law
-      examples: |
-        - What is the aim of the data protection law?
-        - What is the purpose of the privacy law?
-        - Why was the personal data protection law introduced?
-        - What does this law seek to achieve?
-        - What is the objective of the personal data protection law?
-        - What are the goals of the privacy law?
-        - What does the law aim to protect?
-        - Why is the data protection law important?
-        - What are the main goals of the personal data law?
-        - How does the law protect privacy?
-        - What are the expected outcomes of the data protection law?
-        - Why does Rwanda need a data protection law?
-        - What are the primary reasons for the law’s introduction?
-        - How does the law contribute to securing personal data?
-        - What is the law designed to prevent?
-        - What is the significance of the data protection law in Rwanda?
-        - Why was the data privacy law enacted?
-        - What is the overall aim of the personal data protection law?
-        - How does the law promote trust in digital services?
-        - What are the benefits of the data protection law?
+  examples: |
+    - What is the aim of the data protection law?
+    - What is the purpose of the privacy law?
+    - Why was the personal data protection law introduced?
+    - What does this law seek to achieve?
+    - What is the objective of the personal data protection law?
+    - What are the goals of the privacy law?
+    - What does the law aim to protect?
+    - Why is the data protection law important?
+    - What are the main goals of the personal data law?
+    - How does the law protect privacy?
+    - What are the expected outcomes of the data protection law?
+    - Why does Rwanda need a data protection law?
+    - What are the primary reasons for the law’s introduction?
+    - How does the law contribute to securing personal data?
+    - What is the law designed to prevent?
+    - What is the significance of the data protection law in Rwanda?
+    - Why was the data privacy law enacted?
+    - What is the overall aim of the personal data protection law?
+    - How does the law promote trust in digital services?
+    - What are the benefits of the data protection law?
 
   - intent: who_does_this_law_apply_to
     examples: |

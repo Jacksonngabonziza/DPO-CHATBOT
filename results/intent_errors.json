@@ -1,10 +1,138 @@
 [
   {
-    "text": "What are my rights under the data protection law?",
-    "intent": "data_protection_rights",
+    "text": "What are the requirements for notifying authorities of a data breach in Rwanda?",
+    "intent": "data_protection_compliance",
     "intent_prediction": {
-      "name": "data_protection_law",
-      "confidence": 0.9320250153541565
+      "name": "data_breach_notifications",
+      "confidence": 0.7201454043388367
+    }
+  },
+  {
+    "text": "How do I report a data breach to the data protection authority?",
+    "intent": "data_protection_authority",
+    "intent_prediction": {
+      "name": "data_breach_notifications",
+      "confidence": 0.5302292108535767
+    }
+  },
+  {
+    "text": "Who is a Data Processor?",
+    "intent": "data_protection_law",
+    "intent_prediction": {
+      "name": "who_is_a_processor",
+      "confidence": 0.684879720211029
+    }
+  },
+  {
+    "text": "Who is a Data Controller?",
+    "intent": "data_protection_law",
+    "intent_prediction": {
+      "name": "who_is_a_controller",
+      "confidence": 0.4671408534049988
+    }
+  },
+  {
+    "text": "What are my rights under the data protection law?",
+    "intent": "data_protection_law",
+    "intent_prediction": {
+      "name": "data_protection_rights",
+      "confidence": 0.8251627087593079
+    }
+  },
+  {
+    "text": "What are the requirements for notifying individuals about a data breach?",
+    "intent": "data_protection_law",
+    "intent_prediction": {
+      "name": "data_breach_notifications",
+      "confidence": 0.5003397464752197
+    }
+  },
+  {
+    "text": "What are the penalties for companies that fail to comply with the law?",
+    "intent": "data_protection_law",
+    "intent_prediction": {
+      "name": "is_it_an_offence_not_to_comply",
+      "confidence": 0.6489087343215942
+    }
+  },
+  {
+    "text": "How does the law define personal data?",
+    "intent": "data_protection_law",
+    "intent_prediction": {
+      "name": "what_is_personal_data",
+      "confidence": 0.7579925060272217
+    }
+  },
+  {
+    "text": "muraho neza",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.07802160829305649
+    }
+  },
+  {
+    "text": "What are the responsibilities of a representative?",
+    "intent": "who_qualifies_to_be_a_representative",
+    "intent_prediction": {
+      "name": "duties_of_a_representative",
+      "confidence": 0.6409090757369995
+    }
+  },
+  {
+    "text": "How does the law protect privacy?",
+    "intent": "aim_of_the_law",
+    "intent_prediction": {
+      "name": "what_is_privacy",
+      "confidence": 0.527562141418457
+    }
+  },
+  {
+    "text": "What authority does the supervisory body have over data processors?",
+    "intent": "what_is_supervisory_authority",
+    "intent_prediction": {
+      "name": "what_are_powers_of_supervisory_authority",
+      "confidence": 0.6440622210502625
+    }
+  },
+  {
+    "text": "What enforcement actions can the supervisory authority take?",
+    "intent": "what_are_powers_of_supervisory_authority",
+    "intent_prediction": {
+      "name": "what_is_supervisory_authority",
+      "confidence": 0.518908679485321
+    }
+  },
+  {
+    "text": "What are the legal requirements for obtaining consent?",
+    "intent": "what_is_consent",
+    "intent_prediction": {
+      "name": "how_to_ensure_consent_meets_legal_requirements",
+      "confidence": 0.49426913261413574
+    }
+  },
+  {
+    "text": "Is registration mandatory for data processors?",
+    "intent": "why_register_required",
+    "intent_prediction": {
+      "name": "should_controllers_and_processors_register",
+      "confidence": 0.6065190434455872
+    }
+  },
+  {
+    "text": "How do I register as a Data Controller?",
+    "intent": "request_data_controller_registration_form",
+    "intent_prediction": {
+      "name": "how_to_register",
+      "confidence": 0.5091162919998169
+    }
+  },
+  {
+    "text": "How do I notify about a data breach?",
+    "intent": "request_data_breach_notification_form",
+    "intent_prediction": {
+      "name": "data_breach_notifications",
+      "confidence": 0.6673508882522583
     }
   }
 ]

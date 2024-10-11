@@ -314,6 +314,14 @@ nlu:
     - Fridge isnt running
     - my tv isnt working
     - I want a pizza
+    - muraho
+    - bite
+    - mwiriwe
+    - nabasuhuzaga
+    - ese uri umuntu
+    - wavuga ikinyarwanda?
+    - salama wowe
+    - vip mwana
     - my washing machine isnt working
     - what year is it
     - order a pizza
@@ -647,6 +655,7 @@ nlu:
   examples: |
     - What should I do if my data has been breached?
     - How do organizations notify me about data breaches?
+    - hello , i am trying to report the organisation that stole my personal data, how can i report this issue?
     - How do you report a data breach?
     - What is the duration for notifying the data breach to the supervisory authority?
     - When can I complain to an organization about a data breach?
@@ -994,6 +1003,7 @@ nlu:
 - intent: when_to_report_a_change_of_representative
   examples: |
     - When should I report a change of representative?
+    - WHEN TO REPORT A CHANGE OF REPRESENTATIVE?
     - How soon do I need to report a new representative?
     - What is the deadline to report a change of representative?
     - When must I notify NCSA about a representative change?
@@ -1677,3 +1687,639 @@ nlu:
     - How does the law affect different sectors in Rwanda?
     - What sector-specific implications should businesses prepare for?
     - What industry changes are required by the data protection law?
+- intent: why_register_required
+  examples: |
+    - Why is registration required?
+    - Why do I need to register as a data controller?
+    - Why should I register as a data processor?
+    - What is the purpose of registering as a data controller?
+    - Why does the DPP law require registration?
+    - Is registration mandatory for data processors?
+    - What are the legal requirements for data controller registration?
+    - Why is registration necessary?
+    - What happens if I don't register as a data controller?
+    - Is it compulsory to register under the DPP Law?
+    - What are the benefits of registering as a data controller?
+    - Why must I register as a data processor in Rwanda?
+    - Why must I register my data processing activities?
+    - What is the role of registration in data processing?
+    - Is it mandatory to register as a data controller in Rwanda?
+    - Why must data processors register?
+    - What does the Data Protection and Privacy Law say about registration?
+    - Why should I comply with registration requirements?
+    - Why is it important to register my company’s data processing operations?
+
+- intent: who_is_required_to_register
+  examples: |
+    - Who must register as a data controller?
+    - Who is required to register under Rwanda’s DPP Law?
+    - What type of companies must register with the Data Protection Office?
+    - Do all organizations need to register as data controllers?
+    - Who is mandated to register under the DPP Law?
+    - Are all companies required to register as data processors?
+    - Do small businesses need to register as data controllers?
+    - Is it compulsory for educational institutions to register as data controllers?
+    - Is registration required for all sectors under the DPP Law?
+    - Which entities need to register with the supervisory authority?
+    - Do data processors outside Rwanda need to register?
+    - Must telecommunication companies register as data controllers?
+    - What sectors are required to register as data controllers or processors?
+    - Do international companies processing data in Rwanda need to register?
+    - Who is obligated to register as a data controller?
+    - Does every business processing personal data in Rwanda need to register?
+    - Must public bodies register as data controllers or processors?
+    - Who needs to register if they process Rwandan data subjects' data?
+    - Which entities fall under the registration requirement?
+
+- intent: are_you_data_controller
+  examples: |
+    - How do I know if I am a data controller?
+    - Am I classified as a data controller?
+    - How do I identify whether I am a data controller?
+    - What makes an organization a data controller?
+    - Can I be both a data controller and processor?
+    - How can I confirm if my organization is a data controller?
+    - Is my business a data controller?
+    - What are the responsibilities of a data controller?
+    - Who is considered a data controller under the law?
+    - What actions define a data controller?
+    - Is deciding how data is used considered being a data controller?
+    - How do I determine if I’m a data controller or processor?
+    - Does controlling personal data mean I am a data controller?
+    - What are the defining features of a data controller?
+    - Do I make decisions about data processing as a controller?
+    - What is the main role of a data controller?
+    - Does my organization fall under the category of a data controller?
+    - Is my company considered a data controller?
+    - What operations make a company a data controller?
+
+- intent: are_you_data_processor
+  examples: |
+    - How do I know if I am a data processor?
+    - Am I a data processor or data controller?
+    - How do I distinguish between a data processor and controller?
+    - What is a data processor?
+    - Is my organization a data processor?
+    - Who is classified as a data processor?
+    - What defines a data processor under the DPP Law?
+    - What responsibilities does a data processor have?
+    - Can I be both a data processor and controller?
+    - How do I determine if I process personal data on behalf of others?
+    - Do I need to follow the data controller's instructions as a processor?
+    - Is processing personal data on behalf of others a data processor role?
+    - How do I check if I qualify as a data processor?
+    - Am I responsible for determining data processing means as a processor?
+    - Do I act as a data processor for my clients?
+    - What makes a business a data processor?
+    - Can I be a data processor without deciding the purpose of data processing?
+    - What is the role of a data processor under the law?
+    - Does following instructions from a controller make me a processor?
+
+- intent: how_to_register
+  examples: |
+    - How do I register as a data controller?
+    - What steps do I need to follow for registration?
+    - How do I complete the registration process for data controllers?
+    - Can you guide me through the registration process for data processors?
+    - What documents are required for registering as a data processor?
+    - How do I fill out the registration form for data controllers?
+    - What is the process for registering under the DPP law?
+    - What forms do I need to register as a data controller?
+    - Is there an online portal for registration?
+    - How do I submit my registration application to the supervisory authority?
+    - Do I need to register separately as a data controller and processor?
+    - What documents must I submit along with my application?
+    - How long does the registration process take?
+    - Can I register my organization as both a data controller and processor?
+    - What is the procedure for applying for a registration certificate?
+    - What details are required for the registration form?
+    - How can I track my registration process?
+    - Is it possible to submit my registration form online?
+    - How do I get confirmation of my registration?
+
+- intent: registration_fees
+  examples: |
+    - Is there a registration fee for data controllers?
+    - How much does it cost to register as a data controller?
+    - Are there any fees for registering as a data processor?
+    - Is there a charge for registering under the DPP law?
+    - Do I need to pay for the registration certificate?
+    - Is the registration process free?
+    - What is the cost of registering with the supervisory authority?
+    - Do I need to pay any government fees for registration?
+    - How much is the registration fee?
+    - Are there any costs involved in obtaining the certificate?
+    - Do I need to budget for registration fees?
+    - What are the fees for registering as a data processor?
+    - Is the registration process free in Rwanda?
+    - What charges are there for registering as a data controller?
+    - How much does it cost to register my organization?
+    - Are there any hidden fees for registration?
+    - Do I have to pay for the application process?
+    - Is there a registration fee for the DPP law?
+    - Do I need to pay for my certificate of registration?
+- intent: when_is_dpa_needed
+  examples: |
+    - When do I need a data processing agreement?
+    - When is a data processing agreement required?
+    - Do I need a contract with a data processor?
+    - In what cases is a data processing agreement mandatory?
+    - Is a data processing agreement always necessary?
+    - When should a data controller have a data processing agreement?
+    - What triggers the need for a data processing agreement?
+    - When must I enter a data processing agreement with a data processor?
+    - Do I need a data processing agreement if I process data for a third party?
+    - Does a data controller always need a contract with a data processor?
+    - What situations require a data processing agreement?
+    - Do small businesses need a data processing agreement?
+    - When do I need to sign a contract with a third-party processor?
+    - Should cloud service providers have a data processing agreement?
+    - Is a data processing agreement needed for payroll services?
+    - What does the law say about needing a DPA?
+    - Is it mandatory for marketing companies to sign a DPA?
+    - When is a DPA necessary for data controllers?
+    - What type of operations require a data processing agreement?
+    - Do I need a DPA when sharing data?
+
+- intent: mandatory_provisions_dpa
+  examples: |
+    - What are the mandatory provisions in a data processing agreement?
+    - What must be included in a data processing agreement?
+    - What are the essential terms for a data processing agreement?
+    - What provisions are required by law in a data processing contract?
+    - Can you list the mandatory sections in a data processing agreement?
+    - What are the key provisions in a data processing agreement?
+    - What should be included in a data processing contract under the DPP Law?
+    - What clauses must be included in a data processing agreement?
+    - What are the legal requirements for a data processing agreement?
+    - What are the must-have provisions in a data processing agreement?
+    - What legal obligations should be included in a DPA?
+    - What should I ensure when drafting a DPA?
+    - Can you specify the technical measures required in a DPA?
+    - What security measures must be outlined in a DPA?
+    - What data protection clauses should a DPA have?
+    - What type of data subject rights must be included in a DPA?
+    - How should data retention periods be addressed in a DPA?
+    - What should a DPA specify about third-party processors?
+    - Is liability covered in a DPA?
+    - What should a DPA say about data transfers outside Rwanda?
+
+- intent: ensuring_dpp_compliance
+  examples: |
+    - How do I ensure compliance with the DPP law in a data processing agreement?
+    - What measures ensure compliance with Rwanda's DPP law?
+    - How can I make sure my data processing agreement complies with the law?
+    - What are the steps to ensure my agreement complies with the DPP law?
+    - How do I align my data processing agreement with the DPP law?
+    - How can I guarantee my data processing agreement is lawful?
+    - What should I include in a data processing contract to comply with the DPP Law?
+    - How do I ensure a contract complies with data protection regulations?
+    - What legal requirements must be met for DPP compliance?
+    - How do I check if a contract follows the DPP law?
+    - What compliance standards should be reflected in a DPA?
+    - What are the organizational measures to ensure DPP compliance?
+    - What should I do to avoid non-compliance with the DPP law?
+    - What are the consequences of non-compliance with the DPP law?
+    - How do I manage data breaches in compliance with the DPP law?
+    - Should data impact assessments be part of a DPA for compliance?
+    - How do I ensure security compliance in data processing contracts?
+    - What must a data processor do to ensure compliance with DPP law?
+    - What obligations should be included in a DPA to ensure DPP compliance?
+    - How do I document DPP compliance in a DPA?
+- intent: purpose_of_standard_clauses
+  examples: |
+    - What is the purpose of standard contractual clauses?
+    - Why are standard contractual clauses needed for data transfer?
+    - What are these clauses for?
+    - Why do I need standard contractual clauses for transferring data outside Rwanda?
+    - What is the objective of these clauses?
+    - What does the law say about standard clauses for personal data transfer?
+    - Why are standard contractual clauses required for data transfer?
+    - What are standard clauses for data protection?
+    - What is the purpose of these contractual clauses?
+    - What is the purpose of these data protection clauses?
+    - Why are standard clauses necessary for personal data transfer?
+    - Can you explain the objective of these standard contractual clauses?
+    - Why are these clauses important for international data transfer?
+    - What do these contractual clauses cover?
+    - Why must I use these clauses for data transfer?
+    - What is the legal purpose of these clauses?
+    - Why are these clauses necessary according to the law?
+    - Why are clauses required for personal data transfer outside Rwanda?
+    - What’s the reason for using standard clauses for data transfer?
+    - What’s the legal basis for using these contractual clauses?
+
+- intent: obligations_of_parties
+  examples: |
+    - What are the obligations of the parties in a data transfer?
+    - What obligations must parties follow when transferring data outside Rwanda?
+    - What are the responsibilities of the discloser and recipient?
+    - What should the data transfer agreement contain for both parties?
+    - What are the obligations of the parties involved in data transfer?
+    - What are the legal responsibilities of the discloser and recipient?
+    - Can you list the obligations of the parties in personal data transfer?
+    - What duties do the parties have in a data transfer contract?
+    - What do the parties agree to in these clauses?
+    - What responsibilities do the discloser and recipient have?
+    - What are the main obligations of the parties in personal data transfer?
+    - Can you list the roles and duties of the parties in these clauses?
+    - What rules must the parties follow during personal data transfer?
+    - What must the parties ensure under these clauses?
+    - What do these clauses require from the discloser and recipient?
+    - What obligations must both parties fulfill in a data transfer?
+    - What compliance measures must the discloser and recipient follow?
+    - What are the legal obligations of the parties in these clauses?
+    - What must both parties do during personal data transfer?
+    - What safeguards should the parties apply to personal data transfer?
+
+- intent: security_measures_for_transfer
+  examples: |
+    - What security measures are required for data transfer?
+    - What security must be in place for personal data transfer?
+    - What protections are required for transferring personal data outside Rwanda?
+    - What are the security requirements in these clauses?
+    - What safeguards must be in place for personal data transfer?
+    - How should I secure personal data during transfer?
+    - What are the security obligations in these standard contractual clauses?
+    - What security measures should I apply for transferring data internationally?
+    - What are the security standards for personal data transfer under these clauses?
+    - What technical measures must be applied during data transfer?
+    - How can I ensure secure data transfer outside Rwanda?
+    - What are the technical and organizational measures for data transfer security?
+    - What protections must I apply for the transfer of personal data?
+    - What kind of security must be in place for international data transfers?
+    - What do the clauses say about data security during transfer?
+    - What technical measures ensure data protection during transfer?
+    - How can I protect personal data when transferring it outside Rwanda?
+    - What measures ensure compliance with the security obligations for data transfer?
+    - What are the security responsibilities in international data transfer?
+    - What standards apply to personal data security during transfer?
+- intent: data_transfer_purpose_limitation
+  examples: |
+    - What is the purpose limitation in data transfer?
+    - Can personal data be used for another purpose after the transfer?
+    - When can personal data be used for another purpose during transfer?
+    - How do I apply purpose limitation to data transfer?
+    - What does purpose limitation mean in international data transfer?
+    - Is it allowed to use transferred data for purposes other than the original transfer?
+    - What are the rules for purpose limitation in data transfers?
+    - Can the data recipient process the data for a different purpose?
+    - What is the purpose limitation clause in a data transfer agreement?
+    - Can personal data be repurposed after being transferred?
+    - When is repurposing personal data allowed during transfers?
+    - How do I ensure that the data is only processed for the transfer purpose?
+    - Can personal data be used for public interest grounds?
+    - Is prior consent required for processing data for another purpose?
+    - When is it legal to use transferred data for another purpose?
+    - What are the legal grounds for purpose limitation?
+    - What are the exceptions to the purpose limitation rule?
+    - What happens if I need to use the data for another purpose after the transfer?
+    - Is it legal to process personal data for defense of legal claims?
+    - Can I change the purpose of data after it’s been transferred?
+
+- intent: data_transfer_transparency
+  examples: |
+    - What transparency measures must be followed during data transfer?
+    - What must I disclose to data subjects when transferring their data?
+    - How do I ensure transparency in cross-border data transfers?
+    - What are the transparency requirements in these standard contractual clauses?
+    - What information must be provided to data subjects in a data transfer?
+    - How do I make sure the data subjects know their rights during a transfer?
+    - What is required for transparency when transferring personal data internationally?
+    - How do I inform data subjects of the data transfer?
+    - What is the transparency clause in these data transfer rules?
+    - What transparency measures must be included in the agreement?
+    - How do I ensure compliance with transparency obligations?
+    - What should data subjects be told about data transfers?
+    - What do I need to reveal to data subjects when transferring their information abroad?
+    - How do I ensure that personal data transfers remain transparent?
+    - What are the rules for transparency in data transfers?
+    - How do I comply with transparency regulations for cross-border transfers?
+    - How do I make data subjects aware of third-party involvement in the transfer?
+    - What transparency requirements exist for transferring personal data?
+    - What must be disclosed about data security measures in a transfer?
+    - What should be told to data subjects about potential data breaches?
+
+- intent: data_transfer_accuracy
+  examples: |
+    - How do I ensure data accuracy during data transfers?
+    - What are the rules for data accuracy in international data transfers?
+    - How do I check if personal data is accurate before transferring it?
+    - What are the obligations regarding accuracy in personal data transfers?
+    - How do I correct inaccurate data before it’s transferred?
+    - What must be done to ensure data accuracy in a transfer?
+    - How do I make sure personal data is accurate before transferring it outside Rwanda?
+    - What happens if inaccurate data is transferred internationally?
+    - What measures must be taken to ensure data accuracy during transfer?
+    - How do I update data if it becomes inaccurate before transfer?
+    - What are the obligations regarding inaccurate data transfers?
+    - How do I make sure data is relevant and accurate before transfer?
+    - Can inaccurate data be corrected after being transferred?
+    - What should I do if I discover inaccurate data before the transfer?
+    - How do I ensure the accuracy of sensitive personal data before transfer?
+    - What actions should be taken if inaccurate data is found during a transfer?
+    - How is accuracy of personal data handled in cross-border transfers?
+    - What steps must be followed to correct data inaccuracies during transfer?
+    - What is the rule for rectifying inaccurate data in a data transfer?
+    - How do I keep personal data accurate during transfer?
+
+- intent: data_transfer_storage_limitation
+  examples: |
+    - How long can personal data be stored during a transfer?
+    - What are the storage limitations for data transfers?
+    - What does storage limitation mean in these contractual clauses?
+    - How should personal data be handled after the transfer is complete?
+    - What is the rule for storing data transferred outside Rwanda?
+    - How do I limit the storage of personal data transferred internationally?
+    - How long can transferred data be retained before it’s deleted?
+    - What are the requirements for storage limitation during cross-border data transfers?
+    - How do I ensure compliance with data retention limitations during a transfer?
+    - How long can personal data be kept after the transfer is completed?
+    - What is the retention rule for transferred data?
+    - How do I determine how long to retain transferred personal data?
+    - What is the proper retention period for personal data during transfers?
+    - How should I handle data backups after transferring personal data internationally?
+    - What are the data deletion requirements for cross-border transfers?
+    - When should transferred personal data be deleted?
+    - How should I manage data retention in international data transfers?
+    - How can I comply with storage limitation rules for transferred data?
+    - How do I delete transferred data after the retention period ends?
+    - What is the data retention policy in international transfers?
+
+- intent: data_breach_notification
+  examples: |
+    - What should I do in case of a data breach during transfer?
+    - How do I notify data breaches during personal data transfers?
+    - What is the breach notification timeline in cross-border transfers?
+    - What is the process for notifying data subjects of a breach during a transfer?
+    - How do I report a data breach in personal data transfers?
+    - What are the data breach reporting obligations during international transfers?
+    - How do I notify the Supervisory Authority about a data breach?
+    - What are the steps for informing data subjects of a breach during transfer?
+    - What are the notification requirements for data breaches during cross-border transfers?
+    - What happens if a data breach occurs during the transfer of personal data?
+    - How long do I have to report a data breach during a transfer?
+    - Who do I notify first in case of a personal data breach?
+    - What is the 48-hour rule for notifying breaches during transfers?
+    - What must I tell the Supervisory Authority if a breach occurs during a transfer?
+    - What should I inform the data subjects of if their data is breached during transfer?
+    - How do I manage personal data breaches during international transfers?
+    - What information should be provided to the authority in case of a breach?
+    - How soon should I report a breach during international data transfer?
+    - What is the notification procedure for data breaches during transfer?
+    - Who is responsible for notifying the authority of a breach during transfer?
+
+- intent: handling_sensitive_data
+  examples: |
+    - How should sensitive data be transferred internationally?
+    - What rules apply to sensitive data during data transfers?
+    - How do I protect sensitive data during a cross-border transfer?
+    - What restrictions apply to transferring sensitive personal data?
+    - What is the rule for transferring sensitive data outside Rwanda?
+    - How should sensitive data like health information be handled during a transfer?
+    - What special safeguards must be applied when transferring sensitive data?
+    - How do I manage sensitive personal data during cross-border transfers?
+    - What are the rules for handling sensitive personal information in international transfers?
+    - What measures must be taken when dealing with sensitive data in a transfer?
+    - What restrictions must be in place when transferring sensitive data?
+    - How do I protect sensitive data like race and religion during transfers?
+    - How should sensitive data be anonymized during international transfers?
+    - How do I ensure compliance when transferring sensitive personal data?
+    - What restrictions are required when handling sensitive data during transfers?
+    - What is the rule for protecting sensitive personal data during cross-border transfers?
+    - What safeguards should be applied to transferring biometric data?
+    - What additional security measures must be taken for sensitive data?
+    - How do I protect sensitive data during transmission outside Rwanda?
+    - What precautions should be taken when transferring sensitive data internationally?
+- intent: who_is_dpo
+  examples: |
+    - Who is a Data Protection Officer?
+    - What is a DPO?
+    - Can you explain what a DPO is?
+    - What does a Data Protection Officer do?
+    - Who is responsible for data protection in an organization?
+    - What does DPO mean in data protection?
+    - What is the role of a DPO?
+    - Who qualifies to be a Data Protection Officer?
+    - Who oversees data protection in companies?
+    - What is the definition of a Data Protection Officer?
+    - What’s the job of a Data Protection Officer?
+    - Can anyone be a DPO?
+    - Who can be appointed as a DPO?
+    - Is a DPO required in every organization?
+    - Who ensures compliance with data protection laws?
+    - What’s the responsibility of a DPO in data privacy?
+    - How is a DPO different from a data controller?
+    - What role does the DPO play in an organization?
+    - Who manages data protection compliance in a company?
+    - Who handles privacy regulations in a company?
+
+- intent: mandatory_dpo_designation
+  examples: |
+    - Is it mandatory to appoint a Data Protection Officer?
+    - When must a DPO be appointed?
+    - Under what circumstances is DPO appointment mandatory?
+    - Is it required to appoint a DPO for all companies?
+    - What conditions require mandatory DPO designation?
+    - Do I need to appoint a DPO for processing personal data?
+    - When is a company required to have a DPO?
+    - In which cases is a DPO mandatory?
+    - Should I designate a DPO for personal data processing?
+    - Who mandates DPO designation?
+    - What triggers the mandatory appointment of a DPO?
+    - Is DPO appointment compulsory for large-scale data processing?
+    - Do all data processors need a DPO?
+    - Is a DPO mandatory in public organizations?
+    - Can a company be penalized for not appointing a DPO?
+    - When does the law require a DPO to be appointed?
+    - Do courts need to appoint a DPO?
+    - Are DPOs mandatory in small businesses?
+    - What legal requirements make appointing a DPO necessary?
+    - Is DPO designation required for processing special categories of data?
+
+- intent: joint_dpo_appointment
+  examples: |
+    - Can a DPO be appointed for multiple entities?
+    - Can companies appoint a joint DPO?
+    - Under what conditions can a joint DPO be appointed?
+    - Can we appoint a single DPO for several establishments?
+    - Is it possible to have one DPO for multiple organizations?
+    - Can public authorities appoint the same DPO?
+    - Can one DPO serve multiple organizations?
+    - Can a DPO be shared among multiple entities?
+    - What conditions allow for a joint DPO?
+    - Is a group of companies allowed to have one DPO?
+    - Can a DPO work for several companies at once?
+    - Are joint DPO appointments allowed for corporate groups?
+    - How does a joint DPO work across different companies?
+    - Can we assign one DPO for several organizations under a group?
+    - What are the rules for appointing a joint DPO?
+    - What conditions must be met to appoint a joint DPO?
+    - Is a DPO required for each subsidiary, or can one be shared?
+    - Can multiple public authorities share a single DPO?
+    - Are joint DPOs legal in Rwanda?
+    - Can a joint DPO be easily accessible across multiple establishments?
+
+- intent: dpo_location
+  examples: |
+    - Where should the DPO be located?
+    - Can a DPO be located outside Rwanda?
+    - What is the recommended location for a DPO?
+    - Should a DPO be based within the country?
+    - Can we appoint a remote DPO outside Rwanda?
+    - Does the DPO need to be present in Rwanda?
+    - Can a DPO operate from another country?
+    - Is it necessary to have the DPO in the same office?
+    - Where is the best location to base a DPO?
+    - Should a DPO be located near the data processing operations?
+    - Can a DPO work remotely?
+    - Does a DPO need to be physically present at the organization?
+    - Can the DPO work from a different city or country?
+    - What are the location requirements for a DPO?
+    - Does a company need to locate its DPO in Rwanda?
+    - Can a DPO be based outside the establishment?
+    - Should the DPO be in close proximity to data subjects?
+    - Can we hire a DPO who lives in a different country?
+    - Where should we base a DPO for optimal compliance?
+    - Is there a specific location requirement for the DPO?
+
+- intent: dpo_existing_employee
+  examples: |
+    - Can an existing employee be appointed as a DPO?
+    - Is it allowed to appoint an internal employee as DPO?
+    - Can we make one of our staff members the DPO?
+    - Does the DPO need to be an external hire?
+    - Can we appoint an employee as DPO instead of hiring?
+    - Is it possible to make a current employee a DPO?
+    - Does the DPO have to be someone new?
+    - Can a staff member take on the role of DPO?
+    - What conditions must be met to appoint an existing employee as DPO?
+    - Can an internal employee take on the DPO role?
+    - Should the DPO come from within the company?
+    - What if our current employee has the qualifications to be a DPO?
+    - Does a DPO need to be an external consultant?
+    - Can our company’s legal officer be the DPO?
+    - Can we promote someone within the company to be the DPO?
+    - Can a DPO have other responsibilities in the company?
+    - Is it possible to choose an employee as a DPO?
+    - Can the head of compliance be appointed as the DPO?
+    - What are the rules for selecting a current employee as DPO?
+    - Can a DPO role be added to an existing employee’s job?
+
+- intent: contract_out_dpo
+  examples: |
+    - Can the role of DPO be outsourced?
+    - Can we contract out the DPO role?
+    - Can we hire a DPO on a contract basis?
+    - Is it legal to outsource the DPO role?
+    - Can we contract a third-party to be the DPO?
+    - What are the rules for outsourcing a DPO?
+    - Can we hire an external consultant as our DPO?
+    - Is it allowed to outsource the DPO function to a contractor?
+    - Can a DPO work as a contractor?
+    - Can the DPO be hired through an external company?
+    - Is it legal to contract out DPO responsibilities?
+    - What are the conditions for outsourcing the DPO?
+    - Can the role of a DPO be contracted out to a service provider?
+    - Is it permitted to use an external contractor for the DPO position?
+    - Can a DPO role be fulfilled by an external agency?
+    - Can the DPO be hired on a service contract?
+    - Is a third-party contractor allowed to act as a DPO?
+    - Can we outsource the DPO role to a consultancy firm?
+    - Is a contracted DPO as effective as an internal one?
+    - What should be considered when contracting out the DPO?
+
+- intent: dpo_qualifications
+  examples: |
+    - What qualifications should a DPO have?
+    - What skills are required for a Data Protection Officer?
+    - What are the qualifications for appointing a DPO?
+    - What professional qualities should a DPO have?
+    - What experience is needed for a Data Protection Officer?
+    - What makes someone qualified to be a DPO?
+    - What are the necessary skills for a Data Protection Officer?
+    - Can anyone become a DPO?
+    - What knowledge should a DPO have?
+    - What is required to be designated as a DPO?
+    - What are the key skills needed to be a Data Protection Officer?
+    - Does a DPO need to have legal training?
+    - What technical skills does a DPO need?
+    - Does the DPO need knowledge of data protection laws?
+    - How much experience does a DPO need?
+    - Should a DPO have experience in data security?
+    - What sector-specific knowledge is required for a DPO?
+    - What are the core competencies of a DPO?
+    - What expertise should a DPO have in privacy practices?
+    - Can a DPO be someone without data protection knowledge?
+- intent: request_data_controller_registration_form
+  examples: |
+    - Can I get the Data Controller Registration Form?
+    - I need the Data Controller Registration Form.
+    - Where can I find the Data Controller Registration Form?
+    - Please send me the Data Controller Registration Form.
+    - How do I register as a Data Controller?
+    - Can I have the form to register as a Data Controller?
+    - I need the form for Data Controller registration.
+
+- intent: request_data_controller_registration_renewal_form
+  examples: |
+    - Can I get the Data Controller Registration Renewal Form?
+    - I need the Data Controller Registration Renewal Form.
+    - Where can I find the Data Controller Registration Renewal Form?
+    - Please send me the Data Controller Registration Renewal Form.
+    - How do I renew my registration as a Data Controller?
+    - Can I have the form to renew my registration as a Data Controller?
+
+- intent: request_data_controller_change_report_form
+  examples: |
+    - Can I get the Data Controller Change Report Form?
+    - I need the Data Controller Change Report Form.
+    - Where can I find the Data Controller Change Report Form?
+    - Please send me the Data Controller Change Report Form.
+    - How do I report a change as a Data Controller?
+    - Can I have the form to report a change as a Data Controller?
+
+- intent: request_data_processor_registration_form
+  examples: |
+    - Can I get the Data Processor Registration Form?
+    - I need the Data Processor Registration Form.
+    - Where can I find the Data Processor Registration Form?
+    - Please send me the Data Processor Registration Form.
+    - How do I register as a Data Processor?
+    - Can I have the form to register as a Data Processor?
+
+- intent: request_data_processor_registration_renewal_form
+  examples: |
+    - Can I get the Data Processor Registration Renewal Form?
+    - I need the Data Processor Registration Renewal Form.
+    - Where can I find the Data Processor Registration Renewal Form?
+    - Please send me the Data Processor Registration Renewal Form.
+    - How do I renew my registration as a Data Processor?
+    - Can I have the form to renew my registration as a Data Processor?
+
+- intent: request_data_processor_change_report_form
+  examples: |
+    - Can I get the Data Processor Change Report Form?
+    - I need the Data Processor Change Report Form.
+    - Where can I find the Data Processor Change Report Form?
+    - Please send me the Data Processor Change Report Form.
+    - How do I report a change as a Data Processor?
+    - Can I have the form to report a change as a Data Processor?
+
+- intent: request_data_breach_notification_form
+  examples: |
+    - Can I get the Data Breach Notification Form?
+    - I need the Data Breach Notification Form.
+    - Where can I find the Data Breach Notification Form?
+    - Please send me the Data Breach Notification Form.
+    - How do I notify about a data breach?
+    - Can I have the form to notify a data breach?
+
+- intent: request_data_breach_reporting_form
+  examples: |
+    - Can I get the Data Breach Reporting Form?
+    - I need the Data Breach Reporting Form.
+    - Where can I find the Data Breach Reporting Form?
+    - Please send me the Data Breach Reporting Form.
+    - How do I report a data breach?
+    - Can I have the form to report a data breach?

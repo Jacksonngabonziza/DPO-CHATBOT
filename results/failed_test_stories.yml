@@ -3,41 +3,45 @@ stories:
 - story: happy path 1 (./tests/test_stories.yml)
   steps:
   - intent: greet  # predicted: greeting: hello there!
-  - action: utter_greet
-  - intent: mood_great  # predicted: bot_challenge: amazing
-  - action: utter_happy
+  - action: utter_greet  # predicted: action_default_fallback
+  - intent: mood_great  # predicted: nlu_fallback: amazing
+  - action: utter_happy  # predicted: action_default_fallback
 - story: happy path 2 (./tests/test_stories.yml)
   steps:
   - intent: greet  # predicted: greeting: hello there!
-  - action: utter_greet
-  - intent: mood_great  # predicted: bot_challenge: amazing
-  - action: utter_happy
+  - action: utter_greet  # predicted: action_default_fallback
+  - intent: mood_great  # predicted: nlu_fallback: amazing
+  - action: utter_happy  # predicted: action_default_fallback
   - intent: goodbye
   - action: utter_goodbye
 - story: sad path 1 (./tests/test_stories.yml)
   steps:
   - intent: greet  # predicted: greeting: hello
-  - action: utter_greet
+  - action: utter_greet  # predicted: action_default_fallback
   - intent: mood_unhappy  # predicted: deny: not good
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+  - action: utter_cheer_up  # predicted: action_default_fallback
+  - action: utter_did_that_help  # predicted: action_listen
   - intent: affirm
-  - action: utter_happy
+  - action: utter_happy  # predicted: utter_affirm
 - story: sad path 2 (./tests/test_stories.yml)
   steps:
   - intent: greet  # predicted: greeting: hello
-  - action: utter_greet
+  - action: utter_greet  # predicted: action_default_fallback
   - intent: mood_unhappy  # predicted: deny: not good
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+  - action: utter_cheer_up  # predicted: action_default_fallback
+  - action: utter_did_that_help  # predicted: action_listen
   - intent: deny
-  - action: utter_goodbye
+  - action: utter_goodbye  # predicted: utter_deny
 - story: sad path 3 (./tests/test_stories.yml)
   steps:
   - intent: greet  # predicted: greeting: hi
-  - action: utter_greet
-  - intent: mood_unhappy  # predicted: nlu_fallback: very terrible
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+  - action: utter_greet  # predicted: action_default_fallback
+  - intent: mood_unhappy  # predicted: deny: very terrible
+  - action: utter_cheer_up  # predicted: action_default_fallback
+  - action: utter_did_that_help  # predicted: action_listen
   - intent: deny
-  - action: utter_goodbye
+  - action: utter_goodbye  # predicted: utter_deny
+- story: bot challenge (./tests/test_stories.yml)
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot  # predicted: utter_bot_challenge

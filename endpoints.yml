@@ -42,3 +42,12 @@
 #  queue: queue
 action_endpoint:
  url: "http://rasa-actions:5055/webhook"
+
+tracker_store:
+  type: SQL
+  dialect: "postgresql"
+  url: "localhost"  
+  db: "rasa_db"
+  username: "postgres"
+  password: "postgres"
+  port: 5432

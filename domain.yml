@@ -2,6 +2,7 @@ version: '3.1'
 actions:
 - utter_greeting
 - action_default_fallback
+- action_store_clean_conversations
 intents:
 - affirm
 - welcome
@@ -59,6 +60,44 @@ intents:
 - is_non_compliance_an_offence
 - important_documents_to_have
 - implications_of_the_law_for_different_sectors
+- why_register_required
+- who_is_required_to_register
+- are_you_data_controller
+- are_you_data_processor
+- how_to_register
+- registration_fees
+- when_is_dpa_needed
+- mandatory_provisions_dpa
+- ensuring_dpp_compliance
+- purpose_of_standard_clauses
+- obligations_of_parties
+- security_measures_for_transfer
+- data_transfer_purpose_limitation
+- data_transfer_transparency
+- data_transfer_accuracy
+- data_transfer_storage_limitation
+- handling_sensitive_data
+- data_retention_and_deletion
+- dispute_resolution
+- liability_in_data_transfer
+- suspension_of_data_transfer
+- who_is_dpo
+- mandatory_dpo_designation
+- joint_dpo_appointment
+- dpo_location
+- dpo_existing_employee
+- contract_out_dpo
+- dpo_qualifications
+- data_breach_notification
+- request_data_controller_registration_form
+- request_data_controller_registration_renewal_form
+- request_data_controller_change_report_form
+- request_data_processor_registration_form
+- request_data_processor_registration_renewal_form
+- request_data_processor_change_report_form
+- request_data_breach_notification_form
+- request_data_breach_reporting_form
+
 responses:
   utter_data_deletion_retention:
   - text: To request the deletion of your personal data, contact the organization that holds your data and follow their formal procedures. Organizations have retention policies that dictate how long they can keep data, typically based on legal requirements or your ongoing relationship with them.
@@ -86,6 +125,23 @@ responses:
   - text: Data protection refers to the legal and technical measures in place to safeguard personal data from misuse, breaches, or unauthorized access. It is essential for ensuring privacy and maintaining trust in digital environments.
   utter_welcome:
   - text: Hello, I'm here to help you navigate the world of data protection and privacy in Rwanda. Whether you’re looking to learn more about your rights, understand how your data is handled, or resolve concerns regarding privacy, you've come to the right place. Ask me anything about Rwanda's data protection laws or let me assist you with any related issues.
+  utter_why_register_required:
+  - text: "Registration is required under Rwanda’s Data Protection and Privacy Law. It ensures transparency, accountability, and compliance with data processing regulations for both data controllers and processors."
+
+  utter_who_is_required_to_register:
+  - text: "Any Data Controller or processor who is established or resides in Rwanda and processes personal data, or any entity that processes data of Rwandan Data Subjects, must register."
+
+  utter_are_you_data_controller:
+  - text: "A Data Controller is responsible for determining the purposes and means of processing personal data. If you make decisions about 'why' and 'how' the data is processed, you are likely a Data Controller."
+
+  utter_are_you_data_processor:
+  - text: "A Data Processor processes personal data on behalf of a Data Controller, under their instructions. If you follow instructions from a controller regarding data processing, you are a Data Processor."
+
+  utter_how_to_register:
+  - text: "To register, visit www.dpo.gov.rw and download the relevant application forms. Submit the completed form along with required documents to registration@dpo.gov.rw."
+
+  utter_registration_fees:
+  - text: "There is no registration fee for data controllers and processors in Rwanda. Once the application is complete, the registration certificate is issued within 30 working days."
 
   utter_affirm:
   - text: Great! Glad to hear that.
@@ -178,6 +234,168 @@ responses:
   utter_fallback:
     - text: |
        Sorry, I didn't quite understand that. Could you rephrase?
+  utter_when_is_dpa_needed:
+    - text: |
+        A Data Processing Agreement (DPA) is needed when a Data Controller engages a Data Processor to handle personal data on its behalf. For example:
+        - Using cloud services to store collected data makes the company a Data Controller and the cloud provider a Data Processor.
+        - A marketing company sending promotional emails on behalf of a store is the Data Processor, and the store is the Data Controller.
+        - When a factory hires a payroll company to handle employee wages, the factory is the Data Controller, and the payroll company is the Data Processor.
+        In all these cases, a written contract (DPA) is mandatory to regulate the processing of personal data and ensure compliance with the DPP Law.
+
+  utter_mandatory_provisions_dpa:
+    - text: |
+        The following are mandatory provisions that must be included in a Data Processing Agreement (DPA):
+        - The scope and purpose of processing personal data.
+        - The type of personal data being processed and the categories of data subjects (e.g., employees, customers, etc.).
+        - Obligations of the Data Controller, Data Processor, and any third parties involved in the data processing.
+        - Technical and organizational measures to ensure the security of the personal data.
+        - The rights of data subjects, including how data subjects can exercise their rights.
+        - The retention period of the data and reference to the DPP Law as the governing law.
+        - Provisions for data transfers outside Rwanda, if applicable.
+        - Provisions for liability, redress, and end-of-contract obligations (such as returning or deleting data at the end of processing).
+        These provisions ensure that the processing meets the requirements of the DPP Law.
+  utter_ensuring_dpp_compliance:
+    - text: |
+        To ensure compliance with the DPP Law, the Data Controller, Data Processor, and any third parties involved in processing personal data must ensure that the data processing agreement includes the following:
+        - Technical and organizational measures such as access control, data encryption, and secure data transfer protocols to ensure personal data security.
+        - Provisions for data breach notification as required by the DPP Law.
+        - A clear mechanism for handling data subject requests, such as access, correction, or deletion of personal data.
+        - Assistance from the Data Processor in carrying out Data Protection Impact Assessments (DPIAs) when required.
+        - The Data Processor must guarantee that their processing complies with the Data Protection Law by obtaining prior authorization for third-party data processors, ensuring that all parties comply with the same data protection obligations.
+        - At the end of the contract, the Data Processor must either delete or return the personal data as instructed by the Data Controller.
+  utter_purpose_of_standard_clauses:
+    - text: |
+        The purpose of these standard contractual clauses is to ensure that the transfer of personal data from Rwanda is carried out in compliance with **Article 49 of Law Nº 058/2021** on the protection of personal data and privacy. The clauses ensure that both parties involved in the data transfer — the Discloser (the party transferring the data) and the Recipient (the party receiving the data outside Rwanda) — handle the data in a way that respects the legal requirements of data protection. These clauses cover all necessary aspects such as data security, obligations of each party, and the rights of data subjects.
+  utter_obligations_of_parties:
+    - text: |
+        The obligations of the parties involved in a personal data transfer include:
+        - **Full compliance** with all applicable data protection laws and regulations.
+        - Ensuring the data transfer is for a specific, legitimate purpose as per the agreement.
+        - Implementing appropriate **technical and organizational measures** to protect personal data during transfer.
+        - **Transparency**: The Discloser must inform the data subjects about the transfer, including details about the recipient, the data categories, and any third-party access.
+        - Ensuring that data is transferred only for the purpose specified and that data subjects' rights are protected, including the right to be informed about any breaches.
+        - Ensuring personal data transferred is accurate, up-to-date, and retained only for as long as necessary.
+        - Both parties must maintain confidentiality and comply with any **data breach notification** requirements within 48 hours.
+  utter_security_measures_for_transfer:
+    - text: |
+        To ensure the security of personal data during transfer, the parties must:
+        - Implement **appropriate technical and organizational measures** such as encryption, pseudonymization, and secure data transmission methods.
+        - Regularly test and assess the effectiveness of security measures in place to protect personal data during transfer.
+        - Ensure only authorized personnel have access to the data and that they are bound by confidentiality agreements.
+        - In the event of a personal data breach, the Discloser must notify the data subject without undue delay if the breach poses a high risk to their rights. The Recipient must notify the Discloser within 48 hours of becoming aware of any incident.
+        - Ensure the data is securely deleted or anonymized at the end of the retention period, and any backup copies are also deleted.
+
+  utter_data_transfer_purpose_limitation:
+    - text: |
+        The Recipient may only process personal data for the specific purpose(s) of the transfer. If the data is to be processed for another purpose, the Recipient must either:
+        1. Obtain the data subject’s prior written consent,
+        2. Ensure that it is necessary for a legal claim, regulatory, or judicial proceedings,
+        3. Ensure that it is necessary to protect the vital interests of the data subjects,
+        4. Process the data on public interest grounds, or
+        5. Comply with other lawful grounds provided by **Article 48 of the DPP Law**.
+
+  utter_data_transfer_transparency:
+    - text: |
+        To ensure transparency in personal data transfers, the Discloser must inform data subjects of the following:
+        - The identity and contact details of the recipient,
+        - The categories of personal data to be transferred,
+        - The involvement of any third party who may access the data,
+        - The available data protection security measures, and
+        - The discloser’s ability to comply with personal data breach remedies.
+
+  utter_data_transfer_accuracy:
+    - text: |
+        The Discloser is responsible for ensuring that the personal data transferred is accurate and, where necessary, kept up to date. Any inaccurate data must be rectified without delay. Both parties must ensure that the data processed is adequate, relevant, and limited to the purpose(s) of the transfer.
+
+  utter_data_transfer_storage_limitation:
+    - text: |
+        Personal data may only be retained for as long as necessary for the purpose of the transfer. The parties must put in place appropriate technical and organizational measures to ensure compliance, including erasure or anonymization of data and deletion of backups at the end of the retention period.
+
+  utter_data_breach_notification:
+    - text: |
+        In the event of a personal data breach, the Recipient must notify the Discloser within 48 hours. The Discloser must then inform the Supervisory Authority within 72 hours and notify the data subject without undue delay if the breach is likely to result in high risk to the data subject’s rights.
+
+  utter_handling_sensitive_data:
+    - text: |
+        When transferring sensitive personal data (such as health status, race, religious beliefs, or biometric information), both parties must apply specific safeguards to protect the data. These may include access restrictions, purpose limitations, and additional security measures tailored to the sensitive nature of the data.
+
+  utter_data_retention_and_deletion:
+    - text: |
+        Upon termination of the agreement, the Recipient must either return or delete all transferred personal data, including any backups. Data must not be retained longer than necessary, and all copies must be securely deleted at the end of the retention period.
+
+  utter_dispute_resolution:
+    - text: |
+        In the event of a dispute between the parties or a complaint from a data subject, both parties must inform each other and attempt to settle the matter amicably. If no resolution is reached, the dispute may be referred to the **Supervisory Authority** for resolution.
+
+  utter_liability_in_data_transfer:
+    - text: |
+        Both parties are liable for any damages caused by a breach of these clauses. If both parties are responsible for the breach, they may be jointly and severally liable. A party may be exempt from liability if they can prove they were not responsible for the damage caused.
+
+  utter_suspension_of_data_transfer:
+    - text: |
+        If either party breaches their obligations under these clauses, the other party may suspend the transfer of personal data until the breach is remedied. If necessary, the transfer may be terminated, without prejudice to any other legal remedies provided by the law.
+  utter_who_is_dpo:
+    - text: |
+        A Data Protection Officer (DPO) is a person who oversees the implementation and enforcement of data protection and privacy measures in an organization. The DPO ensures compliance with data protection laws and serves as the point of contact for both the organization and external stakeholders, such as data subjects and the supervisory authority.
+
+  utter_mandatory_dpo_designation:
+    - text: |
+        A Data Protection Officer (DPO) must be designated when:
+        1. A public or private organization is processing personal data,
+        2. The core activities involve regular and systematic monitoring of data subjects on a large scale,
+        3. The organization processes special categories of data (e.g., sensitive personal data). The appointment of a DPO ensures compliance with data protection regulations and transparency in data processing.
+
+  utter_joint_dpo_appointment:
+    - text: |
+        Yes, a group of organizations or a group of public authorities can appoint a joint DPO, provided the DPO is easily accessible to each organization and establishment. This joint DPO ensures coordination across multiple entities but must still comply with each organization’s data protection obligations.
+
+  utter_dpo_location:
+    - text: |
+        The DPO should ideally be located in Rwanda if the data controller or processor is based in Rwanda. In some cases, if the organization has no physical presence in Rwanda, a DPO can work in collaboration with a local representative in Rwanda to ensure data protection obligations are met.
+
+  utter_dpo_existing_employee:
+    - text: |
+        Yes, an existing employee can be appointed as the DPO, provided they have the necessary qualifications and knowledge of data protection laws. However, the employee’s other responsibilities should not conflict with their ability to focus on data protection duties.
+
+  utter_contract_out_dpo:
+    - text: |
+        The role of the DPO can be outsourced to an external contractor or consultant. However, it is important that the external DPO is well-informed of the organization's data processing operations and can carry out their duties independently and effectively.
+
+  utter_dpo_qualifications:
+    - text: |
+        A DPO should have the following qualifications:
+        - Knowledge of data protection laws and practices,
+        - Familiarity with the organization’s business sector,
+        - Understanding of the data processing operations and associated risks,
+        - Expertise in data security and information technology,
+        - Ability to raise awareness and train colleagues on data protection practices.
+        The DPO must be able to monitor and ensure compliance with data protection regulations.
+  utter_send_data_controller_registration_form:
+    - text: "Here is the Data Controller Registration Form: [Data Controller Registration Form](https://dpo.gov.rw/assets/documents/Data-Controller-Registration-Form.docx)"
+
+  utter_send_data_controller_registration_renewal_form:
+    - text: "Here is the Data Controller Registration Renewal Form: [Data Controller Registration Renewal Form](https://dpo.gov.rw/assets/documents/Data-Controller-Registration-Renewal-Form.docx)"
+
+  utter_send_data_controller_change_report_form:
+    - text: "Here is the Data Controller Change Report Form: [Data Controller Change Report Form](https://dpo.gov.rw/assets/documents/Data-Controller-Registration-Form.docx)"
+
+  utter_send_data_processor_registration_form:
+    - text: "Here is the Data Processor Registration Form: [Data Processor Registration Form](https://dpo.gov.rw/assets/documents/Data-Controller-Registration-Form.docx)"
+
+  utter_send_data_processor_registration_renewal_form:
+    - text: "Here is the Data Processor Registration Renewal Form: [Data Processor Registration Renewal Form](https://dpo.gov.rw/assets/documents/Data-Controller-Registration-Form.docx)"
+
+  utter_send_data_processor_change_report_form:
+    - text: "Here is the Data Processor Change Report Form: [Data Processor Change Report Form](https://dpo.gov.rw/assets/documents/Data-Controller-Registration-Form.docx)"
+
+  utter_send_data_breach_notification_form:
+    - text: "Here is the Data Breach Notification Form: [Data Breach Notification Form](https://dpo.gov.rw/assets/documents/Data-Controller-Registration-Form.docx)"
+
+  utter_send_data_breach_reporting_form:
+    - text: "Here is the Data Breach Reporting Form: [Data Breach Reporting Form](https://dpo.gov.rw/assets/documents/Data-Controller-Registration-Form.docx)"
+
+
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

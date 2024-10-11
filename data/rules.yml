@@ -106,10 +106,10 @@ rules:
     steps:
       - intent: welcome
       - action: utter_welcome
-  - rule: Fallback
-    steps:
-      - intent: nlu_fallback
-      - action: action_default_fallback
+  # - rule: Fallback
+  #   steps:
+  #     - intent: nlu_fallback
+  #     - action: action_default_fallback
   - rule: Lodge a complaint
     steps:
       - intent: lodge_complaint
@@ -149,8 +149,192 @@ rules:
     steps:
       - intent: full_description_of_data_representative
       - action: utter_full_description_of_data_representative
-     
+  - rule: Respond to why registration is required
+    steps:
+      - intent: why_register_required
+      - action: utter_why_register_required
+
+  - rule: Respond to who is required to register
+    steps:
+      - intent: who_is_required_to_register
+      - action: utter_who_is_required_to_register
+
+  - rule: Respond to whether the user is a data controller
+    steps:
+      - intent: are_you_data_controller
+      - action: utter_are_you_data_controller
+
+  - rule: Respond to whether the user is a data processor
+    steps:
+      - intent: are_you_data_processor
+      - action: utter_are_you_data_processor
+
+  - rule: Provide steps on how to register
+    steps:
+      - intent: how_to_register
+      - action: utter_how_to_register
+
+  - rule: Explain registration fees
+    steps:
+      - intent: registration_fees
+      - action: utter_registration_fees
+  - rule: Respond to when DPA is needed
+    steps:
+      - intent: when_is_dpa_needed
+      - action: utter_when_is_dpa_needed
+
+  - rule: Respond to mandatory provisions in DPA
+    steps:
+      - intent: mandatory_provisions_dpa
+      - action: utter_mandatory_provisions_dpa
+
+  - rule: Respond to ensuring DPP compliance
+    steps:
+      - intent: ensuring_dpp_compliance
+      - action: utter_ensuring_dpp_compliance
+  - rule: Respond to the purpose of standard clauses
+    steps:
+      - intent: purpose_of_standard_clauses
+      - action: utter_purpose_of_standard_clauses
+
+  - rule: Respond to obligations of parties
+    steps:
+      - intent: obligations_of_parties
+      - action: utter_obligations_of_parties
+
+  - rule: Respond to security measures for transfer
+    steps:
+      - intent: security_measures_for_transfer
+      - action: utter_security_measures_for_transfer
+  - rule: Respond to data transfer purpose limitation
+    steps:
+      - intent: data_transfer_purpose_limitation
+      - action: utter_data_transfer_purpose_limitation
+
+  - rule: Respond to data transfer transparency
+    steps:
+      - intent: data_transfer_transparency
+      - action: utter_data_transfer_transparency
+
+  - rule: Respond to data transfer accuracy
+    steps:
+      - intent: data_transfer_accuracy
+      - action: utter_data_transfer_accuracy
+
+  - rule: Respond to data transfer storage limitation
+    steps:
+      - intent: data_transfer_storage_limitation
+      - action: utter_data_transfer_storage_limitation
+
+  - rule: Respond to data breach notification
+    steps:
+      - intent: data_breach_notification
+      - action: utter_data_breach_notification
+
+  - rule: Respond to handling sensitive data
+    steps:
+      - intent: handling_sensitive_data
+      - action: utter_handling_sensitive_data
+
+  - rule: Respond to data retention and deletion
+    steps:
+      - intent: data_retention_and_deletion
+      - action: utter_data_retention_and_deletion
+
+  - rule: Respond to dispute resolution
+    steps:
+      - intent: dispute_resolution
+      - action: utter_dispute_resolution
+
+  - rule: Respond to liability in data transfer
+    steps:
+      - intent: liability_in_data_transfer
+      - action: utter_liability_in_data_transfer
+
+  - rule: Respond to suspension of data transfer
+    steps:
+      - intent: suspension_of_data_transfer
+      - action: utter_suspension_of_data_transfer
+  - rule: Respond to who is a DPO
+    steps:
+      - intent: who_is_dpo
+      - action: utter_who_is_dpo
+
+  - rule: Respond to mandatory DPO designation
+    steps:
+      - intent: mandatory_dpo_designation
+      - action: utter_mandatory_dpo_designation
+
+  - rule: Respond to joint DPO appointment
+    steps:
+      - intent: joint_dpo_appointment
+      - action: utter_joint_dpo_appointment
+
+  - rule: Respond to DPO location query
+    steps:
+      - intent: dpo_location
+      - action: utter_dpo_location
+
+  - rule: Respond to whether a DPO can be an existing employee
+    steps:
+      - intent: dpo_existing_employee
+      - action: utter_dpo_existing_employee
+
+  - rule: Respond to outsourcing the DPO role
+    steps:
+      - intent: contract_out_dpo
+      - action: utter_contract_out_dpo
+
+  - rule: Respond to DPO qualifications
+    steps:
+      - intent: dpo_qualifications
+      - action: utter_dpo_qualifications
+  - rule: Send Data Controller Registration Form
+    steps:
+      - intent: request_data_controller_registration_form
+      - action: utter_send_data_controller_registration_form
+
+  - rule: Send Data Controller Registration Renewal Form
+    steps:
+      - intent: request_data_controller_registration_renewal_form
+      - action: utter_send_data_controller_registration_renewal_form
+
+  - rule: Send Data Controller Change Report Form
+    steps:
+      - intent: request_data_controller_change_report_form
+      - action: utter_send_data_controller_change_report_form
+
+  - rule: Send Data Processor Registration Form
+    steps:
+      - intent: request_data_processor_registration_form
+      - action: utter_send_data_processor_registration_form
+
+  - rule: Send Data Processor Registration Renewal Form
+    steps:
+      - intent: request_data_processor_registration_renewal_form
+      - action: utter_send_data_processor_registration_renewal_form
+
+  - rule: Send Data Processor Change Report Form
+    steps:
+      - intent: request_data_processor_change_report_form
+      - action: utter_send_data_processor_change_report_form
+
+  - rule: Send Data Breach Notification Form
+    steps:
+      - intent: request_data_breach_notification_form
+      - action: utter_send_data_breach_notification_form
+
+  - rule: Send Data Breach Reporting Form
+    steps:
+      - intent: request_data_breach_reporting_form
+      - action: utter_send_data_breach_reporting_form
+  - rule: Fallback rule
+    steps:
+      - intent: nlu_fallback
+      - action: action_store_clean_conversations
   # - rule: Full description of data representative
   #   steps:
   #     - intent: full_description_of_data_representative
   #     - action: utter_full_description_of_data_representative
+actions:
+  - action_store_clean_conversations

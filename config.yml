@@ -62,8 +62,13 @@ policies:
     epochs: 300  # Increased for more training cycles
     constrain_similarities: true
     batch_strategy: "balanced"
-    batch_size: [32, 64]  # Fine-tuned batch sizes for better training optimization
+    batch_size: [32, 64]  
+  - name: AugmentedMemoizationPolicy
+  - name: TEDPolicy
+  - name: RulePolicy
+    core_fallback_threshold: 0.3
+    core_fallback_action_name: "action_default_fallback"
+    enable_fallback_prediction: True
 
-# CORS settings
 cors:
   "*"

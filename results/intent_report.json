@@ -1,44 +1,9 @@
 {
-  "affirm": {
+  "thanks": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 57,
-    "confused_with": {}
-  },
-  "out_of_scope": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 34,
-    "confused_with": {}
-  },
-  "bot_challenge": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 35,
-    "confused_with": {}
-  },
-  "data_protection_authority": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 45,
-    "confused_with": {}
-  },
-  "data_protection_impact_assessment": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 20,
-    "confused_with": {}
-  },
-  "data_access_correction": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 20,
+    "support": 44,
     "confused_with": {}
   },
   "data_collection_consent": {
@@ -48,60 +13,62 @@
     "support": 52,
     "confused_with": {}
   },
-  "thanks": {
+  "welcome": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 44,
+    "support": 1,
     "confused_with": {}
   },
-  "data_protection_general_info": {
+  "who_qualifies_to_be_a_representative": {
+    "precision": 1.0,
+    "recall": 0.9523809523809523,
+    "f1-score": 0.975609756097561,
+    "support": 21,
+    "confused_with": {
+      "duties_of_a_representative": 1
+    }
+  },
+  "data_transfer_purpose_limitation": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 69,
+    "support": 20,
     "confused_with": {}
   },
-  "data_protection_law": {
-    "precision": 0.9838709677419355,
-    "recall": 1.0,
-    "f1-score": 0.991869918699187,
-    "support": 61,
-    "confused_with": {}
-  },
-  "cross_border_data_transfers": {
+  "affirm": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 46,
+    "support": 57,
     "confused_with": {}
   },
-  "data_breach_notifications": {
+  "how_to_designate_a_representative": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 26,
+    "support": 20,
     "confused_with": {}
   },
-  "goodbye": {
+  "what_are_special_categories_of_personal_data": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 68,
+    "support": 20,
     "confused_with": {}
   },
-  "data_protection_compliance": {
+  "when_is_dpa_needed": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 48,
+    "support": 20,
     "confused_with": {}
   },
-  "data_storage_security": {
+  "request_data_processor_registration_form": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
-    "support": 41,
+    "support": 6,
     "confused_with": {}
   },
   "request_human_agent": {
@@ -118,6 +85,328 @@
     "support": 61,
     "confused_with": {}
   },
+  "security_measures_for_transfer": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "how_to_ensure_consent_meets_legal_requirements": {
+    "precision": 0.9523809523809523,
+    "recall": 1.0,
+    "f1-score": 0.975609756097561,
+    "support": 20,
+    "confused_with": {}
+  },
+  "when_to_report_a_change_of_representative": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 21,
+    "confused_with": {}
+  },
+  "request_data_breach_reporting_form": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "contract_out_dpo": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "why_register_required": {
+    "precision": 1.0,
+    "recall": 0.9473684210526315,
+    "f1-score": 0.972972972972973,
+    "support": 19,
+    "confused_with": {
+      "should_controllers_and_processors_register": 1
+    }
+  },
+  "should_controllers_and_processors_register": {
+    "precision": 0.9523809523809523,
+    "recall": 1.0,
+    "f1-score": 0.975609756097561,
+    "support": 20,
+    "confused_with": {}
+  },
+  "data_protection_impact_assessment": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "who_does_this_law_apply_to": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "aim_of_the_law": {
+    "precision": 1.0,
+    "recall": 0.95,
+    "f1-score": 0.9743589743589743,
+    "support": 20,
+    "confused_with": {
+      "what_is_privacy": 1
+    }
+  },
+  "data_protection_general_info": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 69,
+    "confused_with": {}
+  },
+  "cross_border_data_transfers": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 46,
+    "confused_with": {}
+  },
+  "request_data_processor_registration_renewal_form": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "data_breach_notifications": {
+    "precision": 0.8709677419354839,
+    "recall": 1.0,
+    "f1-score": 0.9310344827586207,
+    "support": 27,
+    "confused_with": {}
+  },
+  "lodge_complaint_for_someone_else": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "request_data_breach_notification_form": {
+    "precision": 1.0,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.9090909090909091,
+    "support": 6,
+    "confused_with": {
+      "data_breach_notifications": 1
+    }
+  },
+  "dpo_existing_employee": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "how_to_register": {
+    "precision": 0.95,
+    "recall": 1.0,
+    "f1-score": 0.9743589743589743,
+    "support": 19,
+    "confused_with": {}
+  },
+  "request_data_controller_registration_renewal_form": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "duties_of_a_representative": {
+    "precision": 0.9545454545454546,
+    "recall": 1.0,
+    "f1-score": 0.9767441860465117,
+    "support": 21,
+    "confused_with": {}
+  },
+  "purpose_of_standard_clauses": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "who_is_required_to_register": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 19,
+    "confused_with": {}
+  },
+  "what_are_powers_of_supervisory_authority": {
+    "precision": 0.95,
+    "recall": 0.95,
+    "f1-score": 0.9500000000000001,
+    "support": 20,
+    "confused_with": {
+      "what_is_supervisory_authority": 1
+    }
+  },
+  "is_it_an_offence_not_to_comply": {
+    "precision": 0.9523809523809523,
+    "recall": 1.0,
+    "f1-score": 0.975609756097561,
+    "support": 20,
+    "confused_with": {}
+  },
+  "handling_sensitive_data": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "joint_dpo_appointment": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "goodbye": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 69,
+    "confused_with": {}
+  },
+  "data_protection_compliance": {
+    "precision": 1.0,
+    "recall": 0.9791666666666666,
+    "f1-score": 0.9894736842105264,
+    "support": 48,
+    "confused_with": {
+      "data_breach_notifications": 1
+    }
+  },
+  "data_protection_rights": {
+    "precision": 0.9824561403508771,
+    "recall": 1.0,
+    "f1-score": 0.9911504424778761,
+    "support": 56,
+    "confused_with": {}
+  },
+  "who_is_dpo": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "what_does_processing_mean": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "mandatory_dpo_designation": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "mandatory_provisions_dpa": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "appeal_a_decision": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "data_protection_authority": {
+    "precision": 1.0,
+    "recall": 0.9777777777777777,
+    "f1-score": 0.9887640449438202,
+    "support": 45,
+    "confused_with": {
+      "data_breach_notifications": 1
+    }
+  },
+  "who_is_a_controller": {
+    "precision": 0.9523809523809523,
+    "recall": 1.0,
+    "f1-score": 0.975609756097561,
+    "support": 20,
+    "confused_with": {}
+  },
+  "what_is_personal_data": {
+    "precision": 0.9523809523809523,
+    "recall": 1.0,
+    "f1-score": 0.975609756097561,
+    "support": 20,
+    "confused_with": {}
+  },
+  "registration_fees": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 19,
+    "confused_with": {}
+  },
+  "duties_of_data_protection_officer": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "request_data_controller_registration_form": {
+    "precision": 1.0,
+    "recall": 0.8571428571428571,
+    "f1-score": 0.923076923076923,
+    "support": 7,
+    "confused_with": {
+      "how_to_register": 1
+    }
+  },
+  "are_you_data_processor": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 19,
+    "confused_with": {}
+  },
+  "storage_transfer_and_retention_of_personal_data": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "ensuring_dpp_compliance": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "what_is_sensitive_personal_data": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
   "deny": {
     "precision": 1.0,
     "recall": 1.0,
@@ -125,14 +414,201 @@
     "support": 45,
     "confused_with": {}
   },
-  "data_protection_rights": {
+  "how_to_determine_controller_or_processor": {
     "precision": 1.0,
-    "recall": 0.9821428571428571,
-    "f1-score": 0.9909909909909909,
-    "support": 56,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "out_of_scope": {
+    "precision": 0.9767441860465116,
+    "recall": 1.0,
+    "f1-score": 0.988235294117647,
+    "support": 42,
+    "confused_with": {}
+  },
+  "dpo_qualifications": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "what_is_supervisory_authority": {
+    "precision": 0.95,
+    "recall": 0.95,
+    "f1-score": 0.9500000000000001,
+    "support": 20,
     "confused_with": {
-      "data_protection_law": 1
+      "what_are_powers_of_supervisory_authority": 1
     }
+  },
+  "data_access_correction": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "obligations_of_controllers_and_processors": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "dpo_location": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "data_storage_security": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 41,
+    "confused_with": {}
+  },
+  "data_protection_law": {
+    "precision": 1.0,
+    "recall": 0.9016393442622951,
+    "f1-score": 0.9482758620689655,
+    "support": 61,
+    "confused_with": {
+      "data_protection_rights": 1,
+      "data_breach_notifications": 1
+    }
+  },
+  "full_description_of_data_representative": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "request_data_processor_change_report_form": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "data_transfer_transparency": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "nlu_fallback": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "out_of_scope": 1
+    }
+  },
+  "data_breach_notification": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "who_is_a_data_subject": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "who_is_a_processor": {
+    "precision": 0.9523809523809523,
+    "recall": 1.0,
+    "f1-score": 0.975609756097561,
+    "support": 20,
+    "confused_with": {}
+  },
+  "obligations_of_parties": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "what_is_genetic_information": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 19,
+    "confused_with": {}
+  },
+  "data_transfer_storage_limitation": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "important_documents_to_have": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "implications_of_the_law_for_different_sectors": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "rights_of_data_subjects": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "lodge_complaint": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "what_is_privacy": {
+    "precision": 0.9523809523809523,
+    "recall": 1.0,
+    "f1-score": 0.975609756097561,
+    "support": 20,
+    "confused_with": {}
+  },
+  "data_transfer_accuracy": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "what_is_biometric_information": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "request_data_controller_change_report_form": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
   },
   "data_deletion_retention": {
     "precision": 1.0,
@@ -141,23 +617,46 @@
     "support": 21,
     "confused_with": {}
   },
-  "accuracy": 0.9988545246277205,
+  "are_you_data_controller": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 19,
+    "confused_with": {}
+  },
+  "what_is_consent": {
+    "precision": 1.0,
+    "recall": 0.95,
+    "f1-score": 0.9743589743589743,
+    "support": 20,
+    "confused_with": {
+      "how_to_ensure_consent_meets_legal_requirements": 1
+    }
+  },
+  "bot_challenge": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 35,
+    "confused_with": {}
+  },
+  "accuracy": 0.991866028708134,
   "macro avg": {
-    "precision": 0.9991935483870968,
-    "recall": 0.9991071428571429,
-    "f1-score": 0.9991430454845089,
-    "support": 873
+    "precision": 0.9806975021539205,
+    "recall": 0.980100106279733,
+    "f1-score": 0.980076974700252,
+    "support": 2090
   },
   "weighted avg": {
-    "precision": 0.9988730000369508,
-    "recall": 0.9988545246277205,
-    "f1-score": 0.9988540212326986,
-    "support": 873
+    "precision": 0.9918591945381092,
+    "recall": 0.991866028708134,
+    "f1-score": 0.9916060924140683,
+    "support": 2090
   },
   "micro avg": {
-    "precision": 0.9988545246277205,
-    "recall": 0.9988545246277205,
-    "f1-score": 0.9988545246277205,
-    "support": 873
+    "precision": 0.991866028708134,
+    "recall": 0.991866028708134,
+    "f1-score": 0.991866028708134,
+    "support": 2090
   }
 }
